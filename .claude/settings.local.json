@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git -C \"C:/Users/DAVID AGUILAR/OneDrive/Documentos/projecto_ia2.2/schoolos \\(1\\)/schoolos-js-dev\" status)",
+      "Bash(gh auth *)",
+      "Bash(git init *)",
+      "Bash(git add *)",
+      "Bash(git -c user.email=\"therealdarek@gmail.com\" -c user.name=\"therealdarek-pixel\" commit -m \"Initial commit\")"
+    ]
+  }
+}

@@ -1,0 +1,3040 @@
+[
+  {
+    "materia": "BD-NOSQL",
+    "titulo": "¿Qué es MongoDB?",
+    "palabras_clave": [
+      "mongodb",
+      "base de datos nosql",
+      "qué es mongodb",
+      "mongo database",
+      "mongodb definition",
+      "document database",
+      "nosql database"
+    ],
+    "sinonimos": [
+      "mongo",
+      "mongodb database",
+      "base documental",
+      "sistema nosql"
+    ],
+    "variantes_comunes": [
+      "que significa mongodb",
+      "what is mongodb",
+      "mongodb para que sirve",
+      "how mongodb works",
+      "mongobd",
+      "mongo db",
+      "que es una bd nosql"
+    ],
+    "contenido": "MongoDB es una base de datos NoSQL orientada a documentos. En lugar de guardar información en tablas y filas como las bases de datos relacionales, MongoDB almacena documentos en formato BSON, una versión binaria de JSON. Esto permite manejar estructuras flexibles y datos semiestructurados. MongoDB es muy utilizado en aplicaciones modernas porque facilita el escalamiento horizontal, el manejo de grandes volúmenes de datos y el desarrollo rápido de aplicaciones web y móviles.",
+    "ejemplos": [
+      "Una colección llamada usuarios puede almacenar documentos con diferentes campos.",
+      "MongoDB usa documentos JSON para representar información."
+    ],
+    "ejercicios": [
+      "Explica la diferencia entre MongoDB y MySQL.",
+      "Menciona dos ventajas de MongoDB."
+    ],
+    "nivel": "basico"
+  },
+  {
+    "materia": "BD-NOSQL",
+    "titulo": "Características de las bases de datos NoSQL",
+    "palabras_clave": [
+      "nosql",
+      "caracteristicas nosql",
+      "ventajas nosql",
+      "bases no relacionales",
+      "mongodb nosql"
+    ],
+    "sinonimos": [
+      "bases no relacionales",
+      "sistemas nosql",
+      "database nosql"
+    ],
+    "variantes_comunes": [
+      "que son las bases nosql",
+      "advantages of nosql",
+      "nosql features",
+      "ventajas de mongodb",
+      "diferencias entre sql y nosql"
+    ],
+    "contenido": "Las bases de datos NoSQL están diseñadas para manejar grandes cantidades de datos distribuidos y estructuras flexibles. Algunas de sus características son: escalabilidad horizontal, almacenamiento flexible, alta disponibilidad y velocidad en consultas específicas. MongoDB pertenece a este tipo de bases y utiliza documentos JSON para almacenar información.",
+    "ejemplos": [
+      "Netflix y otras plataformas usan sistemas NoSQL para manejar millones de usuarios.",
+      "MongoDB permite agregar nuevos campos sin modificar toda la estructura."
+    ],
+    "ejercicios": [
+      "Menciona tres características de NoSQL.",
+      "Explica qué significa escalabilidad horizontal."
+    ],
+    "nivel": "basico"
+  },
+  {
+    "materia": "BD-NOSQL",
+    "titulo": "Diferencias entre SQL y NoSQL",
+    "palabras_clave": [
+      "sql vs nosql",
+      "diferencias sql nosql",
+      "mongodb vs mysql",
+      "relacional vs no relacional"
+    ],
+    "sinonimos": [
+      "comparacion sql nosql",
+      "bases relacionales y nosql"
+    ],
+    "variantes_comunes": [
+      "difference between sql and nosql",
+      "mongodb o mysql",
+      "que es mejor sql o nosql",
+      "sql vs mongodb"
+    ],
+    "contenido": "Las bases SQL usan tablas, relaciones y esquemas rígidos, mientras que las NoSQL utilizan estructuras flexibles. MongoDB permite guardar documentos con diferentes atributos sin alterar toda la colección. SQL es ideal para relaciones complejas y consistencia fuerte, mientras que NoSQL destaca en escalabilidad y flexibilidad.",
+    "ejemplos": [
+      "MySQL usa tablas y filas.",
+      "MongoDB usa documentos JSON."
+    ],
+    "ejercicios": [
+      "Escribe una ventaja de SQL.",
+      "Escribe una ventaja de MongoDB."
+    ],
+    "nivel": "basico"
+  },
+  {
+    "materia": "BD-NOSQL",
+    "titulo": "Instalación de MongoDB",
+    "palabras_clave": [
+      "instalar mongodb",
+      "mongodb setup",
+      "download mongodb",
+      "mongodb windows"
+    ],
+    "sinonimos": [
+      "configurar mongodb",
+      "setup mongo"
+    ],
+    "variantes_comunes": [
+      "how to install mongodb",
+      "como descargar mongodb",
+      "instalar mongo db",
+      "mongodb installation"
+    ],
+    "contenido": "MongoDB puede instalarse en Windows, Linux y macOS. El proceso incluye descargar el servidor desde el sitio oficial, configurar el directorio de datos y ejecutar el servicio mongod. También puede usarse MongoDB Atlas, una versión en la nube administrada.",
+    "ejemplos": [
+      "mongod inicia el servidor.",
+      "mongo o mongosh permiten conectarse a la base."
+    ],
+    "ejercicios": [
+      "Investiga qué es MongoDB Atlas.",
+      "Explica la función de mongod."
+    ],
+    "nivel": "basico"
+  },
+  {
+    "materia": "BD-NOSQL",
+    "titulo": "¿Qué es una colección en MongoDB?",
+    "palabras_clave": [
+      "collection mongodb",
+      "colecciones mongodb",
+      "mongodb collection"
+    ],
+    "sinonimos": [
+      "grupo de documentos",
+      "coleccion de datos"
+    ],
+    "variantes_comunes": [
+      "que es una collection",
+      "collections in mongodb",
+      "mongodb colecciones"
+    ],
+    "contenido": "Una colección en MongoDB es un conjunto de documentos relacionados. Es equivalente a una tabla en bases de datos relacionales. Las colecciones no requieren que todos los documentos tengan la misma estructura.",
+    "ejemplos": [
+      "usuarios es una colección.",
+      "productos puede contener documentos con diferentes campos."
+    ],
+    "ejercicios": [
+      "Explica qué diferencia existe entre tabla y colección.",
+      "Da un ejemplo de colección."
+    ],
+    "nivel": "basico"
+  },
+  {
+    "materia": "BD-NOSQL",
+    "titulo": "¿Qué es un documento en MongoDB?",
+    "palabras_clave": [
+      "document mongodb",
+      "documentos mongodb",
+      "json mongodb"
+    ],
+    "sinonimos": [
+      "registro json",
+      "objeto bson"
+    ],
+    "variantes_comunes": [
+      "que es un documento mongodb",
+      "mongodb documents",
+      "json en mongodb"
+    ],
+    "contenido": "Un documento es la unidad básica de almacenamiento en MongoDB. Los documentos tienen formato similar a JSON y almacenan pares clave-valor. Cada documento posee un identificador único llamado _id.",
+    "ejemplos": [
+      "{nombre:'Ana', edad:20}",
+      "Un documento puede contener arrays y objetos anidados."
+    ],
+    "ejercicios": [
+      "Crea un documento con nombre y edad.",
+      "Explica qué es BSON."
+    ],
+    "nivel": "basico"
+  },
+  {
+    "materia": "BD-NOSQL",
+    "titulo": "Uso de BSON",
+    "palabras_clave": [
+      "bson",
+      "json binario",
+      "mongodb bson"
+    ],
+    "sinonimos": [
+      "binary json",
+      "formato bson"
+    ],
+    "variantes_comunes": [
+      "que es bson",
+      "bson mongodb",
+      "difference json and bson"
+    ],
+    "contenido": "BSON significa Binary JSON. MongoDB utiliza BSON para almacenar datos porque permite tipos adicionales como fechas y datos binarios. BSON es más eficiente para procesamiento interno.",
+    "ejemplos": [
+      "BSON soporta ObjectId.",
+      "Las fechas pueden almacenarse directamente."
+    ],
+    "ejercicios": [
+      "Explica una ventaja de BSON.",
+      "Menciona una diferencia entre JSON y BSON."
+    ],
+    "nivel": "basico"
+  },
+  {
+    "materia": "BD-NOSQL",
+    "titulo": "Comando insertOne",
+    "palabras_clave": [
+      "insertone",
+      "insertar documentos",
+      "mongodb insert"
+    ],
+    "sinonimos": [
+      "agregar documento",
+      "insert document"
+    ],
+    "variantes_comunes": [
+      "how to use insertone",
+      "insertar datos mongodb",
+      "mongodb insertone example"
+    ],
+    "contenido": "El método insertOne() se utiliza para insertar un único documento dentro de una colección. MongoDB genera automáticamente un _id si no se especifica.",
+    "ejemplos": [
+      "db.usuarios.insertOne({nombre:'Luis'})"
+    ],
+    "ejercicios": [
+      "Inserta un documento con nombre y edad.",
+      "Explica qué sucede si no se define _id."
+    ],
+    "nivel": "basico"
+  },
+  {
+    "materia": "BD-NOSQL",
+    "titulo": "Comando insertMany",
+    "palabras_clave": [
+      "insertmany",
+      "insertar multiples documentos",
+      "mongodb insertmany"
+    ],
+    "sinonimos": [
+      "bulk insert",
+      "multiple insert"
+    ],
+    "variantes_comunes": [
+      "how to use insertmany",
+      "mongodb insert multiple",
+      "insert many mongo"
+    ],
+    "contenido": "insertMany() permite insertar varios documentos en una colección en una sola operación. Esto mejora el rendimiento cuando se cargan grandes cantidades de información.",
+    "ejemplos": [
+      "db.productos.insertMany([{nombre:'Mouse'},{nombre:'Teclado'}])"
+    ],
+    "ejercicios": [
+      "Inserta tres documentos en una colección.",
+      "Explica una ventaja de insertMany."
+    ],
+    "nivel": "basico"
+  },
+  {
+    "materia": "BD-NOSQL",
+    "titulo": "Consulta con find",
+    "palabras_clave": [
+      "find mongodb",
+      "consultas mongodb",
+      "buscar documentos"
+    ],
+    "sinonimos": [
+      "query mongodb",
+      "search documents"
+    ],
+    "variantes_comunes": [
+      "how to use find",
+      "buscar datos mongodb",
+      "find mongo"
+    ],
+    "contenido": "El método find() se utiliza para consultar documentos dentro de una colección. Puede recibir filtros para buscar información específica.",
+    "ejemplos": [
+      "db.usuarios.find({edad:20})"
+    ],
+    "ejercicios": [
+      "Realiza una consulta por nombre.",
+      "Explica qué devuelve find()."
+    ],
+    "nivel": "basico"
+  },
+  {
+    "materia": "BD-NOSQL",
+    "titulo": "Uso de findOne",
+    "palabras_clave": [
+      "findone",
+      "buscar un documento",
+      "mongodb findone"
+    ],
+    "sinonimos": [
+      "single query",
+      "consulta unica"
+    ],
+    "variantes_comunes": [
+      "findone mongodb",
+      "como usar findone",
+      "search one document"
+    ],
+    "contenido": "findOne() devuelve un único documento que coincida con la condición especificada. Si existen varios documentos, retorna el primero encontrado.",
+    "ejemplos": [
+      "db.usuarios.findOne({nombre:'Ana'})"
+    ],
+    "ejercicios": [
+      "Busca un usuario por nombre.",
+      "Explica la diferencia entre find y findOne."
+    ],
+    "nivel": "basico"
+  },
+  {
+    "materia": "BD-NOSQL",
+    "titulo": "Filtros en consultas",
+    "palabras_clave": [
+      "filtros mongodb",
+      "query filters",
+      "operadores mongodb"
+    ],
+    "sinonimos": [
+      "condiciones mongodb",
+      "query conditions"
+    ],
+    "variantes_comunes": [
+      "mongodb where condition",
+      "filtrar datos mongo",
+      "how filters work in mongodb"
+    ],
+    "contenido": "MongoDB utiliza filtros para limitar los documentos devueltos en una consulta. Los filtros funcionan mediante objetos JSON con pares clave-valor.",
+    "ejemplos": [
+      "db.usuarios.find({edad:18})"
+    ],
+    "ejercicios": [
+      "Consulta documentos por edad.",
+      "Explica cómo funcionan los filtros."
+    ],
+    "nivel": "basico"
+  },
+  {
+    "materia": "BD-NOSQL",
+    "titulo": "Operador $gt",
+    "palabras_clave": [
+      "gt mongodb",
+      "greater than",
+      "operadores comparacion"
+    ],
+    "sinonimos": [
+      "mayor que",
+      "comparison operator"
+    ],
+    "variantes_comunes": [
+      "mongodb greater than",
+      "how to use gt",
+      "operador mayor que mongo"
+    ],
+    "contenido": "El operador $gt significa greater than y permite buscar documentos cuyo valor sea mayor que otro.",
+    "ejemplos": [
+      "db.productos.find({precio:{$gt:100}})"
+    ],
+    "ejercicios": [
+      "Consulta productos con precio mayor a 50.",
+      "Explica el uso de $gt."
+    ],
+    "nivel": "intermedio"
+  },
+  {
+    "materia": "BD-NOSQL",
+    "titulo": "Operador $lt",
+    "palabras_clave": [
+      "lt mongodb",
+      "less than",
+      "operador menor que"
+    ],
+    "sinonimos": [
+      "menor que",
+      "comparison query"
+    ],
+    "variantes_comunes": [
+      "mongodb less than",
+      "how to use lt",
+      "operador menor mongo"
+    ],
+    "contenido": "El operador $lt permite obtener documentos cuyo valor sea menor al especificado.",
+    "ejemplos": [
+      "db.alumnos.find({edad:{$lt:18}})"
+    ],
+    "ejercicios": [
+      "Consulta alumnos menores de 20 años.",
+      "Explica la función de $lt."
+    ],
+    "nivel": "intermedio"
+  },
+  {
+    "materia": "BD-NOSQL",
+    "titulo": "Operador $in",
+    "palabras_clave": [
+      "in mongodb",
+      "operador in",
+      "mongodb arrays"
+    ],
+    "sinonimos": [
+      "buscar multiples valores",
+      "membership operator"
+    ],
+    "variantes_comunes": [
+      "how to use in mongodb",
+      "consultar multiples valores",
+      "mongodb in query"
+    ],
+    "contenido": "El operador $in busca documentos cuyos valores coincidan con cualquiera de los elementos especificados en un arreglo.",
+    "ejemplos": [
+      "db.usuarios.find({edad:{$in:[18,20,22]}})"
+    ],
+    "ejercicios": [
+      "Busca usuarios con edades específicas.",
+      "Explica el funcionamiento de $in."
+    ],
+    "nivel": "intermedio"
+  },
+  {
+    "materia": "BD-NOSQL",
+    "titulo": "Actualizar documentos con updateOne",
+    "palabras_clave": [
+      "updateone",
+      "actualizar mongodb",
+      "mongodb update"
+    ],
+    "sinonimos": [
+      "modificar documento",
+      "update document"
+    ],
+    "variantes_comunes": [
+      "how to use updateone",
+      "editar datos mongodb",
+      "mongodb actualizar"
+    ],
+    "contenido": "updateOne() actualiza un documento que coincida con el filtro especificado. Generalmente se usa junto al operador $set.",
+    "ejemplos": [
+      "db.usuarios.updateOne({nombre:'Ana'},{$set:{edad:21}})"
+    ],
+    "ejercicios": [
+      "Actualiza la edad de un usuario.",
+      "Explica el uso de $set."
+    ],
+    "nivel": "intermedio"
+  },
+  {
+    "materia": "BD-NOSQL",
+    "titulo": "Actualizar múltiples documentos con updateMany",
+    "palabras_clave": [
+      "updatemany",
+      "actualizar varios documentos",
+      "mongodb bulk update"
+    ],
+    "sinonimos": [
+      "multiple update",
+      "actualizacion masiva"
+    ],
+    "variantes_comunes": [
+      "how to use updatemany",
+      "mongodb update many",
+      "editar multiples documentos"
+    ],
+    "contenido": "updateMany() permite modificar varios documentos que cumplan una condición determinada.",
+    "ejemplos": [
+      "db.alumnos.updateMany({},{$set:{activo:true}})"
+    ],
+    "ejercicios": [
+      "Activa todos los usuarios.",
+      "Explica la diferencia entre updateOne y updateMany."
+    ],
+    "nivel": "intermedio"
+  },
+  {
+    "materia": "BD-NOSQL",
+    "titulo": "Eliminar documentos con deleteOne",
+    "palabras_clave": [
+      "deleteone",
+      "eliminar mongodb",
+      "delete document"
+    ],
+    "sinonimos": [
+      "borrar documento",
+      "remove one"
+    ],
+    "variantes_comunes": [
+      "how to use deleteone",
+      "eliminar dato mongo",
+      "mongodb delete"
+    ],
+    "contenido": "deleteOne() elimina el primer documento que coincida con el filtro proporcionado.",
+    "ejemplos": [
+      "db.usuarios.deleteOne({nombre:'Luis'})"
+    ],
+    "ejercicios": [
+      "Elimina un documento por nombre.",
+      "Explica qué sucede si no existe coincidencia."
+    ],
+    "nivel": "intermedio"
+  },
+  {
+    "materia": "BD-NOSQL",
+    "titulo": "Eliminar múltiples documentos con deleteMany",
+    "palabras_clave": [
+      "deletemany",
+      "mongodb delete many",
+      "bulk delete"
+    ],
+    "sinonimos": [
+      "borrado masivo",
+      "multiple delete"
+    ],
+    "variantes_comunes": [
+      "how to use deletemany",
+      "eliminar varios documentos",
+      "mongodb remove many"
+    ],
+    "contenido": "deleteMany() elimina todos los documentos que coincidan con una condición específica.",
+    "ejemplos": [
+      "db.logs.deleteMany({error:true})"
+    ],
+    "ejercicios": [
+      "Elimina usuarios inactivos.",
+      "Explica el riesgo de deleteMany sin filtros."
+    ],
+    "nivel": "intermedio"
+  },
+  {
+    "materia": "BD-NOSQL",
+    "titulo": "Uso de ObjectId",
+    "palabras_clave": [
+      "objectid",
+      "mongodb id",
+      "identificadores mongodb"
+    ],
+    "sinonimos": [
+      "mongo id",
+      "unique identifier"
+    ],
+    "variantes_comunes": [
+      "que es objectid",
+      "mongodb unique id",
+      "objectid example"
+    ],
+    "contenido": "ObjectId es un identificador único generado automáticamente por MongoDB para cada documento. Incluye información de tiempo y unicidad.",
+    "ejemplos": [
+      "ObjectId('507f1f77bcf86cd799439011')"
+    ],
+    "ejercicios": [
+      "Explica para qué sirve ObjectId.",
+      "Menciona una característica de ObjectId."
+    ],
+    "nivel": "intermedio"
+  },
+  {
+    "materia": "BD-NOSQL",
+    "titulo": "¿Qué es una base de datos NoSQL?",
+    "palabras_clave": [
+      "nosql",
+      "base de datos nosql",
+      "qué es nosql",
+      "que es una base de datos nosql",
+      "q es nosql",
+      "what is nosql",
+      "how nosql works",
+      "como funciona nosql",
+      "bases no relacionales",
+      "database nosql",
+      "nosql definition",
+      "nosql meaning",
+      "diferencia sql y nosql",
+      "ventajas de nosql",
+      "para que sirve nosql",
+      "como se usa nosql",
+      "why use nosql",
+      "nosql explained",
+      "tipos de bases nosql",
+      "mongodb nosql"
+    ],
+    "sinonimos": [
+      "bases no relacionales",
+      "database nosql",
+      "sistemas no relacionales",
+      "bases documentales"
+    ],
+    "variantes_comunes": [
+      "que significa nosql",
+      "nosql para principiantes",
+      "how to use nosql",
+      "nosql easy explanation",
+      "como aprender nosql",
+      "no sql",
+      "notsql",
+      "nos ql",
+      "q es una bd nosql",
+      "que hace nosql"
+    ],
+    "contenido": "Las bases de datos NoSQL son sistemas de almacenamiento diseñados para manejar grandes cantidades de información de manera flexible y escalable. A diferencia de las bases de datos relacionales tradicionales, NoSQL no depende de tablas rígidas con filas y columnas. En su lugar, puede trabajar con documentos, claves-valor, grafos o columnas. MongoDB es una de las bases NoSQL más populares y utiliza documentos similares a JSON para almacenar datos. Estas bases son ideales para aplicaciones modernas, redes sociales, videojuegos, plataformas de streaming y sistemas que requieren escalabilidad rápida.",
+    "ejemplos": [
+      "MongoDB almacena usuarios en documentos JSON.",
+      "Una aplicación de chat puede usar NoSQL para guardar mensajes rápidamente.",
+      "Netflix utiliza tecnologías NoSQL para manejar millones de usuarios."
+    ],
+    "ejercicios": [
+      "Explica qué significa NoSQL.",
+      "Menciona dos ventajas de las bases NoSQL.",
+      "Describe una diferencia entre SQL y NoSQL."
+    ],
+    "nivel": "basico"
+  },
+  {
+    "materia": "BD-NOSQL",
+    "titulo": "¿Qué es MongoDB?",
+    "palabras_clave": [
+      "mongodb",
+      "qué es mongodb",
+      "que es mongodb",
+      "q es mongodb",
+      "what is mongodb",
+      "mongodb definition",
+      "mongodb explained",
+      "mongodb para que sirve",
+      "como funciona mongodb",
+      "how mongodb works",
+      "mongo db",
+      "mongobd",
+      "mongodb database",
+      "base de datos mongodb",
+      "mongodb tutorial",
+      "mongodb beginner",
+      "como usar mongodb",
+      "how to use mongodb",
+      "mongodb nosql",
+      "document database"
+    ],
+    "sinonimos": [
+      "mongo",
+      "mongo db",
+      "base documental",
+      "database mongodb"
+    ],
+    "variantes_comunes": [
+      "mongodb facil",
+      "que hace mongodb",
+      "mongodb ejemplos",
+      "como aprender mongodb",
+      "mongodb para principiantes",
+      "mongodb meaning",
+      "que significa mongodb",
+      "mong db",
+      "mongo database"
+    ],
+    "contenido": "MongoDB es una base de datos NoSQL orientada a documentos. Utiliza documentos BSON, similares a JSON, para almacenar información de manera flexible. Esto significa que los datos pueden cambiar de estructura fácilmente sin modificar tablas completas. MongoDB es ampliamente utilizado en aplicaciones modernas porque permite escalabilidad horizontal, rapidez en desarrollo y compatibilidad con aplicaciones web y móviles.",
+    "ejemplos": [
+      "Una colección de usuarios puede almacenar documentos diferentes entre sí.",
+      "MongoDB puede guardar arreglos y objetos dentro de un mismo documento."
+    ],
+    "ejercicios": [
+      "Explica qué es MongoDB.",
+      "Menciona dos características importantes de MongoDB.",
+      "Describe una ventaja de usar MongoDB."
+    ],
+    "nivel": "basico"
+  },
+  {
+    "materia": "BD-NOSQL",
+    "titulo": "Diferencias entre SQL y NoSQL",
+    "palabras_clave": [
+      "sql vs nosql",
+      "diferencias sql y nosql",
+      "sql vs mongodb",
+      "mysql vs mongodb",
+      "relacional vs no relacional",
+      "qué diferencia hay entre sql y nosql",
+      "q diferencia hay entre sql y nosql",
+      "difference between sql and nosql",
+      "which is better sql or nosql",
+      "ventajas de nosql",
+      "ventajas de sql",
+      "como funciona sql",
+      "como funciona nosql",
+      "sql databases",
+      "nosql databases",
+      "tablas vs documentos",
+      "mongodb vs mysql",
+      "bases relacionales",
+      "bases no relacionales",
+      "sql y mongodb"
+    ],
+    "sinonimos": [
+      "comparacion sql nosql",
+      "sql compared to nosql",
+      "bases relacionales y no relacionales"
+    ],
+    "variantes_comunes": [
+      "que es mejor sql o nosql",
+      "sql o mongodb",
+      "sql and nosql differences",
+      "comparar sql y nosql",
+      "mongodb o mysql",
+      "cuando usar nosql",
+      "cuando usar sql"
+    ],
+    "contenido": "Las bases de datos SQL utilizan tablas con filas y columnas, mientras que las bases NoSQL trabajan con estructuras más flexibles como documentos JSON. SQL requiere esquemas rígidos y relaciones definidas, mientras que MongoDB permite modificar documentos sin alterar toda la estructura. SQL suele usarse en sistemas bancarios y aplicaciones con relaciones complejas, mientras que NoSQL es popular en aplicaciones modernas con grandes cantidades de datos.",
+    "ejemplos": [
+      "MySQL usa tablas llamadas usuarios o productos.",
+      "MongoDB usa colecciones y documentos."
+    ],
+    "ejercicios": [
+      "Menciona dos diferencias entre SQL y NoSQL.",
+      "Explica cuándo sería mejor usar MongoDB.",
+      "Describe una ventaja de SQL."
+    ],
+    "nivel": "basico"
+  },
+  {
+    "materia": "BD-NOSQL",
+    "titulo": "¿Qué es un documento en MongoDB?",
+    "palabras_clave": [
+      "documentos mongodb",
+      "document mongodb",
+      "qué es un documento mongodb",
+      "q es un documento mongodb",
+      "mongodb json",
+      "mongodb documents",
+      "como funcionan los documentos en mongodb",
+      "how mongodb documents work",
+      "document structure mongodb",
+      "json en mongodb",
+      "bson document",
+      "document database",
+      "estructura de documento",
+      "mongodb object",
+      "como guardar documentos",
+      "documentos json",
+      "mongodb records",
+      "mongodb data model",
+      "document model",
+      "mongo documents"
+    ],
+    "sinonimos": [
+      "registro json",
+      "objeto bson",
+      "registro mongodb"
+    ],
+    "variantes_comunes": [
+      "que significa documento en mongodb",
+      "como se usa un documento mongodb",
+      "mongodb document example",
+      "ejemplos de documentos mongodb",
+      "estructura json mongodb",
+      "mongo json"
+    ],
+    "contenido": "Un documento es la unidad básica de almacenamiento en MongoDB. Los documentos utilizan un formato similar a JSON y almacenan información mediante pares clave-valor. Cada documento puede contener distintos tipos de datos como cadenas, números, arreglos y objetos anidados. MongoDB guarda internamente los documentos usando BSON.",
+    "ejemplos": [
+      "{nombre:'Ana', edad:20}",
+      "{titulo:'Libro', precio:150, categorias:['programacion','mongodb']}"
+    ],
+    "ejercicios": [
+      "Crea un documento de ejemplo para un estudiante.",
+      "Explica qué tipos de datos puede almacenar un documento.",
+      "Describe la diferencia entre un documento y una fila SQL."
+    ],
+    "nivel": "basico"
+  },
+  {
+    "materia": "BD-NOSQL",
+    "titulo": "¿Qué es una colección en MongoDB?",
+    "palabras_clave": [
+      "coleccion mongodb",
+      "collection mongodb",
+      "qué es una colección",
+      "q es una coleccion",
+      "mongodb collections",
+      "como funcionan las colecciones",
+      "how mongodb collections work",
+      "grupo de documentos",
+      "colecciones nosql",
+      "mongodb tables",
+      "equivalente de tabla en mongodb",
+      "document collections",
+      "como crear colecciones",
+      "mongodb create collection",
+      "estructura de colecciones",
+      "database collection",
+      "mongo collections",
+      "colecciones en bases nosql",
+      "mongodb data organization",
+      "collections explained"
+    ],
+    "sinonimos": [
+      "grupo de documentos",
+      "tabla nosql",
+      "document collection"
+    ],
+    "variantes_comunes": [
+      "que significa collection en mongodb",
+      "colecciones mongodb ejemplos",
+      "como usar collections",
+      "mongodb collection example",
+      "tabla en mongodb",
+      "coleccion mongo"
+    ],
+    "contenido": "Una colección en MongoDB es un conjunto de documentos relacionados. Es similar a una tabla en bases de datos relacionales, aunque las colecciones son mucho más flexibles porque los documentos no necesitan tener exactamente la misma estructura.",
+    "ejemplos": [
+      "usuarios puede ser una colección.",
+      "productos puede contener documentos con diferentes atributos."
+    ],
+    "ejercicios": [
+      "Explica qué es una colección.",
+      "Menciona una diferencia entre tabla y colección.",
+      "Da un ejemplo de colección."
+    ],
+    "nivel": "basico"
+  },
+  {
+    "materia": "BD-NOSQL",
+    "titulo": "Uso de BSON en MongoDB",
+    "palabras_clave": [
+      "bson",
+      "qué es bson",
+      "q es bson",
+      "binary json",
+      "mongodb bson",
+      "json binario",
+      "como funciona bson",
+      "how bson works",
+      "difference between json and bson",
+      "json vs bson",
+      "mongodb storage format",
+      "tipos de datos bson",
+      "bson explained",
+      "mongodb binary format",
+      "como mongodb guarda datos",
+      "bson data types",
+      "objectid bson",
+      "mongodb internal format",
+      "bson tutorial",
+      "bson mongodb example"
+    ],
+    "sinonimos": [
+      "binary json",
+      "json binario",
+      "formato bson"
+    ],
+    "variantes_comunes": [
+      "que significa bson",
+      "bson en mongodb",
+      "mongodb bson explained",
+      "bson facil",
+      "json y bson diferencias",
+      "b son"
+    ],
+    "contenido": "BSON significa Binary JSON. MongoDB utiliza BSON como formato interno para almacenar documentos porque permite manejar más tipos de datos que JSON tradicional, como fechas, ObjectId y datos binarios. BSON también optimiza la velocidad de lectura y escritura.",
+    "ejemplos": [
+      "ObjectId es un tipo especial de BSON.",
+      "Las fechas pueden almacenarse directamente usando BSON."
+    ],
+    "ejercicios": [
+      "Explica qué significa BSON.",
+      "Menciona una diferencia entre JSON y BSON.",
+      "Describe una ventaja de BSON."
+    ],
+    "nivel": "intermedio"
+  },
+  {
+    "materia": "BD-NOSQL",
+    "titulo": "Instalación de MongoDB",
+    "palabras_clave": [
+      "instalar mongodb",
+      "mongodb installation",
+      "download mongodb",
+      "como descargar mongodb",
+      "how to install mongodb",
+      "mongodb setup",
+      "mongodb windows",
+      "mongodb linux",
+      "mongodb mac",
+      "como configurar mongodb",
+      "mongodb local server",
+      "mongod",
+      "mongosh",
+      "mongodb shell",
+      "mongodb community edition",
+      "instalar mongo db",
+      "mongodb tutorial windows",
+      "como iniciar mongodb",
+      "mongodb beginner setup",
+      "mongodb install guide"
+    ],
+    "sinonimos": [
+      "configurar mongodb",
+      "setup mongo",
+      "instalar mongo"
+    ],
+    "variantes_comunes": [
+      "como se instala mongodb",
+      "mongodb para principiantes",
+      "how to start mongodb",
+      "mongodb installation tutorial",
+      "mongo install",
+      "mongdb install"
+    ],
+    "contenido": "MongoDB puede instalarse en diferentes sistemas operativos como Windows, Linux y macOS. El proceso generalmente incluye descargar MongoDB Community Edition, instalar el servidor y utilizar herramientas como mongod y mongosh para administrar la base de datos.",
+    "ejemplos": [
+      "mongod inicia el servidor MongoDB.",
+      "mongosh permite ejecutar consultas."
+    ],
+    "ejercicios": [
+      "Explica la función de mongod.",
+      "Investiga qué es mongosh.",
+      "Describe el proceso básico de instalación."
+    ],
+    "nivel": "basico"
+  },
+  {
+    "materia": "BD-NOSQL",
+    "titulo": "¿Qué es MongoDB Atlas?",
+    "palabras_clave": [
+      "mongodb atlas",
+      "qué es mongodb atlas",
+      "q es mongodb atlas",
+      "mongodb cloud",
+      "mongodb online",
+      "atlas mongodb",
+      "how mongodb atlas works",
+      "como funciona mongodb atlas",
+      "mongodb hosting",
+      "base de datos en la nube",
+      "mongodb database online",
+      "mongodb free cluster",
+      "atlas free tier",
+      "mongodb cloud database",
+      "como usar mongodb atlas",
+      "mongodb remote database",
+      "mongodb internet database",
+      "atlas explained",
+      "mongodb saas",
+      "online nosql database"
+    ],
+    "sinonimos": [
+      "mongodb cloud",
+      "atlas cloud",
+      "base de datos mongo en linea"
+    ],
+    "variantes_comunes": [
+      "que significa mongodb atlas",
+      "como crear cluster atlas",
+      "mongodb atlas tutorial",
+      "mongodb atlas para principiantes",
+      "mongo atlas"
+    ],
+    "contenido": "MongoDB Atlas es el servicio oficial de MongoDB en la nube. Permite crear bases de datos sin instalar servidores localmente. Atlas ofrece clusters administrados, seguridad, respaldos automáticos y escalabilidad global.",
+    "ejemplos": [
+      "Un desarrollador puede conectarse a Atlas desde Node.js.",
+      "Atlas ofrece clusters gratuitos para pruebas."
+    ],
+    "ejercicios": [
+      "Explica qué es MongoDB Atlas.",
+      "Menciona una ventaja de usar Atlas.",
+      "Describe qué es un cluster."
+    ],
+    "nivel": "basico"
+  },
+  {
+    "materia": "BD-NOSQL",
+    "titulo": "Comando insertOne en MongoDB",
+    "palabras_clave": [
+      "insertone",
+      "mongodb insertone",
+      "insertar documentos mongodb",
+      "how to use insertone",
+      "como usar insertone",
+      "mongodb insert",
+      "agregar documento mongodb",
+      "insert document",
+      "mongodb create document",
+      "insertar datos nosql",
+      "mongodb insert example",
+      "crear documento mongodb",
+      "mongodb add data",
+      "insert query mongodb",
+      "insertone example",
+      "mongo insert",
+      "guardar datos mongodb",
+      "mongodb beginner insert",
+      "insertar json mongodb",
+      "insert operation nosql"
+    ],
+    "sinonimos": [
+      "agregar documento",
+      "crear documento",
+      "insert document"
+    ],
+    "variantes_comunes": [
+      "como insertar datos en mongodb",
+      "insertone mongodb example",
+      "mongodb insert tutorial",
+      "insertar un documento",
+      "mongo insertone"
+    ],
+    "contenido": "insertOne() es un método utilizado para insertar un único documento dentro de una colección MongoDB. Si el documento no tiene un _id, MongoDB genera automáticamente un ObjectId único.",
+    "ejemplos": [
+      "db.usuarios.insertOne({nombre:'Carlos', edad:19})"
+    ],
+    "ejercicios": [
+      "Inserta un documento con nombre y correo.",
+      "Explica qué sucede si no se define _id.",
+      "Describe la función de insertOne."
+    ],
+    "nivel": "intermedio"
+  },
+  {
+    "materia": "BD-NOSQL",
+    "titulo": "Comando insertMany en MongoDB",
+    "palabras_clave": [
+      "insertmany",
+      "mongodb insertmany",
+      "insertar multiples documentos",
+      "how to use insertmany",
+      "como usar insertmany",
+      "bulk insert mongodb",
+      "mongodb insert multiple",
+      "insert many documents",
+      "agregar muchos documentos",
+      "mongodb batch insert",
+      "mongodb multiple insert",
+      "guardar varios documentos",
+      "insertmany example",
+      "mongo insertmany",
+      "mongodb massive insert",
+      "insert multiple json",
+      "mongodb create many",
+      "bulk operations mongodb",
+      "insertar muchos datos",
+      "mongodb insert tutorial"
+    ],
+    "sinonimos": [
+      "bulk insert",
+      "multiple insert",
+      "insercion masiva"
+    ],
+    "variantes_comunes": [
+      "como insertar varios documentos",
+      "mongodb insert many example",
+      "insertmany facil",
+      "mongo bulk insert",
+      "mongodb many insert"
+    ],
+    "contenido": "insertMany() permite insertar varios documentos al mismo tiempo dentro de una colección. Este método es más eficiente cuando se necesita cargar grandes cantidades de información.",
+    "ejemplos": [
+      "db.productos.insertMany([{nombre:'Mouse'},{nombre:'Monitor'}])"
+    ],
+    "ejercicios": [
+      "Inserta tres documentos en una colección.",
+      "Explica una ventaja de insertMany.",
+      "Describe cuándo sería útil insertMany."
+    ],
+    "nivel": "intermedio"
+  },
+  {
+    "materia": "BD-NOSQL",
+    "titulo": "Comando find en MongoDB",
+    "palabras_clave": [
+      "find mongodb",
+      "mongodb find",
+      "buscar documentos mongodb",
+      "como buscar datos en mongodb",
+      "how to use find mongodb",
+      "query mongodb",
+      "mongodb consultas",
+      "buscar documentos nosql",
+      "find query",
+      "mongodb search data",
+      "como funciona find",
+      "q es find en mongodb",
+      "qué es find",
+      "find example mongodb",
+      "mongodb select",
+      "consultar datos mongodb",
+      "obtener documentos mongodb",
+      "find all documents",
+      "mongodb data retrieval",
+      "find command mongo"
+    ],
+    "sinonimos": [
+      "consulta mongodb",
+      "buscar documentos",
+      "query nosql"
+    ],
+    "variantes_comunes": [
+      "como usar find",
+      "find mongodb ejemplos",
+      "mongodb buscar datos",
+      "find facil mongodb",
+      "how find works in mongodb",
+      "mongo find"
+    ],
+    "contenido": "El método find() se utiliza para consultar documentos dentro de una colección en MongoDB. Puede devolver todos los documentos o únicamente aquellos que cumplan ciertas condiciones. Es uno de los comandos más utilizados porque permite recuperar información almacenada en la base de datos.",
+    "ejemplos": [
+      "db.usuarios.find()",
+      "db.productos.find({precio:100})"
+    ],
+    "ejercicios": [
+      "Consulta todos los documentos de una colección.",
+      "Busca usuarios con edad de 18 años.",
+      "Explica la función de find()."
+    ],
+    "nivel": "basico"
+  },
+  {
+    "materia": "BD-NOSQL",
+    "titulo": "Comando findOne en MongoDB",
+    "palabras_clave": [
+      "findone mongodb",
+      "mongodb findone",
+      "buscar un documento",
+      "como usar findone",
+      "how to use findone",
+      "findone example",
+      "mongodb single query",
+      "consultar un documento",
+      "obtener un documento mongodb",
+      "mongodb first document",
+      "findone nosql",
+      "q es findone",
+      "qué es findone",
+      "mongodb query one",
+      "findone command",
+      "search one document mongodb",
+      "find one object",
+      "mongodb one result",
+      "mongo findone",
+      "findone tutorial"
+    ],
+    "sinonimos": [
+      "consulta unica",
+      "single query",
+      "buscar un registro"
+    ],
+    "variantes_comunes": [
+      "findone mongodb example",
+      "como buscar un documento",
+      "findone facil",
+      "mongodb findone ejemplos",
+      "how findone works"
+    ],
+    "contenido": "findOne() devuelve únicamente el primer documento que coincida con la condición especificada. Es útil cuando solo se necesita un resultado específico, como un usuario por correo electrónico o un producto por identificador.",
+    "ejemplos": [
+      "db.usuarios.findOne({nombre:'Ana'})",
+      "db.productos.findOne({codigo:'A12'})"
+    ],
+    "ejercicios": [
+      "Busca un usuario por nombre.",
+      "Explica la diferencia entre find y findOne.",
+      "Consulta un producto por código."
+    ],
+    "nivel": "basico"
+  },
+  {
+    "materia": "BD-NOSQL",
+    "titulo": "Filtros en consultas MongoDB",
+    "palabras_clave": [
+      "filtros mongodb",
+      "mongodb filters",
+      "consultas con filtros",
+      "como filtrar datos mongodb",
+      "how mongodb filters work",
+      "mongodb query conditions",
+      "where mongodb",
+      "filtrar documentos",
+      "mongodb conditions",
+      "query filters nosql",
+      "buscar con condiciones",
+      "mongodb search filters",
+      "filtros nosql",
+      "mongodb conditional query",
+      "filtros json mongodb",
+      "q son los filtros mongodb",
+      "qué son los filtros",
+      "mongodb filtering",
+      "how to filter data mongodb",
+      "mongo filters"
+    ],
+    "sinonimos": [
+      "condiciones mongodb",
+      "query conditions",
+      "filtros de consulta"
+    ],
+    "variantes_comunes": [
+      "como usar filtros en mongodb",
+      "mongodb where example",
+      "filtrar datos mongo",
+      "mongodb query tutorial",
+      "filters mongodb examples"
+    ],
+    "contenido": "Los filtros permiten buscar documentos específicos dentro de una colección. En MongoDB los filtros se escriben usando objetos JSON. Esto hace posible consultar información exacta, como usuarios con cierta edad o productos con un precio específico.",
+    "ejemplos": [
+      "db.usuarios.find({edad:20})",
+      "db.productos.find({categoria:'tecnologia'})"
+    ],
+    "ejercicios": [
+      "Realiza una consulta con filtro por edad.",
+      "Busca productos por categoría.",
+      "Explica cómo funcionan los filtros."
+    ],
+    "nivel": "intermedio"
+  },
+  {
+    "materia": "BD-NOSQL",
+    "titulo": "Operador $gt en MongoDB",
+    "palabras_clave": [
+      "gt mongodb",
+      "mongodb greater than",
+      "operador mayor que",
+      "como usar gt",
+      "how to use gt mongodb",
+      "mongodb comparison operators",
+      "buscar mayores que",
+      "query greater than",
+      "mongodb greater query",
+      "comparaciones mongodb",
+      "operador gt",
+      "q significa gt",
+      "qué significa gt",
+      "mongodb greater than example",
+      "filtrar numeros mongodb",
+      "mongodb numeric filters",
+      "mongo gt",
+      "consultas mayores que",
+      "mongodb operator gt",
+      "greater than mongo"
+    ],
+    "sinonimos": [
+      "mayor que",
+      "greater than",
+      "comparador numerico"
+    ],
+    "variantes_comunes": [
+      "gt mongodb example",
+      "como buscar mayores a",
+      "mongodb mayor que",
+      "how gt works",
+      "operador mayor mongo"
+    ],
+    "contenido": "El operador $gt significa 'greater than' o 'mayor que'. Se utiliza para encontrar documentos cuyos valores sean mayores al número especificado. Es muy útil en consultas numéricas como precios, edades o cantidades.",
+    "ejemplos": [
+      "db.productos.find({precio:{$gt:100}})",
+      "db.alumnos.find({edad:{$gt:18}})"
+    ],
+    "ejercicios": [
+      "Busca productos con precio mayor a 500.",
+      "Consulta usuarios mayores de 21 años.",
+      "Explica la función de $gt."
+    ],
+    "nivel": "intermedio"
+  },
+  {
+    "materia": "BD-NOSQL",
+    "titulo": "Operador $lt en MongoDB",
+    "palabras_clave": [
+      "lt mongodb",
+      "mongodb less than",
+      "operador menor que",
+      "como usar lt",
+      "how to use lt mongodb",
+      "mongodb comparison query",
+      "buscar menores que",
+      "less than operator",
+      "query less than",
+      "comparadores mongodb",
+      "operador lt",
+      "q significa lt",
+      "qué significa lt",
+      "mongodb less than example",
+      "filtros numericos mongodb",
+      "mongodb operator lt",
+      "mongo lt",
+      "consultas menores que",
+      "less than mongo",
+      "mongodb less query"
+    ],
+    "sinonimos": [
+      "menor que",
+      "less than",
+      "comparador numerico"
+    ],
+    "variantes_comunes": [
+      "lt mongodb example",
+      "como buscar menores a",
+      "mongodb menor que",
+      "how lt works",
+      "operador menor mongo"
+    ],
+    "contenido": "El operador $lt significa 'less than' o 'menor que'. Permite obtener documentos cuyos valores sean menores al valor especificado. Es común usarlo en filtros de edad, precios o inventario.",
+    "ejemplos": [
+      "db.alumnos.find({edad:{$lt:18}})",
+      "db.productos.find({stock:{$lt:10}})"
+    ],
+    "ejercicios": [
+      "Busca productos con stock menor a 5.",
+      "Consulta usuarios menores de 18 años.",
+      "Explica el uso de $lt."
+    ],
+    "nivel": "intermedio"
+  },
+  {
+    "materia": "BD-NOSQL",
+    "titulo": "Operador $in en MongoDB",
+    "palabras_clave": [
+      "in mongodb",
+      "mongodb in operator",
+      "operador in",
+      "como usar in mongodb",
+      "how to use in operator",
+      "buscar multiples valores",
+      "mongodb array search",
+      "query multiple values",
+      "mongodb membership operator",
+      "consultas multiples mongodb",
+      "operador in nosql",
+      "q significa in mongodb",
+      "qué significa in",
+      "mongodb in example",
+      "search many values",
+      "mongo in",
+      "mongodb list filter",
+      "filtrar multiples datos",
+      "mongodb operator in",
+      "multiple query mongo"
+    ],
+    "sinonimos": [
+      "membership operator",
+      "buscar varios valores",
+      "multiple filter"
+    ],
+    "variantes_comunes": [
+      "in mongodb example",
+      "como buscar varios valores",
+      "operador in facil",
+      "mongodb multiples valores",
+      "how in works mongodb"
+    ],
+    "contenido": "El operador $in permite buscar documentos cuyos valores coincidan con cualquiera de los elementos especificados dentro de un arreglo. Es muy útil cuando se necesitan múltiples coincidencias en una sola consulta.",
+    "ejemplos": [
+      "db.usuarios.find({edad:{$in:[18,20,22]}})",
+      "db.productos.find({categoria:{$in:['tecnologia','gaming']}})"
+    ],
+    "ejercicios": [
+      "Busca usuarios con edades específicas.",
+      "Consulta productos de dos categorías distintas.",
+      "Explica cómo funciona $in."
+    ],
+    "nivel": "intermedio"
+  },
+  {
+    "materia": "BD-NOSQL",
+    "titulo": "Actualizar documentos con updateOne",
+    "palabras_clave": [
+      "updateone mongodb",
+      "mongodb updateone",
+      "actualizar documento mongodb",
+      "como usar updateone",
+      "how to use updateone",
+      "editar datos mongodb",
+      "modificar documento",
+      "mongodb update query",
+      "update one document",
+      "mongodb set operator",
+      "actualizacion mongodb",
+      "q es updateone",
+      "qué es updateone",
+      "mongodb update example",
+      "editar documentos nosql",
+      "mongo updateone",
+      "update command mongodb",
+      "mongodb update tutorial",
+      "actualizar registros mongo",
+      "updateone example"
+    ],
+    "sinonimos": [
+      "modificar documento",
+      "editar documento",
+      "update query"
+    ],
+    "variantes_comunes": [
+      "como actualizar datos mongodb",
+      "updateone facil",
+      "mongodb updateone ejemplos",
+      "how updateone works",
+      "mongo actualizar documento"
+    ],
+    "contenido": "updateOne() se utiliza para modificar un único documento dentro de una colección. Generalmente trabaja junto con operadores como $set para cambiar valores específicos sin reemplazar todo el documento.",
+    "ejemplos": [
+      "db.usuarios.updateOne({nombre:'Luis'},{$set:{edad:21}})"
+    ],
+    "ejercicios": [
+      "Actualiza el correo de un usuario.",
+      "Modifica la edad de un estudiante.",
+      "Explica la función de $set."
+    ],
+    "nivel": "intermedio"
+  },
+  {
+    "materia": "BD-NOSQL",
+    "titulo": "Actualizar múltiples documentos con updateMany",
+    "palabras_clave": [
+      "updatemany mongodb",
+      "mongodb updatemany",
+      "actualizar multiples documentos",
+      "como usar updatemany",
+      "how to use updatemany",
+      "bulk update mongodb",
+      "editar muchos documentos",
+      "mongodb massive update",
+      "update many query",
+      "mongodb update multiple",
+      "actualizacion masiva",
+      "q es updatemany",
+      "qué es updatemany",
+      "mongodb bulk operations",
+      "mongo updatemany",
+      "modificar muchos registros",
+      "mongodb update tutorial",
+      "update multiple records",
+      "updatemany example",
+      "mass update nosql"
+    ],
+    "sinonimos": [
+      "bulk update",
+      "actualizacion masiva",
+      "multiple update"
+    ],
+    "variantes_comunes": [
+      "como actualizar varios documentos",
+      "updatemany facil",
+      "mongodb update many example",
+      "how updatemany works",
+      "mongo actualizacion masiva"
+    ],
+    "contenido": "updateMany() permite actualizar varios documentos al mismo tiempo. Es útil cuando se necesita modificar información en masa, como activar cuentas o actualizar estados de múltiples registros.",
+    "ejemplos": [
+      "db.usuarios.updateMany({},{$set:{activo:true}})",
+      "db.productos.updateMany({stock:0},{$set:{agotado:true}})"
+    ],
+    "ejercicios": [
+      "Activa todos los usuarios de una colección.",
+      "Marca como agotados los productos sin stock.",
+      "Explica la diferencia entre updateOne y updateMany."
+    ],
+    "nivel": "intermedio"
+  },
+  {
+    "materia": "BD-NOSQL",
+    "titulo": "Eliminar documentos con deleteOne",
+    "palabras_clave": [
+      "deleteone mongodb",
+      "mongodb deleteone",
+      "eliminar documento mongodb",
+      "como usar deleteone",
+      "how to use deleteone",
+      "borrar datos mongodb",
+      "remove one document",
+      "mongodb delete query",
+      "delete command mongo",
+      "eliminar registros nosql",
+      "mongodb remove data",
+      "q es deleteone",
+      "qué es deleteone",
+      "deleteone example",
+      "mongo deleteone",
+      "mongodb delete tutorial",
+      "borrar un documento",
+      "delete single document",
+      "mongodb remove one",
+      "delete query nosql"
+    ],
+    "sinonimos": [
+      "borrar documento",
+      "remove one",
+      "eliminar registro"
+    ],
+    "variantes_comunes": [
+      "como eliminar documentos mongodb",
+      "deleteone facil",
+      "mongodb deleteone ejemplos",
+      "how deleteone works",
+      "mongo borrar documento"
+    ],
+    "contenido": "deleteOne() elimina únicamente el primer documento que coincida con la condición especificada. Se utiliza cuando se necesita borrar información específica sin afectar otros documentos.",
+    "ejemplos": [
+      "db.usuarios.deleteOne({nombre:'Carlos'})",
+      "db.productos.deleteOne({codigo:'A100'})"
+    ],
+    "ejercicios": [
+      "Elimina un usuario por nombre.",
+      "Borra un producto por código.",
+      "Explica qué hace deleteOne."
+    ],
+    "nivel": "intermedio"
+  },
+  {
+    "materia": "BD-NOSQL",
+    "titulo": "Eliminar múltiples documentos con deleteMany",
+    "palabras_clave": [
+      "deletemany mongodb",
+      "mongodb deletemany",
+      "eliminar multiples documentos",
+      "como usar deletemany",
+      "how to use deletemany",
+      "bulk delete mongodb",
+      "borrar muchos documentos",
+      "mongodb massive delete",
+      "delete many query",
+      "mongodb remove multiple",
+      "eliminacion masiva",
+      "q es deletemany",
+      "qué es deletemany",
+      "mongo deletemany",
+      "mongodb delete tutorial",
+      "remove many documents",
+      "delete multiple records",
+      "deletemany example",
+      "mass delete nosql",
+      "mongodb bulk remove"
+    ],
+    "sinonimos": [
+      "bulk delete",
+      "eliminacion masiva",
+      "multiple delete"
+    ],
+    "variantes_comunes": [
+      "como eliminar varios documentos",
+      "deletemany facil",
+      "mongodb delete many example",
+      "how deletemany works",
+      "mongo borrar muchos datos"
+    ],
+    "contenido": "deleteMany() elimina todos los documentos que cumplan una condición determinada. Es una operación poderosa y debe utilizarse con cuidado porque puede borrar grandes cantidades de información.",
+    "ejemplos": [
+      "db.logs.deleteMany({error:true})",
+      "db.usuarios.deleteMany({activo:false})"
+    ],
+    "ejercicios": [
+      "Elimina usuarios inactivos.",
+      "Borra registros de error.",
+      "Explica el riesgo de usar deleteMany sin filtros."
+    ],
+    "nivel": "intermedio"
+  },
+  {
+    "materia": "BD-NOSQL",
+    "titulo": "Uso de ObjectId en MongoDB",
+    "palabras_clave": [
+      "objectid mongodb",
+      "mongodb objectid",
+      "qué es objectid",
+      "q es objectid",
+      "mongodb id",
+      "identificador mongodb",
+      "how objectid works",
+      "como funciona objectid",
+      "mongodb unique id",
+      "objectid example",
+      "mongodb primary key",
+      "mongo id",
+      "bson objectid",
+      "objectid explained",
+      "mongodb autogenerated id",
+      "mongodb document id",
+      "como identificar documentos mongodb",
+      "mongodb objectid tutorial",
+      "objectid nosql",
+      "mongo object id"
+    ],
+    "sinonimos": [
+      "identificador unico",
+      "mongo id",
+      "id bson"
+    ],
+    "variantes_comunes": [
+      "que significa objectid",
+      "objectid mongodb example",
+      "como usar objectid",
+      "mongo objectid",
+      "mongodb id automatico"
+    ],
+    "contenido": "ObjectId es un identificador único generado automáticamente por MongoDB para cada documento. Está compuesto por información como la fecha de creación, datos aleatorios y un contador incremental. Esto permite identificar documentos de manera única dentro de una colección.",
+    "ejemplos": [
+      "ObjectId('507f1f77bcf86cd799439011')",
+      "Cada documento insertado recibe un _id único."
+    ],
+    "ejercicios": [
+      "Explica qué es ObjectId.",
+      "Menciona una ventaja de usar ObjectId.",
+      "Describe para qué sirve el campo _id."
+    ],
+    "nivel": "intermedio"
+  },
+  {
+    "materia": "BD-NOSQL",
+    "titulo": "Operador $set en MongoDB",
+    "palabras_clave": [
+      "set mongodb",
+      "mongodb set",
+      "operador set",
+      "como usar set mongodb",
+      "how to use set operator",
+      "mongodb update fields",
+      "actualizar campos mongodb",
+      "set query mongodb",
+      "modificar datos mongodb",
+      "mongodb update operator",
+      "q es set mongodb",
+      "qué significa set",
+      "set operator nosql",
+      "mongodb set example",
+      "mongo set",
+      "actualizar un campo",
+      "mongodb field update",
+      "set tutorial mongodb",
+      "operadores update mongodb",
+      "mongodb edit fields"
+    ],
+    "sinonimos": [
+      "actualizar campos",
+      "modificar valores",
+      "update field"
+    ],
+    "variantes_comunes": [
+      "como funciona set",
+      "mongodb set ejemplos",
+      "set operator facil",
+      "how set works mongodb",
+      "mongo actualizar campo"
+    ],
+    "contenido": "El operador $set se utiliza para actualizar valores específicos dentro de un documento sin reemplazar completamente su contenido. Es uno de los operadores más usados en operaciones updateOne y updateMany.",
+    "ejemplos": [
+      "db.usuarios.updateOne({nombre:'Ana'},{$set:{edad:22}})",
+      "db.productos.updateOne({codigo:'A1'},{$set:{stock:50}})"
+    ],
+    "ejercicios": [
+      "Actualiza el nombre de un usuario.",
+      "Modifica el precio de un producto.",
+      "Explica la función del operador $set."
+    ],
+    "nivel": "intermedio"
+  },
+  {
+    "materia": "BD-NOSQL",
+    "titulo": "Operador $inc en MongoDB",
+    "palabras_clave": [
+      "inc mongodb",
+      "mongodb inc",
+      "operador increment",
+      "como usar inc mongodb",
+      "how to use inc operator",
+      "incrementar valores mongodb",
+      "mongodb counter",
+      "increase value query",
+      "mongodb numeric update",
+      "increment operator nosql",
+      "q es inc mongodb",
+      "qué significa inc",
+      "mongodb increment example",
+      "mongo increment",
+      "sumar numeros mongodb",
+      "mongodb add value",
+      "increment field mongodb",
+      "inc operator tutorial",
+      "mongodb update numbers",
+      "auto increment mongo"
+    ],
+    "sinonimos": [
+      "incrementar valor",
+      "sumar numeros",
+      "increase operator"
+    ],
+    "variantes_comunes": [
+      "como incrementar valores en mongodb",
+      "inc mongodb example",
+      "operador inc facil",
+      "how inc works",
+      "mongo aumentar numeros"
+    ],
+    "contenido": "El operador $inc incrementa o decrementa valores numéricos dentro de un documento. Es útil para contadores, puntuaciones, inventarios y estadísticas.",
+    "ejemplos": [
+      "db.productos.updateOne({nombre:'Mouse'},{$inc:{stock:5}})",
+      "db.usuarios.updateOne({nombre:'Luis'},{$inc:{puntos:10}})"
+    ],
+    "ejercicios": [
+      "Incrementa el stock de un producto.",
+      "Aumenta la puntuación de un usuario.",
+      "Explica cómo funciona $inc."
+    ],
+    "nivel": "intermedio"
+  },
+  {
+    "materia": "BD-NOSQL",
+    "titulo": "Ordenar resultados con sort",
+    "palabras_clave": [
+      "sort mongodb",
+      "mongodb sort",
+      "ordenar resultados mongodb",
+      "como usar sort",
+      "how to sort mongodb",
+      "mongodb order by",
+      "orden ascendente mongodb",
+      "orden descendente mongodb",
+      "sort query mongodb",
+      "organizar datos mongodb",
+      "mongodb sorting",
+      "q es sort mongodb",
+      "qué es sort",
+      "sort example mongodb",
+      "mongo sort",
+      "order results nosql",
+      "mongodb order query",
+      "sort tutorial mongodb",
+      "clasificar documentos mongodb",
+      "mongodb sorted results"
+    ],
+    "sinonimos": [
+      "ordenar datos",
+      "clasificar resultados",
+      "order by"
+    ],
+    "variantes_comunes": [
+      "como ordenar datos mongodb",
+      "sort mongodb example",
+      "sort facil mongodb",
+      "how sort works",
+      "mongo ordenar documentos"
+    ],
+    "contenido": "El método sort() permite ordenar los documentos obtenidos en una consulta. Puede organizar resultados de forma ascendente o descendente según uno o varios campos.",
+    "ejemplos": [
+      "db.productos.find().sort({precio:1})",
+      "db.usuarios.find().sort({edad:-1})"
+    ],
+    "ejercicios": [
+      "Ordena usuarios por edad ascendente.",
+      "Ordena productos por precio descendente.",
+      "Explica la diferencia entre 1 y -1 en sort."
+    ],
+    "nivel": "intermedio"
+  },
+  {
+    "materia": "BD-NOSQL",
+    "titulo": "Limitar resultados con limit",
+    "palabras_clave": [
+      "limit mongodb",
+      "mongodb limit",
+      "limitar resultados mongodb",
+      "como usar limit",
+      "how to use limit mongodb",
+      "mongodb query limit",
+      "mostrar pocos documentos",
+      "mongodb pagination",
+      "limit query nosql",
+      "mongodb result limit",
+      "q es limit mongodb",
+      "qué es limit",
+      "limit example mongodb",
+      "mongo limit",
+      "mongodb top results",
+      "controlar cantidad de datos",
+      "limit tutorial mongodb",
+      "mongodb limited query",
+      "show few documents",
+      "query limit mongo"
+    ],
+    "sinonimos": [
+      "limitar documentos",
+      "mostrar pocos resultados",
+      "query limit"
+    ],
+    "variantes_comunes": [
+      "como limitar resultados mongodb",
+      "limit mongodb example",
+      "limit facil",
+      "how limit works mongodb",
+      "mongo mostrar pocos documentos"
+    ],
+    "contenido": "El método limit() restringe la cantidad de documentos devueltos por una consulta. Es muy útil para paginación, pruebas y optimización de resultados.",
+    "ejemplos": [
+      "db.usuarios.find().limit(5)",
+      "db.productos.find().limit(10)"
+    ],
+    "ejercicios": [
+      "Muestra solo 3 usuarios.",
+      "Limita una consulta a 5 productos.",
+      "Explica la utilidad de limit()."
+    ],
+    "nivel": "intermedio"
+  },
+  {
+    "materia": "BD-NOSQL",
+    "titulo": "Saltar resultados con skip",
+    "palabras_clave": [
+      "skip mongodb",
+      "mongodb skip",
+      "saltar resultados mongodb",
+      "como usar skip",
+      "how to use skip mongodb",
+      "mongodb pagination",
+      "skip query mongodb",
+      "omitir documentos",
+      "mongodb next page",
+      "pagination nosql",
+      "q es skip mongodb",
+      "qué es skip",
+      "skip example mongodb",
+      "mongo skip",
+      "mongodb page results",
+      "skip tutorial mongodb",
+      "pagination query mongo",
+      "skip results nosql",
+      "query offset mongodb",
+      "mongodb offset"
+    ],
+    "sinonimos": [
+      "omitir resultados",
+      "pagination offset",
+      "saltar documentos"
+    ],
+    "variantes_comunes": [
+      "como usar skip mongodb",
+      "skip mongodb example",
+      "skip facil",
+      "how skip works",
+      "mongo paginacion"
+    ],
+    "contenido": "El método skip() omite una cantidad específica de documentos antes de mostrar resultados. Se utiliza frecuentemente junto con limit() para crear sistemas de paginación.",
+    "ejemplos": [
+      "db.usuarios.find().skip(5)",
+      "db.productos.find().skip(10).limit(5)"
+    ],
+    "ejercicios": [
+      "Omite los primeros 3 documentos.",
+      "Crea una consulta con skip y limit.",
+      "Explica cómo funciona skip()."
+    ],
+    "nivel": "intermedio"
+  },
+  {
+    "materia": "BD-NOSQL",
+    "titulo": "Operador $or en MongoDB",
+    "palabras_clave": [
+      "or mongodb",
+      "mongodb or operator",
+      "operador or",
+      "como usar or mongodb",
+      "how to use or operator",
+      "mongodb logical operators",
+      "consultas con or",
+      "buscar multiples condiciones",
+      "or query mongodb",
+      "mongodb conditional query",
+      "q es or mongodb",
+      "qué significa or",
+      "or operator nosql",
+      "mongodb or example",
+      "mongo or",
+      "logical query mongodb",
+      "or tutorial mongodb",
+      "consultas logicas mongodb",
+      "multiple conditions mongo",
+      "mongodb boolean operators"
+    ],
+    "sinonimos": [
+      "operador logico or",
+      "multiple conditions",
+      "logical operator"
+    ],
+    "variantes_comunes": [
+      "como usar or en mongodb",
+      "or mongodb example",
+      "operador or facil",
+      "how or works mongodb",
+      "mongo condiciones multiples"
+    ],
+    "contenido": "El operador $or permite buscar documentos que cumplan al menos una de varias condiciones especificadas. Es útil cuando existen múltiples criterios válidos para una consulta.",
+    "ejemplos": [
+      "db.usuarios.find({$or:[{edad:18},{edad:20}]})",
+      "db.productos.find({$or:[{stock:0},{precio:{$gt:1000}}]})"
+    ],
+    "ejercicios": [
+      "Consulta usuarios con dos edades diferentes.",
+      "Busca productos agotados o caros.",
+      "Explica cómo funciona $or."
+    ],
+    "nivel": "intermedio"
+  },
+  {
+    "materia": "BD-NOSQL",
+    "titulo": "Operador $and en MongoDB",
+    "palabras_clave": [
+      "and mongodb",
+      "mongodb and operator",
+      "operador and",
+      "como usar and mongodb",
+      "how to use and operator",
+      "mongodb logical query",
+      "consultas con and",
+      "multiple filters mongodb",
+      "and query mongodb",
+      "mongodb multiple conditions",
+      "q es and mongodb",
+      "qué significa and",
+      "and operator nosql",
+      "mongodb and example",
+      "mongo and",
+      "logical filters mongodb",
+      "and tutorial mongodb",
+      "consultas avanzadas mongodb",
+      "combined conditions mongo",
+      "mongodb boolean queries"
+    ],
+    "sinonimos": [
+      "operador logico and",
+      "condiciones combinadas",
+      "multiple filters"
+    ],
+    "variantes_comunes": [
+      "como usar and en mongodb",
+      "and mongodb example",
+      "operador and facil",
+      "how and works mongodb",
+      "mongo filtros combinados"
+    ],
+    "contenido": "El operador $and permite buscar documentos que cumplan múltiples condiciones al mismo tiempo. Es utilizado en consultas avanzadas y filtros complejos.",
+    "ejemplos": [
+      "db.usuarios.find({$and:[{edad:20},{activo:true}]})",
+      "db.productos.find({$and:[{precio:{$gt:100}},{stock:{$gt:0}}]})"
+    ],
+    "ejercicios": [
+      "Busca usuarios activos de cierta edad.",
+      "Consulta productos con stock y precio específico.",
+      "Explica la diferencia entre $and y $or."
+    ],
+    "nivel": "intermedio"
+  },
+  {
+    "materia": "BD-NOSQL",
+    "titulo": "Operador $regex en MongoDB",
+    "palabras_clave": [
+      "regex mongodb",
+      "mongodb regex",
+      "expresiones regulares mongodb",
+      "como usar regex mongodb",
+      "how to use regex",
+      "buscar texto mongodb",
+      "mongodb text patterns",
+      "pattern matching mongodb",
+      "regex query mongodb",
+      "buscar coincidencias texto",
+      "q es regex mongodb",
+      "qué es regex",
+      "mongodb regular expressions",
+      "regex example mongodb",
+      "mongo regex",
+      "buscar palabras mongodb",
+      "text search regex",
+      "regex tutorial mongodb",
+      "mongodb pattern search",
+      "advanced search mongo"
+    ],
+    "sinonimos": [
+      "expresiones regulares",
+      "busqueda por patrones",
+      "pattern matching"
+    ],
+    "variantes_comunes": [
+      "como buscar texto en mongodb",
+      "regex mongodb example",
+      "regex facil",
+      "how regex works mongodb",
+      "mongo buscar palabras"
+    ],
+    "contenido": "El operador $regex permite realizar búsquedas usando expresiones regulares. Esto hace posible encontrar textos que coincidan con ciertos patrones o palabras específicas.",
+    "ejemplos": [
+      "db.usuarios.find({nombre:{$regex:'Ana'}})",
+      "db.productos.find({categoria:{$regex:'tec'}})"
+    ],
+    "ejercicios": [
+      "Busca nombres que contengan una palabra específica.",
+      "Realiza una consulta usando regex.",
+      "Explica la utilidad de las expresiones regulares."
+    ],
+    "nivel": "avanzado"
+  },
+  {
+    "materia": "BD-NOSQL",
+    "titulo": "Conteo de documentos con countDocuments",
+    "palabras_clave": [
+      "countdocuments mongodb",
+      "mongodb countdocuments",
+      "contar documentos mongodb",
+      "como contar datos mongodb",
+      "how to use countdocuments",
+      "mongodb count query",
+      "document count nosql",
+      "count query mongodb",
+      "mongodb statistics",
+      "cantidad de documentos",
+      "q es countdocuments",
+      "qué es countdocuments",
+      "count example mongodb",
+      "mongo count",
+      "mongodb total records",
+      "count tutorial mongodb",
+      "database statistics mongo",
+      "contar registros mongodb",
+      "mongodb counting documents",
+      "count command mongo"
+    ],
+    "sinonimos": [
+      "contar registros",
+      "document count",
+      "count query"
+    ],
+    "variantes_comunes": [
+      "como contar documentos mongodb",
+      "countdocuments example",
+      "count facil mongodb",
+      "how count works mongodb",
+      "mongo contar registros"
+    ],
+    "contenido": "countDocuments() permite contar cuántos documentos existen en una colección o cuántos cumplen una condición específica. Es útil para estadísticas, dashboards y paginación.",
+    "ejemplos": [
+      "db.usuarios.countDocuments()",
+      "db.productos.countDocuments({stock:0})"
+    ],
+    "ejercicios": [
+      "Cuenta todos los usuarios.",
+      "Cuenta productos agotados.",
+      "Explica la utilidad de countDocuments()."
+    ],
+    "nivel": "intermedio"
+  },
+  {
+    "materia": "BD-NOSQL",
+    "titulo": "Índices en MongoDB",
+    "palabras_clave": [
+      "indices mongodb",
+      "mongodb indexes",
+      "qué son los indices mongodb",
+      "q son los indices",
+      "how mongodb indexes work",
+      "como funcionan los indices",
+      "mongodb performance",
+      "optimizar consultas mongodb",
+      "mongodb search speed",
+      "database indexing",
+      "index query mongodb",
+      "mongodb create index",
+      "buscar rapido mongodb",
+      "index explained mongodb",
+      "mongodb indexing tutorial",
+      "performance nosql",
+      "query optimization mongodb",
+      "mongo indexes",
+      "mongodb speed queries",
+      "indexes nosql"
+    ],
+    "sinonimos": [
+      "indexacion",
+      "optimizacion de consultas",
+      "database indexes"
+    ],
+    "variantes_comunes": [
+      "como usar indices mongodb",
+      "mongodb index example",
+      "indices facil mongodb",
+      "how indexes work mongodb",
+      "mongo indexar datos"
+    ],
+    "contenido": "Los índices en MongoDB mejoran la velocidad de búsqueda de documentos. Funcionan de manera similar al índice de un libro, permitiendo encontrar información rápidamente sin recorrer todos los documentos de la colección.",
+    "ejemplos": [
+      "db.usuarios.createIndex({correo:1})",
+      "Un índice en correo acelera búsquedas de usuarios."
+    ],
+    "ejercicios": [
+      "Crea un índice para el campo nombre.",
+      "Explica por qué los índices mejoran el rendimiento.",
+      "Describe una desventaja de usar demasiados índices."
+    ],
+    "nivel": "avanzado"
+  },
+  {
+    "materia": "BD-NOSQL",
+    "titulo": "Índices únicos en MongoDB",
+    "palabras_clave": [
+      "unique index mongodb",
+      "indice unico mongodb",
+      "mongodb unique indexes",
+      "como crear indice unico",
+      "how to use unique index",
+      "mongodb duplicate prevention",
+      "evitar datos duplicados",
+      "mongodb constraints",
+      "indice unique",
+      "mongodb unique field",
+      "q es unique index",
+      "qué es indice unico",
+      "unique constraint mongodb",
+      "mongo unique index",
+      "mongodb email unique",
+      "unique example mongodb",
+      "mongodb duplicate values",
+      "database unique indexes",
+      "mongodb prevent duplicates",
+      "unique indexes nosql"
+    ],
+    "sinonimos": [
+      "indice unique",
+      "restriccion unica",
+      "prevent duplicates"
+    ],
+    "variantes_comunes": [
+      "como evitar duplicados mongodb",
+      "unique mongodb example",
+      "indice unico facil",
+      "how unique works mongodb",
+      "mongo valores unicos"
+    ],
+    "contenido": "Un índice único garantiza que los valores de un campo no se repitan dentro de una colección. Es común utilizarlo en correos electrónicos, nombres de usuario o identificadores.",
+    "ejemplos": [
+      "db.usuarios.createIndex({email:1},{unique:true})",
+      "No pueden existir dos usuarios con el mismo correo."
+    ],
+    "ejercicios": [
+      "Crea un índice único para un correo electrónico.",
+      "Explica qué sucede si se intenta insertar un duplicado.",
+      "Describe una ventaja de los índices únicos."
+    ],
+    "nivel": "avanzado"
+  },
+  {
+    "materia": "BD-NOSQL",
+    "titulo": "Relaciones embebidas en MongoDB",
+    "palabras_clave": [
+      "embedded documents mongodb",
+      "documentos embebidos",
+      "relaciones embebidas mongodb",
+      "como funcionan documentos embebidos",
+      "how embedded documents work",
+      "mongodb nested documents",
+      "objetos anidados mongodb",
+      "embedded relationships",
+      "mongodb data modeling",
+      "subdocuments mongodb",
+      "q son documentos embebidos",
+      "qué son documentos anidados",
+      "nested json mongodb",
+      "mongo embedded docs",
+      "mongodb arrays objects",
+      "modelado nosql",
+      "mongodb parent child",
+      "embedded structure mongodb",
+      "document nesting",
+      "mongodb object embedding"
+    ],
+    "sinonimos": [
+      "documentos anidados",
+      "subdocumentos",
+      "nested documents"
+    ],
+    "variantes_comunes": [
+      "como usar documentos embebidos",
+      "embedded mongodb example",
+      "documentos anidados facil",
+      "how nesting works mongodb",
+      "mongo objetos anidados"
+    ],
+    "contenido": "Las relaciones embebidas consisten en guardar información relacionada dentro del mismo documento. Esto reduce consultas adicionales y mejora el rendimiento en ciertos escenarios.",
+    "ejemplos": [
+      "{nombre:'Ana',direccion:{ciudad:'Toluca',cp:50000}}",
+      "Un pedido puede incluir un arreglo de productos embebidos."
+    ],
+    "ejercicios": [
+      "Crea un documento con un objeto anidado.",
+      "Explica una ventaja de relaciones embebidas.",
+      "Describe cuándo usar documentos embebidos."
+    ],
+    "nivel": "avanzado"
+  },
+  {
+    "materia": "BD-NOSQL",
+    "titulo": "Referencias entre documentos en MongoDB",
+    "palabras_clave": [
+      "mongodb references",
+      "referencias mongodb",
+      "relaciones referencias nosql",
+      "como usar referencias mongodb",
+      "how references work mongodb",
+      "mongodb foreign key",
+      "document references",
+      "mongodb linked documents",
+      "relaciones entre documentos",
+      "objectid references",
+      "q son referencias mongodb",
+      "qué son referencias",
+      "mongodb relation modeling",
+      "mongo references",
+      "mongodb parent child relation",
+      "referenced documents",
+      "database relationships nosql",
+      "mongodb relation example",
+      "document linking mongodb",
+      "nosql references"
+    ],
+    "sinonimos": [
+      "documentos relacionados",
+      "relaciones por referencia",
+      "linked documents"
+    ],
+    "variantes_comunes": [
+      "como relacionar documentos mongodb",
+      "references mongodb example",
+      "referencias facil",
+      "how references work",
+      "mongo relacion documentos"
+    ],
+    "contenido": "Las referencias en MongoDB permiten conectar documentos mediante ObjectId. En lugar de guardar toda la información dentro de un documento, se almacena la referencia al documento relacionado.",
+    "ejemplos": [
+      "{usuario_id:ObjectId('507f1f77bcf86cd799439011')}",
+      "Una colección de tareas puede guardar referencias a usuarios."
+    ],
+    "ejercicios": [
+      "Crea un ejemplo de referencia entre usuarios y tareas.",
+      "Explica la diferencia entre embebidos y referencias.",
+      "Describe cuándo usar referencias."
+    ],
+    "nivel": "avanzado"
+  },
+  {
+    "materia": "BD-NOSQL",
+    "titulo": "Arreglos en documentos MongoDB",
+    "palabras_clave": [
+      "arrays mongodb",
+      "mongodb arrays",
+      "arreglos mongodb",
+      "como usar arrays mongodb",
+      "how arrays work mongodb",
+      "listas mongodb",
+      "mongodb array fields",
+      "guardar listas mongodb",
+      "array documents mongodb",
+      "mongodb collections arrays",
+      "q son arrays mongodb",
+      "qué son arreglos",
+      "mongodb list data",
+      "mongo arrays",
+      "array example mongodb",
+      "mongodb nested arrays",
+      "json arrays mongodb",
+      "mongodb array tutorial",
+      "listas nosql",
+      "mongodb data arrays"
+    ],
+    "sinonimos": [
+      "listas",
+      "colecciones de datos",
+      "array fields"
+    ],
+    "variantes_comunes": [
+      "como guardar listas mongodb",
+      "arrays mongodb example",
+      "arreglos facil mongodb",
+      "how arrays work",
+      "mongo listas datos"
+    ],
+    "contenido": "MongoDB permite almacenar arreglos dentro de documentos. Los arreglos son útiles para guardar listas de valores relacionados, como etiquetas, categorías o productos.",
+    "ejemplos": [
+      "{nombre:'Ana',hobbies:['musica','programacion']}",
+      "{producto:'Laptop',colores:['negro','gris']}"
+    ],
+    "ejercicios": [
+      "Crea un documento con un arreglo.",
+      "Guarda una lista de materias favoritas.",
+      "Explica la utilidad de los arreglos."
+    ],
+    "nivel": "intermedio"
+  },
+  {
+    "materia": "BD-NOSQL",
+    "titulo": "Operador $push en MongoDB",
+    "palabras_clave": [
+      "push mongodb",
+      "mongodb push",
+      "operador push",
+      "como usar push mongodb",
+      "how to use push",
+      "agregar elementos arrays mongodb",
+      "mongodb add to array",
+      "push operator nosql",
+      "mongodb arrays update",
+      "append array mongodb",
+      "q es push mongodb",
+      "qué significa push",
+      "push example mongodb",
+      "mongo push",
+      "mongodb insert array item",
+      "array updates mongodb",
+      "push tutorial mongodb",
+      "mongodb append values",
+      "agregar datos arreglos",
+      "push operator tutorial"
+    ],
+    "sinonimos": [
+      "agregar al arreglo",
+      "append values",
+      "array update"
+    ],
+    "variantes_comunes": [
+      "como agregar elementos arrays mongodb",
+      "push mongodb example",
+      "push facil mongodb",
+      "how push works",
+      "mongo agregar array"
+    ],
+    "contenido": "El operador $push agrega nuevos elementos a un arreglo dentro de un documento. Es muy útil para listas dinámicas como comentarios, etiquetas o historial.",
+    "ejemplos": [
+      "db.usuarios.updateOne({nombre:'Ana'},{$push:{hobbies:'gaming'}})",
+      "db.posts.updateOne({_id:1},{$push:{comentarios:'Buen post'}})"
+    ],
+    "ejercicios": [
+      "Agrega un hobby a un usuario.",
+      "Inserta un comentario en un arreglo.",
+      "Explica cómo funciona $push."
+    ],
+    "nivel": "intermedio"
+  },
+  {
+    "materia": "BD-NOSQL",
+    "titulo": "Operador $pull en MongoDB",
+    "palabras_clave": [
+      "pull mongodb",
+      "mongodb pull",
+      "operador pull",
+      "como usar pull mongodb",
+      "how to use pull",
+      "eliminar elementos arrays mongodb",
+      "mongodb remove from array",
+      "pull operator nosql",
+      "mongodb array delete",
+      "remove array items",
+      "q es pull mongodb",
+      "qué significa pull",
+      "pull example mongodb",
+      "mongo pull",
+      "mongodb delete array value",
+      "array removal mongodb",
+      "pull tutorial mongodb",
+      "mongodb remove values",
+      "eliminar datos arreglos",
+      "pull operator tutorial"
+    ],
+    "sinonimos": [
+      "eliminar del arreglo",
+      "remove array item",
+      "array delete"
+    ],
+    "variantes_comunes": [
+      "como eliminar elementos arrays mongodb",
+      "pull mongodb example",
+      "pull facil mongodb",
+      "how pull works",
+      "mongo borrar array"
+    ],
+    "contenido": "El operador $pull elimina elementos específicos de un arreglo dentro de un documento. Esto permite modificar listas dinámicas sin reemplazar todo el arreglo.",
+    "ejemplos": [
+      "db.usuarios.updateOne({nombre:'Ana'},{$pull:{hobbies:'gaming'}})",
+      "db.posts.updateOne({_id:1},{$pull:{comentarios:'spam'}})"
+    ],
+    "ejercicios": [
+      "Elimina un hobby de un usuario.",
+      "Borra un comentario de un arreglo.",
+      "Explica la función de $pull."
+    ],
+    "nivel": "intermedio"
+  },
+  {
+    "materia": "BD-NOSQL",
+    "titulo": "Agregaciones en MongoDB",
+    "palabras_clave": [
+      "aggregation mongodb",
+      "mongodb aggregation",
+      "pipeline mongodb",
+      "como funcionan agregaciones",
+      "how aggregation works mongodb",
+      "mongodb aggregate",
+      "analisis datos mongodb",
+      "data aggregation nosql",
+      "mongodb statistics",
+      "aggregate pipeline",
+      "q es aggregation mongodb",
+      "qué es aggregate",
+      "mongodb data processing",
+      "mongo aggregate",
+      "aggregation example mongodb",
+      "mongodb group data",
+      "aggregation framework",
+      "advanced queries mongodb",
+      "mongodb analytics",
+      "aggregate tutorial mongodb"
+    ],
+    "sinonimos": [
+      "pipeline",
+      "procesamiento de datos",
+      "aggregate framework"
+    ],
+    "variantes_comunes": [
+      "como usar aggregate mongodb",
+      "aggregation mongodb example",
+      "aggregate facil",
+      "how aggregate works",
+      "mongo pipeline"
+    ],
+    "contenido": "El framework de agregación permite procesar y transformar datos en MongoDB mediante pipelines. Las agregaciones se usan para estadísticas, agrupaciones y análisis avanzado de información.",
+    "ejemplos": [
+      "db.ventas.aggregate([{ $group:{_id:'$categoria',total:{$sum:1}} }])",
+      "Las agregaciones pueden calcular promedios y conteos."
+    ],
+    "ejercicios": [
+      "Crea una agregación para contar productos.",
+      "Agrupa usuarios por edad.",
+      "Explica qué es un pipeline."
+    ],
+    "nivel": "avanzado"
+  },
+  {
+    "materia": "BD-NOSQL",
+    "titulo": "Operador $group en MongoDB",
+    "palabras_clave": [
+      "group mongodb",
+      "mongodb group",
+      "operador group",
+      "como usar group mongodb",
+      "how to use group aggregation",
+      "mongodb group data",
+      "agrupar datos mongodb",
+      "aggregate group mongodb",
+      "group stage pipeline",
+      "mongodb statistics grouping",
+      "q es group mongodb",
+      "qué significa group",
+      "group example mongodb",
+      "mongo group",
+      "mongodb aggregate group",
+      "data grouping nosql",
+      "group tutorial mongodb",
+      "mongodb analytics grouping",
+      "group query mongodb",
+      "pipeline group mongo"
+    ],
+    "sinonimos": [
+      "agrupar datos",
+      "group stage",
+      "aggregation grouping"
+    ],
+    "variantes_comunes": [
+      "como agrupar datos mongodb",
+      "group mongodb example",
+      "group facil mongodb",
+      "how group works",
+      "mongo agrupar documentos"
+    ],
+    "contenido": "El operador $group se utiliza dentro del framework de agregación para agrupar documentos según un campo específico y calcular estadísticas como sumas, promedios o conteos.",
+    "ejemplos": [
+      "db.ventas.aggregate([{ $group:{_id:'$categoria',total:{$sum:1}} }])",
+      "Se pueden agrupar usuarios por ciudad."
+    ],
+    "ejercicios": [
+      "Agrupa productos por categoría.",
+      "Cuenta usuarios por ciudad.",
+      "Explica cómo funciona $group."
+    ],
+    "nivel": "avanzado"
+  },
+  {
+    "materia": "BD-NOSQL",
+    "titulo": "Operador $match en MongoDB",
+    "palabras_clave": [
+      "match mongodb",
+      "mongodb match",
+      "operador match",
+      "como usar match mongodb",
+      "how to use match",
+      "mongodb aggregation filters",
+      "filtrar agregaciones mongodb",
+      "match stage pipeline",
+      "aggregate match mongodb",
+      "mongodb conditional aggregation",
+      "q es match mongodb",
+      "qué significa match",
+      "match example mongodb",
+      "mongo match",
+      "mongodb pipeline filter",
+      "aggregation filtering",
+      "match tutorial mongodb",
+      "mongodb analytics filters",
+      "pipeline filters mongo",
+      "advanced filtering mongodb"
+    ],
+    "sinonimos": [
+      "filtro aggregation",
+      "pipeline filtering",
+      "aggregation conditions"
+    ],
+    "variantes_comunes": [
+      "como usar match en mongodb",
+      "match mongodb example",
+      "match facil mongodb",
+      "how match works",
+      "mongo filtros pipeline"
+    ],
+    "contenido": "El operador $match filtra documentos dentro de un pipeline de agregación. Funciona de manera similar a find(), pero dentro de procesos avanzados de análisis de datos.",
+    "ejemplos": [
+      "db.ventas.aggregate([{ $match:{categoria:'tecnologia'} }])",
+      "Se puede usar para filtrar documentos antes de agruparlos."
+    ],
+    "ejercicios": [
+      "Filtra productos por categoría usando $match.",
+      "Crea un pipeline con $match y $group.",
+      "Explica la utilidad de $match."
+    ],
+    "nivel": "avanzado"
+  },
+  {
+    "materia": "BD-NOSQL",
+    "titulo": "Consistencia eventual en NoSQL",
+    "palabras_clave": [
+      "eventual consistency",
+      "consistencia eventual",
+      "qué es consistencia eventual",
+      "q es consistencia eventual",
+      "how eventual consistency works",
+      "nosql consistency",
+      "distributed consistency",
+      "mongodb consistency",
+      "bases distribuidas consistencia",
+      "eventual consistency explained",
+      "replication consistency",
+      "nosql replication",
+      "database synchronization",
+      "consistencia en nosql",
+      "eventual sync databases",
+      "distributed database systems",
+      "consistency model nosql",
+      "nosql data synchronization",
+      "replicated databases",
+      "eventual consistency databases"
+    ],
+    "sinonimos": [
+      "sincronizacion eventual",
+      "consistencia distribuida",
+      "replication consistency"
+    ],
+    "variantes_comunes": [
+      "como funciona la consistencia eventual",
+      "eventual consistency facil",
+      "consistencia en bases nosql",
+      "what is eventual consistency",
+      "explicacion eventual consistency"
+    ],
+    "contenido": "La consistencia eventual es un modelo utilizado en muchas bases NoSQL distribuidas. Significa que los datos no siempre se actualizan instantáneamente en todos los servidores, pero eventualmente todos los nodos tendrán la misma información.",
+    "ejemplos": [
+      "Un cambio realizado en un servidor puede tardar algunos segundos en reflejarse en otro.",
+      "Sistemas distribuidos globales suelen usar consistencia eventual."
+    ],
+    "ejercicios": [
+      "Explica qué significa consistencia eventual.",
+      "Menciona una ventaja de este modelo.",
+      "Describe un escenario donde podría utilizarse."
+    ],
+    "nivel": "avanzado"
+  },
+  {
+    "materia": "BD-NOSQL",
+    "titulo": "Teorema CAP en bases NoSQL",
+    "palabras_clave": [
+      "cap theorem",
+      "teorema cap",
+      "qué es el teorema cap",
+      "q es cap theorem",
+      "consistency availability partition tolerance",
+      "nosql cap theorem",
+      "distributed systems cap",
+      "bases distribuidas cap",
+      "database cap theorem",
+      "how cap theorem works",
+      "cap explained",
+      "availability consistency",
+      "partition tolerance",
+      "nosql distributed theory",
+      "database architecture cap",
+      "distributed database concepts",
+      "cap theorem explained",
+      "consistency vs availability",
+      "nosql theory",
+      "cap in databases"
+    ],
+    "sinonimos": [
+      "consistency availability partition",
+      "teoria cap",
+      "distributed systems theorem"
+    ],
+    "variantes_comunes": [
+      "como funciona el teorema cap",
+      "cap theorem facil",
+      "cap theorem databases",
+      "explicacion cap nosql",
+      "what is cap theorem"
+    ],
+    "contenido": "El teorema CAP establece que en una base de datos distribuida solo se pueden garantizar dos de tres propiedades: consistencia, disponibilidad y tolerancia a particiones. Es un concepto fundamental en sistemas NoSQL.",
+    "ejemplos": [
+      "MongoDB prioriza ciertas propiedades dependiendo de la configuración.",
+      "Sistemas distribuidos deben balancear consistencia y disponibilidad."
+    ],
+    "ejercicios": [
+      "Menciona las tres propiedades del teorema CAP.",
+      "Explica qué significa disponibilidad.",
+      "Describe qué es tolerancia a particiones."
+    ],
+    "nivel": "avanzado"
+  },
+  {
+    "materia": "BD-NOSQL",
+    "titulo": "Sharding en bases NoSQL",
+    "palabras_clave": [
+      "sharding nosql",
+      "database sharding",
+      "qué es sharding",
+      "q es sharding",
+      "horizontal partitioning",
+      "distributed databases",
+      "mongodb sharding",
+      "particion horizontal",
+      "how sharding works",
+      "nosql scalability",
+      "database partitioning",
+      "shards databases",
+      "large scale databases",
+      "cluster sharding",
+      "scalable nosql systems",
+      "distributed storage",
+      "sharding explained",
+      "data partitioning",
+      "nosql clusters",
+      "horizontal scaling databases"
+    ],
+    "sinonimos": [
+      "particion horizontal",
+      "database partitioning",
+      "data sharding"
+    ],
+    "variantes_comunes": [
+      "como funciona sharding",
+      "sharding facil",
+      "mongodb sharding example",
+      "what is sharding",
+      "explicacion sharding"
+    ],
+    "contenido": "Sharding es una técnica que divide datos entre múltiples servidores para mejorar rendimiento y escalabilidad. Cada fragmento llamado shard contiene solo una parte de la información total.",
+    "ejemplos": [
+      "Usuarios de diferentes regiones pueden almacenarse en shards distintos.",
+      "Grandes plataformas usan sharding para distribuir carga."
+    ],
+    "ejercicios": [
+      "Explica qué es un shard.",
+      "Describe una ventaja del sharding.",
+      "Menciona por qué mejora la escalabilidad."
+    ],
+    "nivel": "avanzado"
+  },
+  {
+    "materia": "BD-NOSQL",
+    "titulo": "Replicación en bases NoSQL",
+    "palabras_clave": [
+      "database replication",
+      "replicacion nosql",
+      "qué es replicacion",
+      "q es replicacion",
+      "mongodb replication",
+      "replica sets",
+      "distributed databases",
+      "backup databases",
+      "high availability nosql",
+      "replicated databases",
+      "how replication works",
+      "database redundancy",
+      "replication explained",
+      "nosql replicas",
+      "fault tolerance databases",
+      "data redundancy",
+      "replication systems",
+      "database failover",
+      "cluster replication",
+      "nosql backup systems"
+    ],
+    "sinonimos": [
+      "copias de seguridad",
+      "database redundancy",
+      "replica sets"
+    ],
+    "variantes_comunes": [
+      "como funciona la replicacion",
+      "replication facil",
+      "mongodb replica set",
+      "what is database replication",
+      "explicacion replicacion"
+    ],
+    "contenido": "La replicación consiste en mantener copias de datos en varios servidores. Esto mejora disponibilidad, tolerancia a fallos y recuperación ante errores.",
+    "ejemplos": [
+      "MongoDB usa replica sets para replicación.",
+      "Si un servidor falla, otro puede continuar funcionando."
+    ],
+    "ejercicios": [
+      "Explica qué es la replicación.",
+      "Menciona una ventaja de replica sets.",
+      "Describe cómo ayuda ante fallos."
+    ],
+    "nivel": "intermedio"
+  },
+  {
+    "materia": "BD-NOSQL",
+    "titulo": "Bases de datos orientadas a grafos",
+    "palabras_clave": [
+      "graph databases",
+      "bases orientadas a grafos",
+      "qué es una graph database",
+      "q es graph db",
+      "neo4j",
+      "nodes and edges",
+      "database relationships",
+      "social network databases",
+      "graph storage",
+      "how graph databases work",
+      "nosql graph systems",
+      "graph models",
+      "database nodes",
+      "database edges",
+      "graph query systems",
+      "relationship databases",
+      "graph nosql",
+      "graph db explained",
+      "connected data",
+      "graph theory databases"
+    ],
+    "sinonimos": [
+      "graph db",
+      "bases de grafos",
+      "relationship databases"
+    ],
+    "variantes_comunes": [
+      "como funcionan las graph databases",
+      "neo4j facil",
+      "graph db examples",
+      "what is a graph database",
+      "explicacion graph nosql"
+    ],
+    "contenido": "Las bases orientadas a grafos almacenan información usando nodos y relaciones. Son ideales para redes sociales, sistemas de recomendación y análisis de conexiones complejas.",
+    "ejemplos": [
+      "Neo4j es una base orientada a grafos.",
+      "Facebook puede modelar amistades usando grafos."
+    ],
+    "ejercicios": [
+      "Explica qué es un nodo.",
+      "Describe una relación en una graph database.",
+      "Menciona un caso de uso."
+    ],
+    "nivel": "intermedio"
+  },
+  {
+    "materia": "BD-NOSQL",
+    "titulo": "Bases de datos clave-valor",
+    "palabras_clave": [
+      "key value databases",
+      "bases clave valor",
+      "qué es key value",
+      "q es key value database",
+      "redis",
+      "dictionary databases",
+      "nosql key value",
+      "cache databases",
+      "how key value works",
+      "simple nosql systems",
+      "database pairs",
+      "clave valor storage",
+      "key value explained",
+      "redis nosql",
+      "fast databases",
+      "memory databases",
+      "data cache systems",
+      "nosql cache",
+      "database lookup",
+      "key value stores"
+    ],
+    "sinonimos": [
+      "almacen clave valor",
+      "dictionary databases",
+      "key value stores"
+    ],
+    "variantes_comunes": [
+      "como funcionan las bases clave valor",
+      "redis facil",
+      "key value examples",
+      "what is key value database",
+      "explicacion redis"
+    ],
+    "contenido": "Las bases de datos clave-valor almacenan información mediante pares de clave y valor. Son extremadamente rápidas y se utilizan mucho en sistemas de caché y sesiones.",
+    "ejemplos": [
+      "Redis almacena datos en memoria.",
+      "Una sesión de usuario puede guardarse como clave-valor."
+    ],
+    "ejercicios": [
+      "Explica qué es una base clave-valor.",
+      "Menciona una ventaja de Redis.",
+      "Describe un uso común."
+    ],
+    "nivel": "basico"
+  },
+  {
+    "materia": "BD-NOSQL",
+    "titulo": "Bases de datos orientadas a columnas",
+    "palabras_clave": [
+      "column databases",
+      "wide column stores",
+      "bases orientadas a columnas",
+      "qué es column database",
+      "q es wide column",
+      "cassandra nosql",
+      "big data databases",
+      "column family databases",
+      "distributed column storage",
+      "how column databases work",
+      "apache cassandra",
+      "columnar nosql",
+      "database columns nosql",
+      "large scale storage",
+      "column systems",
+      "nosql columns",
+      "column database explained",
+      "analytics databases",
+      "big data nosql",
+      "column family model"
+    ],
+    "sinonimos": [
+      "wide column stores",
+      "column family databases",
+      "bases columnares"
+    ],
+    "variantes_comunes": [
+      "como funcionan las bases orientadas a columnas",
+      "cassandra facil",
+      "column database examples",
+      "what is column database",
+      "explicacion cassandra"
+    ],
+    "contenido": "Las bases orientadas a columnas almacenan información agrupada por columnas en lugar de filas. Son útiles para big data, análisis masivos y sistemas distribuidos.",
+    "ejemplos": [
+      "Apache Cassandra usa un modelo orientado a columnas.",
+      "Grandes sistemas analíticos usan almacenamiento columnar."
+    ],
+    "ejercicios": [
+      "Explica qué es una base orientada a columnas.",
+      "Menciona una ventaja del almacenamiento columnar.",
+      "Describe un ejemplo de uso."
+    ],
+    "nivel": "intermedio"
+  },
+  {
+    "materia": "BD-NOSQL",
+    "titulo": "Big Data y NoSQL",
+    "palabras_clave": [
+      "big data nosql",
+      "nosql for big data",
+      "qué es big data",
+      "q es big data",
+      "large scale data",
+      "massive databases",
+      "distributed storage",
+      "analytics systems",
+      "big data explained",
+      "nosql scalability",
+      "data processing",
+      "high volume databases",
+      "data lakes",
+      "big data technologies",
+      "nosql and analytics",
+      "massive information systems",
+      "database clusters",
+      "big data systems",
+      "large datasets",
+      "data engineering nosql"
+    ],
+    "sinonimos": [
+      "datos masivos",
+      "large datasets",
+      "massive information"
+    ],
+    "variantes_comunes": [
+      "como se usa nosql en big data",
+      "big data facil",
+      "big data databases",
+      "what is big data",
+      "explicacion big data"
+    ],
+    "contenido": "Big Data se refiere al procesamiento y análisis de enormes cantidades de información. Las bases NoSQL son muy utilizadas en este campo porque manejan grandes volúmenes de datos de forma escalable.",
+    "ejemplos": [
+      "Redes sociales generan big data constantemente.",
+      "NoSQL permite procesar millones de registros rápidamente."
+    ],
+    "ejercicios": [
+      "Explica qué es Big Data.",
+      "Describe la relación entre NoSQL y Big Data.",
+      "Menciona una ventaja de usar NoSQL."
+    ],
+    "nivel": "intermedio"
+  },
+  {
+    "materia": "BD-NOSQL",
+    "titulo": "Ventajas y desventajas de NoSQL",
+    "palabras_clave": [
+      "advantages of nosql",
+      "desventajas de nosql",
+      "ventajas y desventajas nosql",
+      "pros and cons nosql",
+      "qué ventajas tiene nosql",
+      "q ventajas tiene nosql",
+      "nosql benefits",
+      "nosql drawbacks",
+      "database comparison",
+      "mongodb advantages",
+      "scalable databases",
+      "flexible databases",
+      "nosql limitations",
+      "database pros cons",
+      "nosql performance",
+      "distributed systems advantages",
+      "nosql explained",
+      "why use nosql",
+      "nosql disadvantages",
+      "nosql comparison"
+    ],
+    "sinonimos": [
+      "pros y contras nosql",
+      "beneficios nosql",
+      "nosql limitations"
+    ],
+    "variantes_comunes": [
+      "ventajas de mongodb",
+      "nosql facil",
+      "pros and cons mongodb",
+      "why use nosql databases",
+      "explicacion ventajas nosql"
+    ],
+    "contenido": "Las bases NoSQL ofrecen flexibilidad, escalabilidad y alto rendimiento. Sin embargo, también pueden presentar desventajas como menor consistencia estricta y complejidad en ciertos tipos de relaciones.",
+    "ejemplos": [
+      "MongoDB permite cambiar estructuras fácilmente.",
+      "Bases SQL suelen ser mejores para relaciones complejas."
+    ],
+    "ejercicios": [
+      "Menciona dos ventajas de NoSQL.",
+      "Describe una desventaja.",
+      "Compara NoSQL con SQL."
+    ],
+    "nivel": "basico"
+  },
+  {
+    "materia": "BD-NOSQL",
+    "titulo": "Casos de uso de bases NoSQL",
+    "palabras_clave": [
+      "nosql use cases",
+      "casos de uso nosql",
+      "qué aplicaciones usan nosql",
+      "q aplicaciones usan nosql",
+      "mongodb real world",
+      "social media databases",
+      "gaming databases",
+      "streaming databases",
+      "big data systems",
+      "real time applications",
+      "distributed apps",
+      "nosql applications",
+      "database examples",
+      "when to use nosql",
+      "modern applications databases",
+      "nosql projects",
+      "high traffic systems",
+      "real world mongodb",
+      "cloud databases",
+      "large scale apps"
+    ],
+    "sinonimos": [
+      "aplicaciones nosql",
+      "real world nosql",
+      "database use cases"
+    ],
+    "variantes_comunes": [
+      "cuando usar nosql",
+      "nosql ejemplos reales",
+      "mongodb real applications",
+      "what is nosql used for",
+      "explicacion casos nosql"
+    ],
+    "contenido": "Las bases NoSQL se utilizan en redes sociales, videojuegos, plataformas de streaming, sistemas en tiempo real y aplicaciones que requieren escalabilidad masiva y flexibilidad.",
+    "ejemplos": [
+      "Netflix usa tecnologías NoSQL.",
+      "Aplicaciones de chat usan bases distribuidas."
+    ],
+    "ejercicios": [
+      "Menciona tres aplicaciones de NoSQL.",
+      "Describe un caso donde SQL no sería ideal.",
+      "Explica por qué NoSQL es popular en aplicaciones modernas."
+    ],
+    "nivel": "basico"
+  }
+
+
+
+
+
+
+]

@@ -1,0 +1,2734 @@
+[
+
+  {
+    "materia": "BD-REL",
+    "titulo": "¿Qué es una base de datos relacional?",
+    "palabras_clave": [
+      "base de datos relacional",
+      "relational database",
+      "sql",
+      "tablas",
+      "filas",
+      "columnas",
+      "datos estructurados",
+      "db relacional",
+      "sistema gestor de bases de datos"
+    ],
+    "sinonimos": [
+      "bd relacional",
+      "relational db",
+      "rdbms",
+      "database relacional"
+    ],
+    "variantes_comunes": [
+      "q es una bd relacional",
+      "que significa relational database",
+      "como funcionan las bases de datos relacionales",
+      "sql database",
+      "base de datos con tablas",
+      "bd relacionales explicacion"
+    ],
+    "contenido": "Una base de datos relacional es un sistema que almacena información usando tablas relacionadas entre sí. Cada tabla contiene filas y columnas donde se guardan datos organizados. Las relaciones permiten conectar información de diferentes tablas mediante claves primarias y claves foráneas. Este modelo fue creado para mantener los datos organizados, evitar duplicados y facilitar consultas complejas usando SQL. Las bases de datos relacionales son usadas en sistemas escolares, bancos, redes sociales, tiendas en línea y aplicaciones empresariales.",
+    "ejemplos": [
+      "Una tabla de alumnos relacionada con una tabla de materias.",
+      "Una tienda que relaciona productos con pedidos.",
+      "Un hospital que conecta pacientes con citas médicas."
+    ],
+    "ejercicios": [
+      "Explica con tus palabras qué es una base de datos relacional.",
+      "Menciona 3 ejemplos reales donde se use una base de datos relacional.",
+      "Investiga qué significa RDBMS."
+    ],
+    "nivel": "basico"
+  },
+  {
+    "materia": "BD-REL",
+    "titulo": "¿Qué es una tabla en una base de datos?",
+    "palabras_clave": [
+      "tabla sql",
+      "table database",
+      "filas y columnas",
+      "estructura de tabla",
+      "datos",
+      "campos",
+      "registros"
+    ],
+    "sinonimos": [
+      "table",
+      "tabla de datos",
+      "tabla relacional"
+    ],
+    "variantes_comunes": [
+      "q es una tabla en sql",
+      "como funciona una tabla",
+      "que son las tablas en bases de datos",
+      "table sql meaning",
+      "como guardar datos en tablas"
+    ],
+    "contenido": "Una tabla es la estructura principal donde se almacena información dentro de una base de datos relacional. Está formada por columnas y filas. Las columnas representan atributos o características, mientras que las filas representan registros individuales. Cada tabla suele almacenar información sobre una sola entidad, como usuarios, productos o materias.",
+    "ejemplos": [
+      "Tabla Usuarios: id, nombre, correo.",
+      "Tabla Productos: id_producto, precio, stock.",
+      "Tabla Materias: codigo, nombre, semestre."
+    ],
+    "ejercicios": [
+      "Crea una tabla imaginaria para estudiantes.",
+      "Identifica cuáles serían las columnas y filas.",
+      "Explica la diferencia entre registro y campo."
+    ],
+    "nivel": "basico"
+  },
+  {
+    "materia": "BD-REL",
+    "titulo": "¿Qué es una fila y una columna?",
+    "palabras_clave": [
+      "fila",
+      "columna",
+      "registro",
+      "campo",
+      "rows",
+      "columns",
+      "estructura sql"
+    ],
+    "sinonimos": [
+      "row",
+      "column",
+      "registro",
+      "campo de tabla"
+    ],
+    "variantes_comunes": [
+      "que es una fila en sql",
+      "q son las columnas",
+      "diferencia entre fila y columna",
+      "rows and columns sql",
+      "como funcionan los registros"
+    ],
+    "contenido": "En una tabla, las columnas representan atributos específicos y las filas contienen registros completos. Por ejemplo, en una tabla de usuarios, una columna puede ser 'nombre' y una fila puede contener todos los datos de un usuario específico. Las columnas mantienen el mismo tipo de dato para todos los registros.",
+    "ejemplos": [
+      "Columna: correo electrónico.",
+      "Fila: datos completos de Juan Pérez.",
+      "Columna edad con valores numéricos."
+    ],
+    "ejercicios": [
+      "Dibuja una tabla simple e identifica filas y columnas.",
+      "Explica por qué las columnas tienen tipos de datos.",
+      "Da 2 ejemplos de registros."
+    ],
+    "nivel": "basico"
+  },
+  {
+    "materia": "BD-REL",
+    "titulo": "¿Qué es SQL?",
+    "palabras_clave": [
+      "sql",
+      "structured query language",
+      "consultas sql",
+      "lenguaje sql",
+      "query language",
+      "database language"
+    ],
+    "sinonimos": [
+      "lenguaje sql",
+      "query language",
+      "structured query language"
+    ],
+    "variantes_comunes": [
+      "q es sql",
+      "que significa sql",
+      "para que sirve sql",
+      "how to use sql",
+      "como hacer consultas sql",
+      "sql basico"
+    ],
+    "contenido": "SQL significa Structured Query Language. Es el lenguaje usado para interactuar con bases de datos relacionales. Permite crear tablas, insertar información, consultar datos, modificar registros y eliminar información. SQL es uno de los lenguajes más importantes en programación y análisis de datos.",
+    "ejemplos": [
+      "SELECT * FROM usuarios;",
+      "INSERT INTO productos VALUES(...);",
+      "DELETE FROM alumnos WHERE id=1;"
+    ],
+    "ejercicios": [
+      "Investiga qué significa SQL.",
+      "Escribe una consulta SELECT básica.",
+      "Menciona 3 acciones que se pueden hacer con SQL."
+    ],
+    "nivel": "basico"
+  },
+  {
+    "materia": "BD-REL",
+    "titulo": "¿Qué es una clave primaria?",
+    "palabras_clave": [
+      "primary key",
+      "clave primaria",
+      "pk",
+      "identificador unico",
+      "id",
+      "llave primaria"
+    ],
+    "sinonimos": [
+      "pk",
+      "primary key",
+      "identificador único"
+    ],
+    "variantes_comunes": [
+      "q es primary key",
+      "que es una clave primaria",
+      "pk sql",
+      "como funciona la llave primaria",
+      "id unico en sql"
+    ],
+    "contenido": "La clave primaria es un campo que identifica de manera única cada registro dentro de una tabla. No puede repetirse ni contener valores nulos. Su función principal es garantizar que cada fila sea única. Generalmente se utiliza un campo llamado id.",
+    "ejemplos": [
+      "id_usuario",
+      "numero_control",
+      "id_producto"
+    ],
+    "ejercicios": [
+      "Crea una tabla e identifica su clave primaria.",
+      "Explica por qué una PK no puede repetirse.",
+      "Menciona ejemplos de identificadores únicos."
+    ],
+    "nivel": "basico"
+  },
+  {
+    "materia": "BD-REL",
+    "titulo": "¿Qué es una clave foránea?",
+    "palabras_clave": [
+      "foreign key",
+      "clave foranea",
+      "fk",
+      "relaciones",
+      "llave foranea",
+      "referencias sql"
+    ],
+    "sinonimos": [
+      "fk",
+      "foreign key",
+      "llave foránea"
+    ],
+    "variantes_comunes": [
+      "q es una foreign key",
+      "como funcionan las claves foraneas",
+      "fk sql",
+      "que significa clave foranea",
+      "relacionar tablas sql"
+    ],
+    "contenido": "Una clave foránea es un campo que conecta dos tablas entre sí. Su función es crear relaciones y mantener integridad referencial. La foreign key apunta normalmente a la primary key de otra tabla.",
+    "ejemplos": [
+      "id_materia dentro de tabla alumnos.",
+      "id_cliente dentro de pedidos.",
+      "id_usuario en publicaciones."
+    ],
+    "ejercicios": [
+      "Relaciona dos tablas usando FK.",
+      "Explica qué pasa si una FK apunta a un registro inexistente.",
+      "Menciona ejemplos reales de relaciones."
+    ],
+    "nivel": "basico"
+  },
+  {
+    "materia": "BD-REL",
+    "titulo": "Tipos de datos en SQL",
+    "palabras_clave": [
+      "tipos de datos",
+      "varchar",
+      "int",
+      "date",
+      "boolean",
+      "datatype sql"
+    ],
+    "sinonimos": [
+      "data types",
+      "tipos sql",
+      "datatype"
+    ],
+    "variantes_comunes": [
+      "tipos de datos sql",
+      "que significa varchar",
+      "como usar int sql",
+      "date sql",
+      "boolean en sql"
+    ],
+    "contenido": "Los tipos de datos definen qué tipo de información puede almacenarse en una columna. Algunos ejemplos son INT para números enteros, VARCHAR para texto, DATE para fechas y BOOLEAN para valores verdadero o falso.",
+    "ejemplos": [
+      "edad INT",
+      "nombre VARCHAR(100)",
+      "fecha_registro DATE"
+    ],
+    "ejercicios": [
+      "Asigna tipos de datos a una tabla de usuarios.",
+      "Explica la diferencia entre INT y VARCHAR.",
+      "Investiga otros tipos de datos SQL."
+    ],
+    "nivel": "basico"
+  },
+  {
+    "materia": "BD-REL",
+    "titulo": "¿Qué es un registro?",
+    "palabras_clave": [
+      "registro",
+      "record",
+      "fila sql",
+      "datos",
+      "row database"
+    ],
+    "sinonimos": [
+      "row",
+      "record",
+      "fila"
+    ],
+    "variantes_comunes": [
+      "q es un registro en sql",
+      "record database meaning",
+      "como funcionan los registros",
+      "filas sql"
+    ],
+    "contenido": "Un registro es una fila completa dentro de una tabla. Contiene todos los valores relacionados con una entidad específica. Por ejemplo, un usuario completo con nombre, correo y contraseña representa un registro.",
+    "ejemplos": [
+      "Usuario Juan con correo y edad.",
+      "Producto con precio y stock.",
+      "Alumno con matrícula."
+    ],
+    "ejercicios": [
+      "Crea 3 registros imaginarios.",
+      "Explica la diferencia entre registro y columna.",
+      "Identifica registros en una tabla."
+    ],
+    "nivel": "basico"
+  },
+  {
+    "materia": "BD-REL",
+    "titulo": "¿Qué es un SGBD o DBMS?",
+    "palabras_clave": [
+      "dbms",
+      "sgbd",
+      "mysql",
+      "postgresql",
+      "database manager",
+      "motor de base de datos"
+    ],
+    "sinonimos": [
+      "database management system",
+      "sistema gestor de bases de datos",
+      "motor de bd"
+    ],
+    "variantes_comunes": [
+      "q es dbms",
+      "que significa sgbd",
+      "mysql es un dbms",
+      "postgresql database",
+      "motor sql"
+    ],
+    "contenido": "Un DBMS o SGBD es un software que permite crear, administrar y manipular bases de datos. Algunos ejemplos populares son MySQL, PostgreSQL, SQL Server y Oracle. Estos sistemas ejecutan consultas SQL y gestionan almacenamiento, seguridad y rendimiento.",
+    "ejemplos": [
+      "MySQL",
+      "PostgreSQL",
+      "Microsoft SQL Server"
+    ],
+    "ejercicios": [
+      "Investiga 3 DBMS populares.",
+      "Explica la diferencia entre base de datos y DBMS.",
+      "Menciona cuál usarías para una app escolar."
+    ],
+    "nivel": "basico"
+  },
+  {
+    "materia": "BD-REL",
+    "titulo": "¿Qué es MySQL?",
+    "palabras_clave": [
+      "mysql",
+      "base de datos mysql",
+      "sql server",
+      "motor mysql",
+      "dbms mysql"
+    ],
+    "sinonimos": [
+      "mysql database",
+      "mysql server",
+      "motor mysql"
+    ],
+    "variantes_comunes": [
+      "q es mysql",
+      "como funciona mysql",
+      "mysql para principiantes",
+      "how to use mysql",
+      "mysql explicacion"
+    ],
+    "contenido": "MySQL es uno de los sistemas gestores de bases de datos relacionales más usados del mundo. Utiliza SQL para administrar información y es popular en aplicaciones web, sistemas escolares y plataformas empresariales. Es rápido, gratuito en muchas versiones y compatible con múltiples lenguajes de programación.",
+    "ejemplos": [
+      "Sistema escolar con MySQL.",
+      "Tienda en línea usando MySQL.",
+      "Backend web conectado a MySQL."
+    ],
+    "ejercicios": [
+      "Investiga quién creó MySQL.",
+      "Explica por qué MySQL es popular.",
+      "Menciona ventajas de usar MySQL."
+    ],
+    "nivel": "basico"
+  },
+  {
+    "materia": "BD-REL",
+    "titulo": "¿Qué es una consulta SQL?",
+    "palabras_clave": [
+      "consulta sql",
+      "query",
+      "sql query",
+      "consultar datos",
+      "select sql",
+      "queries database"
+    ],
+    "sinonimos": [
+      "query",
+      "consulta de base de datos",
+      "sql query"
+    ],
+    "variantes_comunes": [
+      "q es una query",
+      "como hacer consultas sql",
+      "query sql basica",
+      "como buscar datos en sql",
+      "consultas en mysql"
+    ],
+    "contenido": "Una consulta SQL es una instrucción que se utiliza para interactuar con una base de datos. Las consultas permiten obtener información, insertar registros, modificar datos o eliminar información. La consulta más conocida es SELECT, usada para leer datos almacenados en tablas.",
+    "ejemplos": [
+      "SELECT * FROM usuarios;",
+      "SELECT nombre FROM alumnos;",
+      "SELECT precio FROM productos;"
+    ],
+    "ejercicios": [
+      "Escribe una consulta SELECT básica.",
+      "Explica para qué sirve una query.",
+      "Investiga otros tipos de consultas SQL."
+    ],
+    "nivel": "basico"
+  },
+  {
+    "materia": "BD-REL",
+    "titulo": "¿Qué es SELECT en SQL?",
+    "palabras_clave": [
+      "select",
+      "select sql",
+      "leer datos",
+      "consultar registros",
+      "query select"
+    ],
+    "sinonimos": [
+      "consulta select",
+      "comando select",
+      "leer registros"
+    ],
+    "variantes_comunes": [
+      "q hace select",
+      "como usar select sql",
+      "select en mysql",
+      "query para mostrar datos",
+      "mostrar registros sql"
+    ],
+    "contenido": "SELECT es una instrucción SQL usada para obtener datos desde una tabla. Puede mostrar todos los registros o solamente ciertas columnas. También permite aplicar filtros, ordenar resultados y combinar información.",
+    "ejemplos": [
+      "SELECT * FROM alumnos;",
+      "SELECT nombre, edad FROM usuarios;",
+      "SELECT correo FROM clientes;"
+    ],
+    "ejercicios": [
+      "Haz una consulta que muestre todos los usuarios.",
+      "Muestra solo la columna nombre.",
+      "Explica la diferencia entre SELECT * y SELECT nombre."
+    ],
+    "nivel": "basico"
+  },
+  {
+    "materia": "BD-REL",
+    "titulo": "¿Qué es INSERT INTO?",
+    "palabras_clave": [
+      "insert into",
+      "agregar datos sql",
+      "insertar registros",
+      "insert sql",
+      "añadir datos"
+    ],
+    "sinonimos": [
+      "insertar registros",
+      "añadir filas",
+      "insert query"
+    ],
+    "variantes_comunes": [
+      "como insertar datos sql",
+      "q hace insert into",
+      "insert en mysql",
+      "agregar registros sql",
+      "how to insert data sql"
+    ],
+    "contenido": "INSERT INTO es una instrucción SQL utilizada para agregar nuevos registros a una tabla. Permite introducir datos en columnas específicas siguiendo la estructura definida por la tabla.",
+    "ejemplos": [
+      "INSERT INTO usuarios VALUES (1,'Juan');",
+      "INSERT INTO productos(nombre,precio) VALUES('Mouse',300);",
+      "INSERT INTO materias(nombre) VALUES('Matemáticas');"
+    ],
+    "ejercicios": [
+      "Inserta un usuario imaginario.",
+      "Crea una consulta INSERT con 3 columnas.",
+      "Explica qué pasa si faltan datos obligatorios."
+    ],
+    "nivel": "basico"
+  },
+  {
+    "materia": "BD-REL",
+    "titulo": "¿Qué es UPDATE en SQL?",
+    "palabras_clave": [
+      "update sql",
+      "modificar datos",
+      "editar registros",
+      "actualizar datos",
+      "query update"
+    ],
+    "sinonimos": [
+      "actualizar registros",
+      "editar datos",
+      "modificar filas"
+    ],
+    "variantes_comunes": [
+      "como actualizar datos sql",
+      "q hace update",
+      "editar registros mysql",
+      "update query",
+      "modificar datos sql"
+    ],
+    "contenido": "UPDATE es una instrucción SQL usada para modificar información existente dentro de una tabla. Generalmente se utiliza junto con WHERE para actualizar registros específicos.",
+    "ejemplos": [
+      "UPDATE usuarios SET nombre='Carlos' WHERE id=1;",
+      "UPDATE productos SET precio=500;",
+      "UPDATE alumnos SET edad=20 WHERE matricula=10;"
+    ],
+    "ejercicios": [
+      "Actualiza el nombre de un usuario.",
+      "Explica por qué WHERE es importante en UPDATE.",
+      "Modifica un precio dentro de una tabla."
+    ],
+    "nivel": "basico"
+  },
+  {
+    "materia": "BD-REL",
+    "titulo": "¿Qué es DELETE en SQL?",
+    "palabras_clave": [
+      "delete sql",
+      "eliminar datos",
+      "borrar registros",
+      "delete query",
+      "remove data sql"
+    ],
+    "sinonimos": [
+      "borrar registros",
+      "eliminar filas",
+      "delete query"
+    ],
+    "variantes_comunes": [
+      "q hace delete",
+      "como borrar datos sql",
+      "delete mysql",
+      "eliminar registros database",
+      "remove rows sql"
+    ],
+    "contenido": "DELETE es una instrucción SQL que elimina registros de una tabla. Se recomienda usar WHERE para evitar borrar todos los datos accidentalmente.",
+    "ejemplos": [
+      "DELETE FROM usuarios WHERE id=1;",
+      "DELETE FROM productos;",
+      "DELETE FROM alumnos WHERE edad<15;"
+    ],
+    "ejercicios": [
+      "Elimina un registro específico.",
+      "Explica el peligro de usar DELETE sin WHERE.",
+      "Haz una consulta DELETE básica."
+    ],
+    "nivel": "basico"
+  },
+  {
+    "materia": "BD-REL",
+    "titulo": "¿Qué es WHERE en SQL?",
+    "palabras_clave": [
+      "where sql",
+      "filtros sql",
+      "condiciones sql",
+      "buscar registros",
+      "sql condition"
+    ],
+    "sinonimos": [
+      "condicion sql",
+      "filtro sql",
+      "where clause"
+    ],
+    "variantes_comunes": [
+      "q hace where",
+      "como filtrar datos sql",
+      "buscar registros mysql",
+      "where query",
+      "sql conditions"
+    ],
+    "contenido": "WHERE es una cláusula SQL usada para filtrar registros según una condición específica. Permite seleccionar, actualizar o eliminar únicamente ciertos datos.",
+    "ejemplos": [
+      "SELECT * FROM usuarios WHERE edad=18;",
+      "DELETE FROM alumnos WHERE id=2;",
+      "UPDATE productos SET stock=0 WHERE precio>1000;"
+    ],
+    "ejercicios": [
+      "Haz una consulta usando WHERE.",
+      "Filtra usuarios mayores de edad.",
+      "Explica qué son las condiciones en SQL."
+    ],
+    "nivel": "basico"
+  },
+  {
+    "materia": "BD-REL",
+    "titulo": "¿Qué es ORDER BY?",
+    "palabras_clave": [
+      "order by",
+      "ordenar datos",
+      "sort sql",
+      "sql order",
+      "orden ascendente"
+    ],
+    "sinonimos": [
+      "ordenar registros",
+      "sort records",
+      "clasificar datos"
+    ],
+    "variantes_comunes": [
+      "como ordenar datos sql",
+      "q hace order by",
+      "sort mysql",
+      "ordenar alfabeticamente sql",
+      "sql ascending descending"
+    ],
+    "contenido": "ORDER BY es una cláusula SQL utilizada para ordenar resultados de consultas. Puede ordenar datos de forma ascendente ASC o descendente DESC.",
+    "ejemplos": [
+      "SELECT * FROM usuarios ORDER BY nombre ASC;",
+      "SELECT * FROM productos ORDER BY precio DESC;",
+      "SELECT * FROM alumnos ORDER BY edad;"
+    ],
+    "ejercicios": [
+      "Ordena usuarios por nombre.",
+      "Ordena productos por precio descendente.",
+      "Explica ASC y DESC."
+    ],
+    "nivel": "basico"
+  },
+  {
+    "materia": "BD-REL",
+    "titulo": "¿Qué es una relación entre tablas?",
+    "palabras_clave": [
+      "relaciones sql",
+      "relacion entre tablas",
+      "foreign key",
+      "tablas conectadas",
+      "database relationships"
+    ],
+    "sinonimos": [
+      "conexión entre tablas",
+      "relaciones de base de datos",
+      "database relation"
+    ],
+    "variantes_comunes": [
+      "como relacionar tablas",
+      "q son relaciones sql",
+      "tablas conectadas mysql",
+      "database relationships meaning",
+      "relacion entre entities"
+    ],
+    "contenido": "Las relaciones permiten conectar tablas mediante claves primarias y foráneas. Esto ayuda a evitar duplicación de información y mantener los datos organizados.",
+    "ejemplos": [
+      "Usuarios relacionados con pedidos.",
+      "Alumnos relacionados con materias.",
+      "Clientes conectados con facturas."
+    ],
+    "ejercicios": [
+      "Diseña dos tablas relacionadas.",
+      "Identifica una PK y una FK.",
+      "Explica por qué las relaciones son importantes."
+    ],
+    "nivel": "basico"
+  },
+  {
+    "materia": "BD-REL",
+    "titulo": "¿Qué es la normalización?",
+    "palabras_clave": [
+      "normalizacion",
+      "normalization database",
+      "evitar duplicados",
+      "formas normales",
+      "organizar datos"
+    ],
+    "sinonimos": [
+      "database normalization",
+      "optimización de datos",
+      "formas normales"
+    ],
+    "variantes_comunes": [
+      "q es normalizacion",
+      "como funciona la normalizacion",
+      "formas normales sql",
+      "evitar datos repetidos",
+      "database normalization explained"
+    ],
+    "contenido": "La normalización es un proceso de diseño de bases de datos que busca reducir redundancia y mejorar la organización de la información. Se divide en diferentes formas normales como 1FN, 2FN y 3FN.",
+    "ejemplos": [
+      "Separar usuarios y teléfonos en tablas distintas.",
+      "Evitar repetir datos de materias.",
+      "Organizar datos en múltiples tablas."
+    ],
+    "ejercicios": [
+      "Investiga qué es la 1FN.",
+      "Explica qué problemas evita la normalización.",
+      "Identifica datos duplicados en una tabla."
+    ],
+    "nivel": "intermedio"
+  },
+  {
+    "materia": "BD-REL",
+    "titulo": "¿Qué es un diagrama entidad-relación?",
+    "palabras_clave": [
+      "erd",
+      "entity relationship diagram",
+      "diagrama er",
+      "modelo entidad relacion",
+      "database design"
+    ],
+    "sinonimos": [
+      "diagrama ER",
+      "modelo ER",
+      "entity relationship diagram"
+    ],
+    "variantes_comunes": [
+      "q es un diagrama er",
+      "como hacer un erd",
+      "entity relationship diagram meaning",
+      "modelo entidad relacion sql",
+      "database diagram"
+    ],
+    "contenido": "Un diagrama entidad-relación es una representación visual de cómo se organizan y relacionan los datos dentro de una base de datos. Se utilizan entidades, atributos y relaciones para diseñar estructuras antes de implementarlas en SQL.",
+    "ejemplos": [
+      "Entidad Usuarios relacionada con Cursos.",
+      "Entidad Productos conectada con Ventas.",
+      "Sistema escolar con alumnos y materias."
+    ],
+    "ejercicios": [
+      "Diseña un ERD simple.",
+      "Identifica entidades y relaciones.",
+      "Explica la utilidad de un modelo ER."
+    ],
+    "nivel": "intermedio"
+  },
+  {
+    "materia": "BD-REL",
+    "titulo": "INNER JOIN en SQL",
+    "palabras_clave": [
+      "inner join",
+      "joins sql",
+      "combinar tablas",
+      "relaciones sql",
+      "consultas avanzadas",
+      "join mysql",
+      "sql joins"
+    ],
+    "sinonimos": [
+      "join interno",
+      "combinacion de tablas",
+      "inner join sql"
+    ],
+    "variantes_comunes": [
+      "q es inner join",
+      "como usar joins sql",
+      "combinar tablas mysql",
+      "inner join explained",
+      "consultas con varias tablas",
+      "como unir tablas en sql"
+    ],
+    "contenido": "INNER JOIN es una instrucción SQL utilizada para combinar información de dos o más tablas relacionadas. Solo devuelve los registros que tienen coincidencias en ambas tablas. Esta operación es una de las más importantes en bases de datos relacionales porque permite construir consultas complejas utilizando relaciones entre entidades. Generalmente se utiliza junto con claves primarias y claves foráneas. Por ejemplo, en un sistema escolar, una tabla de alumnos puede relacionarse con una tabla de materias mediante un identificador compartido. INNER JOIN permite consultar información completa sin duplicar datos. Es esencial para reportes, dashboards, sistemas administrativos y aplicaciones empresariales.",
+    "ejemplos": [
+      "SELECT alumnos.nombre, materias.nombre FROM alumnos INNER JOIN materias ON alumnos.id_materia = materias.id;",
+      "Un sistema escolar que muestra qué materias cursa cada alumno.",
+      "Una tienda en línea que relaciona pedidos con clientes."
+    ],
+    "ejercicios": [
+      "Crea dos tablas relacionadas y utiliza INNER JOIN.",
+      "Explica qué sucede si no existen coincidencias entre tablas.",
+      "Investiga la diferencia entre INNER JOIN y LEFT JOIN."
+    ],
+    "nivel": "intermedio"
+  },
+  {
+    "materia": "BD-REL",
+    "titulo": "LEFT JOIN y RIGHT JOIN",
+    "palabras_clave": [
+      "left join",
+      "right join",
+      "outer join",
+      "joins avanzados",
+      "sql relations",
+      "consultas relacionales"
+    ],
+    "sinonimos": [
+      "join izquierdo",
+      "join derecho",
+      "outer joins"
+    ],
+    "variantes_comunes": [
+      "q es left join",
+      "como funciona right join",
+      "difference inner and left join",
+      "joins avanzados sql",
+      "outer join mysql"
+    ],
+    "contenido": "LEFT JOIN devuelve todos los registros de la tabla izquierda aunque no tengan coincidencia en la tabla derecha. RIGHT JOIN hace lo contrario. Estos joins son útiles cuando se desea conservar información incompleta o detectar registros sin relación. Por ejemplo, en un sistema escolar se puede usar LEFT JOIN para mostrar todos los alumnos incluso si aún no tienen materias asignadas. Los joins externos ayudan a identificar inconsistencias, registros huérfanos y relaciones faltantes.",
+    "ejemplos": [
+      "SELECT * FROM alumnos LEFT JOIN materias ON alumnos.id_materia = materias.id;",
+      "Mostrar clientes aunque no hayan realizado pedidos.",
+      "Listar productos aunque no tengan ventas."
+    ],
+    "ejercicios": [
+      "Explica la diferencia entre LEFT JOIN y INNER JOIN.",
+      "Haz una consulta que muestre registros sin coincidencias.",
+      "Investiga FULL OUTER JOIN."
+    ],
+    "nivel": "intermedio"
+  },
+  {
+    "materia": "BD-REL",
+    "titulo": "Índices en bases de datos",
+    "palabras_clave": [
+      "indices sql",
+      "database index",
+      "optimizar consultas",
+      "rendimiento sql",
+      "index mysql",
+      "performance database"
+    ],
+    "sinonimos": [
+      "indexes",
+      "índices de búsqueda",
+      "database indexing"
+    ],
+    "variantes_comunes": [
+      "q son los indices sql",
+      "como optimizar consultas",
+      "index mysql",
+      "database performance",
+      "porque sql va lento"
+    ],
+    "contenido": "Los índices son estructuras especiales utilizadas para acelerar búsquedas dentro de una base de datos. Funcionan de manera similar al índice de un libro, permitiendo localizar información rápidamente sin recorrer todos los registros. Los índices mejoran enormemente el rendimiento de consultas SELECT, especialmente en tablas grandes. Sin embargo, también pueden aumentar el consumo de almacenamiento y ralentizar operaciones INSERT, UPDATE y DELETE debido a que el índice debe actualizarse constantemente. Existen índices simples, compuestos, únicos y de texto completo.",
+    "ejemplos": [
+      "CREATE INDEX idx_nombre ON usuarios(nombre);",
+      "Índice sobre correo electrónico para búsquedas rápidas.",
+      "Índice compuesto en nombre y apellido."
+    ],
+    "ejercicios": [
+      "Investiga cuándo conviene usar índices.",
+      "Explica ventajas y desventajas de indexar tablas.",
+      "Crea un ejemplo de índice único."
+    ],
+    "nivel": "intermedio"
+  },
+  {
+    "materia": "BD-REL",
+    "titulo": "Restricciones CONSTRAINT en SQL",
+    "palabras_clave": [
+      "constraints",
+      "restricciones sql",
+      "not null",
+      "unique",
+      "check",
+      "default sql",
+      "integridad de datos"
+    ],
+    "sinonimos": [
+      "constraints sql",
+      "reglas de datos",
+      "restricciones de tabla"
+    ],
+    "variantes_comunes": [
+      "q son constraints",
+      "como usar not null",
+      "unique sql meaning",
+      "check constraint",
+      "default sql"
+    ],
+    "contenido": "Las restricciones o CONSTRAINTS son reglas aplicadas a columnas o tablas para garantizar integridad y consistencia de los datos. Algunas de las más importantes son PRIMARY KEY, FOREIGN KEY, UNIQUE, NOT NULL, CHECK y DEFAULT. Estas restricciones ayudan a evitar errores, datos duplicados o registros inválidos. Por ejemplo, NOT NULL impide dejar campos vacíos y UNIQUE evita repetir valores como correos electrónicos.",
+    "ejemplos": [
+      "correo VARCHAR(100) UNIQUE;",
+      "edad INT CHECK(edad>=18);",
+      "nombre VARCHAR(50) NOT NULL;"
+    ],
+    "ejercicios": [
+      "Explica para qué sirve UNIQUE.",
+      "Crea una tabla con múltiples restricciones.",
+      "Investiga CHECK y DEFAULT."
+    ],
+    "nivel": "intermedio"
+  },
+  {
+    "materia": "BD-REL",
+    "titulo": "Integridad referencial",
+    "palabras_clave": [
+      "integridad referencial",
+      "referential integrity",
+      "foreign key",
+      "consistencia de datos",
+      "relaciones sql"
+    ],
+    "sinonimos": [
+      "consistencia relacional",
+      "integridad de relaciones",
+      "referential integrity"
+    ],
+    "variantes_comunes": [
+      "q es integridad referencial",
+      "como funciona foreign key",
+      "consistencia de datos sql",
+      "referential integrity explained",
+      "relaciones consistentes"
+    ],
+    "contenido": "La integridad referencial garantiza que las relaciones entre tablas permanezcan válidas. Esto significa que una foreign key siempre debe apuntar a un registro existente en otra tabla. Ayuda a evitar datos huérfanos o inconsistentes. Por ejemplo, no debería existir un pedido asociado a un usuario inexistente. Los DBMS aplican reglas automáticas para mantener esta integridad mediante restricciones y acciones como CASCADE.",
+    "ejemplos": [
+      "Un alumno no puede pertenecer a una materia inexistente.",
+      "Una factura debe tener un cliente válido.",
+      "Pedidos relacionados con usuarios reales."
+    ],
+    "ejercicios": [
+      "Explica qué es un dato huérfano.",
+      "Investiga ON DELETE CASCADE.",
+      "Diseña tablas con integridad referencial."
+    ],
+    "nivel": "intermedio"
+  },
+  {
+    "materia": "BD-REL",
+    "titulo": "Normalización Primera Forma Normal (1FN)",
+    "palabras_clave": [
+      "1fn",
+      "primera forma normal",
+      "normalizacion sql",
+      "atomicidad",
+      "database normalization"
+    ],
+    "sinonimos": [
+      "first normal form",
+      "1nf",
+      "normalización básica"
+    ],
+    "variantes_comunes": [
+      "q es 1fn",
+      "como funciona primera forma normal",
+      "normalizacion basica sql",
+      "atomic values database",
+      "1nf explained"
+    ],
+    "contenido": "La Primera Forma Normal establece que cada columna debe contener valores atómicos e indivisibles. No deben existir listas, grupos repetidos o múltiples valores dentro de una misma celda. Este principio mejora la organización y facilita consultas SQL. Por ejemplo, guardar varios teléfonos en una sola columna rompe la 1FN; en su lugar, deben separarse en otra tabla.",
+    "ejemplos": [
+      "Incorrecto: telefonos='555-111,555-222'.",
+      "Correcto: tabla separada para teléfonos.",
+      "Evitar múltiples valores en una sola celda."
+    ],
+    "ejercicios": [
+      "Detecta violaciones de 1FN.",
+      "Corrige una tabla mal normalizada.",
+      "Explica qué significa atomicidad."
+    ],
+    "nivel": "intermedio"
+  },
+  {
+    "materia": "BD-REL",
+    "titulo": "Transacciones en SQL",
+    "palabras_clave": [
+      "transacciones sql",
+      "transactions",
+      "commit",
+      "rollback",
+      "atomicidad",
+      "database transaction"
+    ],
+    "sinonimos": [
+      "transactions sql",
+      "operaciones atomicas",
+      "control de transacciones"
+    ],
+    "variantes_comunes": [
+      "q es una transaccion sql",
+      "commit y rollback",
+      "atomic transactions database",
+      "como funcionan las transacciones",
+      "sql transaction explained"
+    ],
+    "contenido": "Una transacción es un conjunto de operaciones SQL que se ejecutan como una sola unidad lógica. Si todas las operaciones se completan correctamente, se utiliza COMMIT para guardar cambios. Si ocurre un error, se usa ROLLBACK para deshacer operaciones. Las transacciones son esenciales en sistemas bancarios, compras en línea y aplicaciones críticas donde la integridad de datos es fundamental.",
+    "ejemplos": [
+      "Transferencia bancaria entre cuentas.",
+      "Compra en línea con actualización de inventario.",
+      "Registro de múltiples operaciones relacionadas."
+    ],
+    "ejercicios": [
+      "Explica qué hace COMMIT.",
+      "Investiga ACID en bases de datos.",
+      "Da un ejemplo donde ROLLBACK sea necesario."
+    ],
+    "nivel": "intermedio"
+  },
+  {
+    "materia": "BD-REL",
+    "titulo": "Propiedades ACID",
+    "palabras_clave": [
+      "acid",
+      "atomicity",
+      "consistency",
+      "isolation",
+      "durability",
+      "transacciones sql"
+    ],
+    "sinonimos": [
+      "propiedades acid",
+      "reglas de transacciones",
+      "acid database"
+    ],
+    "variantes_comunes": [
+      "q significa acid",
+      "atomicity consistency isolation durability",
+      "acid sql",
+      "como funcionan las propiedades acid",
+      "database reliability"
+    ],
+    "contenido": "Las propiedades ACID garantizan que las transacciones en una base de datos sean seguras y confiables. Atomicity asegura que todas las operaciones ocurran o ninguna. Consistency mantiene reglas válidas. Isolation evita conflictos entre transacciones simultáneas. Durability garantiza que los datos permanezcan guardados incluso después de fallos del sistema.",
+    "ejemplos": [
+      "Transferencias bancarias seguras.",
+      "Evitar pérdida de datos en compras.",
+      "Protección ante apagones o errores."
+    ],
+    "ejercicios": [
+      "Explica cada propiedad ACID.",
+      "Da ejemplos reales de atomicidad.",
+      "Investiga cómo MySQL implementa ACID."
+    ],
+    "nivel": "intermedio"
+  },
+  {
+    "materia": "BD-REL",
+    "titulo": "Vistas VIEW en SQL",
+    "palabras_clave": [
+      "views sql",
+      "vista sql",
+      "virtual tables",
+      "consultas guardadas",
+      "database view"
+    ],
+    "sinonimos": [
+      "vista virtual",
+      "sql views",
+      "tablas virtuales"
+    ],
+    "variantes_comunes": [
+      "q es una view",
+      "como usar vistas sql",
+      "virtual table sql",
+      "views mysql",
+      "consultas guardadas"
+    ],
+    "contenido": "Una VIEW es una tabla virtual creada a partir de una consulta SQL. No almacena datos físicamente, sino que muestra resultados dinámicos basados en otras tablas. Las vistas simplifican consultas complejas, mejoran seguridad y facilitan reutilización de código SQL.",
+    "ejemplos": [
+      "CREATE VIEW alumnos_activos AS SELECT * FROM alumnos WHERE activo=1;",
+      "Vista para reportes financieros.",
+      "Vista simplificada para usuarios administrativos."
+    ],
+    "ejercicios": [
+      "Crea una VIEW básica.",
+      "Explica ventajas de usar vistas.",
+      "Investiga diferencias entre VIEW y tabla normal."
+    ],
+    "nivel": "intermedio"
+  },
+  {
+    "materia": "BD-REL",
+    "titulo": "Stored Procedures en SQL",
+    "palabras_clave": [
+      "stored procedures",
+      "procedimientos almacenados",
+      "sql procedures",
+      "automatizacion sql",
+      "mysql procedure"
+    ],
+    "sinonimos": [
+      "procedimientos sql",
+      "stored proc",
+      "procedimientos almacenados"
+    ],
+    "variantes_comunes": [
+      "q es un stored procedure",
+      "como usar procedures sql",
+      "automatizar consultas mysql",
+      "stored procedure explained",
+      "sql automation"
+    ],
+    "contenido": "Los Stored Procedures son bloques de código SQL almacenados dentro de la base de datos que pueden ejecutarse múltiples veces. Permiten automatizar tareas, reutilizar lógica y mejorar seguridad. Son comunes en sistemas empresariales para validar información, generar reportes y ejecutar procesos complejos.",
+    "ejemplos": [
+      "Procedimiento para registrar usuarios.",
+      "Automatización de reportes mensuales.",
+      "Procedure para actualizar inventario."
+    ],
+    "ejercicios": [
+      "Investiga sintaxis de CREATE PROCEDURE.",
+      "Explica ventajas de automatizar tareas SQL.",
+      "Diseña un procedimiento simple."
+    ],
+    "nivel": "avanzado"
+  },
+  {
+    "materia": "BD-REL",
+    "titulo": "Funciones de agregación en SQL",
+    "palabras_clave": [
+      "funciones sql",
+      "count sql",
+      "sum sql",
+      "avg sql",
+      "max sql",
+      "min sql",
+      "aggregate functions"
+    ],
+    "sinonimos": [
+      "funciones de agregacion",
+      "aggregate functions",
+      "funciones matematicas sql"
+    ],
+    "variantes_comunes": [
+      "q son las funciones de agregacion",
+      "como usar count sql",
+      "sum y avg sql",
+      "aggregate functions mysql",
+      "funciones matematicas database"
+    ],
+    "contenido": "Las funciones de agregación en SQL permiten realizar cálculos sobre múltiples registros y devolver un único resultado. Son muy utilizadas para generar estadísticas, reportes y análisis de información. Las funciones más comunes son COUNT para contar registros, SUM para sumar valores, AVG para calcular promedios, MAX para encontrar el valor máximo y MIN para obtener el mínimo. Estas funciones suelen combinarse con GROUP BY para analizar conjuntos específicos de datos. Son esenciales en dashboards, sistemas administrativos y aplicaciones empresariales donde se necesita resumir información rápidamente.",
+    "ejemplos": [
+      "SELECT COUNT(*) FROM usuarios;",
+      "SELECT AVG(precio) FROM productos;",
+      "SELECT MAX(calificacion) FROM alumnos;"
+    ],
+    "ejercicios": [
+      "Cuenta cuántos usuarios existen en una tabla.",
+      "Calcula el promedio de edades.",
+      "Explica la diferencia entre SUM y AVG."
+    ],
+    "nivel": "intermedio"
+  },
+  {
+    "materia": "BD-REL",
+    "titulo": "GROUP BY en SQL",
+    "palabras_clave": [
+      "group by",
+      "agrupar datos",
+      "sql grouping",
+      "consultas agrupadas",
+      "aggregate queries"
+    ],
+    "sinonimos": [
+      "agrupacion sql",
+      "grouping records",
+      "consultas agrupadas"
+    ],
+    "variantes_comunes": [
+      "q hace group by",
+      "como agrupar datos sql",
+      "group by mysql",
+      "consultas agrupadas",
+      "aggregate query explained"
+    ],
+    "contenido": "GROUP BY es una cláusula SQL utilizada para agrupar registros que comparten valores iguales en ciertas columnas. Se utiliza principalmente junto con funciones de agregación para resumir información. Por ejemplo, se puede calcular cuántos alumnos hay por carrera o el promedio de ventas por mes. Esta herramienta es muy importante para análisis de datos y generación de reportes.",
+    "ejemplos": [
+      "SELECT carrera, COUNT(*) FROM alumnos GROUP BY carrera;",
+      "SELECT categoria, AVG(precio) FROM productos GROUP BY categoria;",
+      "SELECT ciudad, SUM(ventas) FROM clientes GROUP BY ciudad;"
+    ],
+    "ejercicios": [
+      "Agrupa usuarios por edad.",
+      "Cuenta productos por categoría.",
+      "Explica para qué sirve GROUP BY."
+    ],
+    "nivel": "intermedio"
+  },
+  {
+    "materia": "BD-REL",
+    "titulo": "HAVING en SQL",
+    "palabras_clave": [
+      "having sql",
+      "filtrar grupos",
+      "group by having",
+      "sql conditions",
+      "aggregate filter"
+    ],
+    "sinonimos": [
+      "filtro de grupos",
+      "having clause",
+      "condiciones agrupadas"
+    ],
+    "variantes_comunes": [
+      "q hace having",
+      "difference where and having",
+      "having mysql",
+      "filtrar group by",
+      "sql aggregate filter"
+    ],
+    "contenido": "HAVING es una cláusula SQL utilizada para filtrar resultados después de aplicar GROUP BY. Mientras WHERE filtra registros individuales, HAVING filtra grupos completos. Esto permite trabajar con resultados agregados y aplicar condiciones sobre cálculos como COUNT o AVG.",
+    "ejemplos": [
+      "SELECT carrera, COUNT(*) FROM alumnos GROUP BY carrera HAVING COUNT(*) > 10;",
+      "SELECT categoria, AVG(precio) FROM productos GROUP BY categoria HAVING AVG(precio)>500;",
+      "Mostrar ciudades con más de 100 clientes."
+    ],
+    "ejercicios": [
+      "Explica la diferencia entre WHERE y HAVING.",
+      "Crea una consulta con GROUP BY y HAVING.",
+      "Filtra grupos usando COUNT."
+    ],
+    "nivel": "intermedio"
+  },
+  {
+    "materia": "BD-REL",
+    "titulo": "Operadores lógicos en SQL",
+    "palabras_clave": [
+      "and sql",
+      "or sql",
+      "not sql",
+      "operadores logicos",
+      "condiciones sql"
+    ],
+    "sinonimos": [
+      "logical operators",
+      "operadores booleanos",
+      "condiciones lógicas"
+    ],
+    "variantes_comunes": [
+      "q significa and en sql",
+      "como usar or sql",
+      "not sql meaning",
+      "operadores logicos mysql",
+      "sql conditions"
+    ],
+    "contenido": "Los operadores lógicos permiten combinar múltiples condiciones en consultas SQL. AND requiere que todas las condiciones sean verdaderas, OR necesita que al menos una lo sea y NOT invierte una condición. Estos operadores ayudan a construir filtros avanzados y búsquedas más precisas.",
+    "ejemplos": [
+      "SELECT * FROM alumnos WHERE edad>18 AND carrera='Sistemas';",
+      "SELECT * FROM productos WHERE precio<100 OR stock>50;",
+      "SELECT * FROM usuarios WHERE NOT activo=0;"
+    ],
+    "ejercicios": [
+      "Haz una consulta usando AND.",
+      "Combina condiciones con OR.",
+      "Explica cómo funciona NOT."
+    ],
+    "nivel": "basico"
+  },
+  {
+    "materia": "BD-REL",
+    "titulo": "LIKE y búsquedas de texto",
+    "palabras_clave": [
+      "like sql",
+      "buscar texto",
+      "wildcards sql",
+      "patrones sql",
+      "search database"
+    ],
+    "sinonimos": [
+      "busqueda parcial",
+      "pattern matching",
+      "texto sql"
+    ],
+    "variantes_comunes": [
+      "q hace like",
+      "como buscar palabras sql",
+      "wildcards mysql",
+      "search text database",
+      "like operator"
+    ],
+    "contenido": "LIKE es un operador SQL utilizado para buscar patrones dentro de cadenas de texto. Utiliza caracteres especiales llamados wildcards, como % para representar múltiples caracteres y _ para representar uno solo. Es muy útil para búsquedas parciales y sistemas de búsqueda textual.",
+    "ejemplos": [
+      "SELECT * FROM usuarios WHERE nombre LIKE 'J%';",
+      "Buscar productos que contengan 'phone'.",
+      "SELECT * FROM alumnos WHERE correo LIKE '%gmail.com';"
+    ],
+    "ejercicios": [
+      "Haz una búsqueda usando LIKE.",
+      "Explica qué significa %. ",
+      "Investiga otros wildcards."
+    ],
+    "nivel": "intermedio"
+  },
+  {
+    "materia": "BD-REL",
+    "titulo": "Subconsultas en SQL",
+    "palabras_clave": [
+      "subquery",
+      "subconsulta",
+      "nested query",
+      "consultas anidadas",
+      "advanced sql"
+    ],
+    "sinonimos": [
+      "nested query",
+      "consulta interna",
+      "subquery sql"
+    ],
+    "variantes_comunes": [
+      "q es una subconsulta",
+      "como hacer subqueries",
+      "nested query sql",
+      "consultas dentro de consultas",
+      "advanced mysql queries"
+    ],
+    "contenido": "Una subconsulta es una consulta SQL dentro de otra consulta. Se utilizan para resolver problemas complejos dividiendo operaciones en pasos más pequeños. Las subconsultas pueden aparecer en SELECT, FROM o WHERE. Son muy útiles para comparaciones, filtros avanzados y cálculos dinámicos.",
+    "ejemplos": [
+      "SELECT nombre FROM alumnos WHERE edad > (SELECT AVG(edad) FROM alumnos);",
+      "Buscar productos con precio mayor al promedio.",
+      "Subconsulta para obtener usuarios activos."
+    ],
+    "ejercicios": [
+      "Crea una subconsulta simple.",
+      "Explica cuándo usar subqueries.",
+      "Investiga diferencia entre subconsulta y JOIN."
+    ],
+    "nivel": "intermedio"
+  },
+  {
+    "materia": "BD-REL",
+    "titulo": "Tipos de relaciones en bases de datos",
+    "palabras_clave": [
+      "one to one",
+      "one to many",
+      "many to many",
+      "database relationships",
+      "relaciones sql"
+    ],
+    "sinonimos": [
+      "tipos de relaciones",
+      "database relations",
+      "cardinalidad"
+    ],
+    "variantes_comunes": [
+      "q es one to many",
+      "tipos de relaciones sql",
+      "many to many explained",
+      "cardinality database",
+      "relaciones entre tablas"
+    ],
+    "contenido": "Las bases de datos relacionales utilizan diferentes tipos de relaciones entre tablas. One to One conecta un registro con otro único registro. One to Many conecta un registro con varios registros relacionados. Many to Many conecta múltiples registros de ambas tablas y normalmente requiere una tabla intermedia. Estas relaciones son fundamentales para modelar sistemas reales.",
+    "ejemplos": [
+      "Usuario y perfil personal = One to One.",
+      "Cliente y pedidos = One to Many.",
+      "Alumnos y materias = Many to Many."
+    ],
+    "ejercicios": [
+      "Identifica relaciones en un sistema escolar.",
+      "Explica cuándo usar Many to Many.",
+      "Diseña tablas relacionadas."
+    ],
+    "nivel": "intermedio"
+  },
+  {
+    "materia": "BD-REL",
+    "titulo": "CREATE TABLE en SQL",
+    "palabras_clave": [
+      "create table",
+      "crear tablas",
+      "sql schema",
+      "database structure",
+      "ddl sql"
+    ],
+    "sinonimos": [
+      "crear estructura",
+      "table creation",
+      "definir tablas"
+    ],
+    "variantes_comunes": [
+      "como crear tablas sql",
+      "q hace create table",
+      "ddl mysql",
+      "crear tablas database",
+      "sql schema creation"
+    ],
+    "contenido": "CREATE TABLE es una instrucción SQL utilizada para definir nuevas tablas dentro de una base de datos. Permite especificar nombres de columnas, tipos de datos y restricciones. Es parte del lenguaje DDL (Data Definition Language), encargado de definir estructuras de bases de datos.",
+    "ejemplos": [
+      "CREATE TABLE usuarios(id INT, nombre VARCHAR(50));",
+      "Crear tabla alumnos con primary key.",
+      "Definir columnas y restricciones."
+    ],
+    "ejercicios": [
+      "Crea una tabla para productos.",
+      "Agrega una primary key.",
+      "Explica qué es DDL."
+    ],
+    "nivel": "basico"
+  },
+  {
+    "materia": "BD-REL",
+    "titulo": "ALTER TABLE en SQL",
+    "palabras_clave": [
+      "alter table",
+      "modificar tablas",
+      "sql schema changes",
+      "editar estructura",
+      "database modification"
+    ],
+    "sinonimos": [
+      "modificar tabla",
+      "editar estructura sql",
+      "schema update"
+    ],
+    "variantes_comunes": [
+      "q hace alter table",
+      "como modificar tablas sql",
+      "add column mysql",
+      "schema modification",
+      "alter sql"
+    ],
+    "contenido": "ALTER TABLE es una instrucción SQL utilizada para modificar estructuras existentes. Permite agregar columnas, eliminar campos, cambiar tipos de datos o agregar restricciones. Esta operación es común cuando una aplicación evoluciona y necesita nuevas funcionalidades.",
+    "ejemplos": [
+      "ALTER TABLE usuarios ADD telefono VARCHAR(20);",
+      "Modificar tipo de dato en una columna.",
+      "Agregar constraint UNIQUE."
+    ],
+    "ejercicios": [
+      "Agrega una columna a una tabla.",
+      "Cambia el tipo de dato de un campo.",
+      "Explica cuándo usar ALTER TABLE."
+    ],
+    "nivel": "intermedio"
+  },
+  {
+    "materia": "BD-REL",
+    "titulo": "DROP TABLE y eliminación de estructuras",
+    "palabras_clave": [
+      "drop table",
+      "eliminar tablas",
+      "borrar estructura sql",
+      "database deletion",
+      "ddl commands"
+    ],
+    "sinonimos": [
+      "eliminar tabla",
+      "drop sql",
+      "borrar estructura"
+    ],
+    "variantes_comunes": [
+      "q hace drop table",
+      "como borrar tablas sql",
+      "drop mysql",
+      "eliminar estructura database",
+      "ddl delete"
+    ],
+    "contenido": "DROP TABLE elimina completamente una tabla junto con todos sus registros y estructura. Esta operación es irreversible en la mayoría de los casos si no existen respaldos. DROP pertenece al lenguaje DDL y debe utilizarse con cuidado en entornos reales.",
+    "ejemplos": [
+      "DROP TABLE usuarios;",
+      "Eliminar tablas temporales.",
+      "Borrar estructuras antiguas."
+    ],
+    "ejercicios": [
+      "Explica riesgos de DROP TABLE.",
+      "Investiga diferencia entre DELETE y DROP.",
+      "Haz un ejemplo de eliminación de tabla."
+    ],
+    "nivel": "intermedio"
+  },
+  {
+    "materia": "BD-REL",
+    "titulo": "Triggers en SQL",
+    "palabras_clave": [
+      "trigger sql",
+      "database trigger",
+      "automatizacion database",
+      "eventos sql",
+      "sql trigger mysql",
+      "acciones automaticas"
+    ],
+    "sinonimos": [
+      "disparadores sql",
+      "triggers database",
+      "event driven sql"
+    ],
+    "variantes_comunes": [
+      "q es un trigger",
+      "como funcionan los triggers sql",
+      "automatizar acciones mysql",
+      "database events",
+      "trigger explained"
+    ],
+    "contenido": "Un trigger es un bloque de código SQL que se ejecuta automáticamente cuando ocurre un evento específico dentro de una tabla, como INSERT, UPDATE o DELETE. Los triggers son utilizados para automatizar tareas, validar información, generar auditorías y mantener integridad de datos. Por ejemplo, un trigger puede registrar automáticamente cambios importantes realizados por usuarios o actualizar tablas relacionadas sin intervención manual. Existen triggers BEFORE y AFTER dependiendo de si se ejecutan antes o después del evento principal.",
+    "ejemplos": [
+      "Registrar automáticamente cambios de precios.",
+      "Guardar historial de movimientos bancarios.",
+      "Actualizar inventario después de una compra."
+    ],
+    "ejercicios": [
+      "Explica la diferencia entre BEFORE y AFTER trigger.",
+      "Diseña un trigger para auditoría.",
+      "Investiga riesgos de usar demasiados triggers."
+    ],
+    "nivel": "avanzado"
+  },
+  {
+    "materia": "BD-REL",
+    "titulo": "Respaldos y backups de bases de datos",
+    "palabras_clave": [
+      "backup database",
+      "respaldos sql",
+      "copias de seguridad",
+      "database recovery",
+      "mysql backup",
+      "restore database"
+    ],
+    "sinonimos": [
+      "copias de seguridad",
+      "respaldo de datos",
+      "database backup"
+    ],
+    "variantes_comunes": [
+      "como hacer backup mysql",
+      "q es un respaldo database",
+      "restore sql",
+      "copias de seguridad sql",
+      "database recovery explained"
+    ],
+    "contenido": "Los respaldos o backups son copias de seguridad de una base de datos utilizadas para recuperar información en caso de fallos, errores humanos, ataques o pérdida de datos. Son fundamentales en cualquier sistema profesional. Existen respaldos completos, incrementales y diferenciales. Además, muchos DBMS permiten automatizar backups periódicos para garantizar continuidad operativa. Restaurar correctamente una base de datos es una habilidad esencial para administradores.",
+    "ejemplos": [
+      "mysqldump en MySQL.",
+      "Respaldos automáticos diarios.",
+      "Recuperación después de un fallo del servidor."
+    ],
+    "ejercicios": [
+      "Investiga cómo hacer backups en MySQL.",
+      "Explica diferencia entre backup completo e incremental.",
+      "Menciona riesgos de no tener respaldos."
+    ],
+    "nivel": "intermedio"
+  },
+  {
+    "materia": "BD-REL",
+    "titulo": "Seguridad en bases de datos",
+    "palabras_clave": [
+      "database security",
+      "seguridad sql",
+      "usuarios y permisos",
+      "authentication database",
+      "roles sql",
+      "proteccion de datos"
+    ],
+    "sinonimos": [
+      "seguridad de datos",
+      "proteccion database",
+      "database protection"
+    ],
+    "variantes_comunes": [
+      "como proteger una base de datos",
+      "q es database security",
+      "usuarios mysql",
+      "permisos sql",
+      "database authentication"
+    ],
+    "contenido": "La seguridad en bases de datos consiste en proteger la información contra accesos no autorizados, modificaciones indebidas o pérdida de datos. Incluye autenticación de usuarios, control de permisos, cifrado, auditorías y prevención de ataques como SQL Injection. Los administradores pueden asignar roles específicos para limitar acciones dependiendo del usuario. La seguridad es crítica en bancos, hospitales, sistemas escolares y cualquier plataforma que maneje información sensible.",
+    "ejemplos": [
+      "Usuarios con permisos de solo lectura.",
+      "Protección contra SQL Injection.",
+      "Bases de datos cifradas."
+    ],
+    "ejercicios": [
+      "Explica qué es SQL Injection.",
+      "Investiga cómo funcionan los permisos en MySQL.",
+      "Menciona medidas de seguridad importantes."
+    ],
+    "nivel": "intermedio"
+  },
+  {
+    "materia": "BD-REL",
+    "titulo": "SQL Injection",
+    "palabras_clave": [
+      "sql injection",
+      "inyeccion sql",
+      "ciberseguridad",
+      "hackeo database",
+      "vulnerabilidades sql",
+      "ataques sql"
+    ],
+    "sinonimos": [
+      "inyeccion de consultas",
+      "sql attack",
+      "database exploit"
+    ],
+    "variantes_comunes": [
+      "q es sql injection",
+      "como funciona sql injection",
+      "hackear bases de datos",
+      "sql vulnerabilities",
+      "database attack explained"
+    ],
+    "contenido": "SQL Injection es una vulnerabilidad de seguridad donde un atacante inserta código SQL malicioso dentro de formularios o entradas de usuario para manipular consultas. Esto puede permitir acceso no autorizado, robo de información o eliminación de datos. La mejor forma de prevenirlo es utilizando consultas preparadas, validación de entradas y sistemas ORM seguros. SQL Injection es uno de los ataques más conocidos en aplicaciones web.",
+    "ejemplos": [
+      "Manipulación de formularios de login.",
+      "Consultas inseguras concatenando texto.",
+      "Acceso indebido a información confidencial."
+    ],
+    "ejercicios": [
+      "Explica cómo prevenir SQL Injection.",
+      "Investiga prepared statements.",
+      "Menciona riesgos de concatenar consultas."
+    ],
+    "nivel": "avanzado"
+  },
+  {
+    "materia": "BD-REL",
+    "titulo": "ORM y bases de datos relacionales",
+    "palabras_clave": [
+      "orm",
+      "object relational mapping",
+      "sequelize",
+      "hibernate",
+      "entity framework",
+      "database abstraction"
+    ],
+    "sinonimos": [
+      "mapeo objeto relacional",
+      "orm framework",
+      "database mapper"
+    ],
+    "variantes_comunes": [
+      "q es un orm",
+      "como funciona sequelize",
+      "orm explained",
+      "object relational mapping meaning",
+      "database abstraction layer"
+    ],
+    "contenido": "Un ORM (Object Relational Mapping) es una tecnología que permite interactuar con bases de datos utilizando objetos y clases en lugar de escribir SQL manualmente. Los ORMs simplifican desarrollo, reducen errores y aceleran la construcción de aplicaciones. Frameworks populares incluyen Sequelize para JavaScript, Hibernate para Java y Entity Framework para .NET. Aunque facilitan programación, también pueden generar consultas menos optimizadas en sistemas grandes.",
+    "ejemplos": [
+      "Sequelize en Node.js.",
+      "Hibernate en aplicaciones Java.",
+      "Entity Framework en C#."
+    ],
+    "ejercicios": [
+      "Investiga ventajas y desventajas de usar ORM.",
+      "Explica diferencia entre ORM y SQL puro.",
+      "Menciona ORMs populares."
+    ],
+    "nivel": "intermedio"
+  },
+  {
+    "materia": "BD-REL",
+    "titulo": "Optimización de consultas SQL",
+    "palabras_clave": [
+      "sql optimization",
+      "query optimization",
+      "database performance",
+      "consultas lentas",
+      "optimize sql",
+      "performance tuning"
+    ],
+    "sinonimos": [
+      "optimizar queries",
+      "performance sql",
+      "ajuste de rendimiento"
+    ],
+    "variantes_comunes": [
+      "como optimizar consultas sql",
+      "q hace lenta una query",
+      "performance mysql",
+      "optimize database queries",
+      "slow sql queries"
+    ],
+    "contenido": "La optimización de consultas busca mejorar el rendimiento de operaciones SQL reduciendo tiempos de respuesta y consumo de recursos. Algunas estrategias incluyen crear índices adecuados, evitar SELECT *, reducir subconsultas innecesarias y analizar planes de ejecución. En sistemas grandes, una mala consulta puede afectar miles de usuarios simultáneamente.",
+    "ejemplos": [
+      "Uso de índices para acelerar búsquedas.",
+      "Reducir joins innecesarios.",
+      "Optimizar consultas en dashboards."
+    ],
+    "ejercicios": [
+      "Explica por qué SELECT * puede ser ineficiente.",
+      "Investiga EXPLAIN en MySQL.",
+      "Menciona técnicas de optimización."
+    ],
+    "nivel": "avanzado"
+  },
+  {
+    "materia": "BD-REL",
+    "titulo": "Replicación de bases de datos",
+    "palabras_clave": [
+      "database replication",
+      "replicacion sql",
+      "master slave",
+      "high availability",
+      "replicated database",
+      "database scaling"
+    ],
+    "sinonimos": [
+      "replicacion de datos",
+      "database mirroring",
+      "replicated systems"
+    ],
+    "variantes_comunes": [
+      "q es replication database",
+      "como funciona master slave",
+      "database replication explained",
+      "replicated mysql servers",
+      "high availability sql"
+    ],
+    "contenido": "La replicación consiste en copiar automáticamente información de una base de datos hacia otros servidores. Esto mejora disponibilidad, rendimiento y tolerancia a fallos. Un modelo común es Master-Slave, donde un servidor principal recibe escrituras y otros servidores manejan lecturas. La replicación es utilizada en plataformas grandes para soportar millones de usuarios.",
+    "ejemplos": [
+      "Replicar datos entre servidores.",
+      "Sistemas distribuidos con múltiples réplicas.",
+      "Escalabilidad en aplicaciones web."
+    ],
+    "ejercicios": [
+      "Explica ventajas de la replicación.",
+      "Investiga diferencias entre replicación y backup.",
+      "Menciona casos reales donde se use replicación."
+    ],
+    "nivel": "avanzado"
+  },
+  {
+    "materia": "BD-REL",
+    "titulo": "Sharding y particionamiento",
+    "palabras_clave": [
+      "sharding",
+      "database partitioning",
+      "particionamiento",
+      "escalabilidad database",
+      "horizontal scaling",
+      "distributed databases"
+    ],
+    "sinonimos": [
+      "fragmentacion de datos",
+      "particionado database",
+      "horizontal partitioning"
+    ],
+    "variantes_comunes": [
+      "q es sharding",
+      "como funciona database partitioning",
+      "horizontal scaling sql",
+      "distributed database explained",
+      "particionamiento mysql"
+    ],
+    "contenido": "El sharding es una técnica utilizada para dividir grandes cantidades de datos en múltiples servidores o fragmentos llamados shards. Cada shard almacena una parte específica de la información. Esto permite distribuir carga y mejorar escalabilidad horizontal. Es común en sistemas enormes como redes sociales, videojuegos online y plataformas globales.",
+    "ejemplos": [
+      "Separar usuarios por región.",
+      "Distribuir millones de registros entre servidores.",
+      "Escalabilidad en plataformas masivas."
+    ],
+    "ejercicios": [
+      "Explica diferencia entre sharding y replicación.",
+      "Investiga cuándo se necesita particionamiento.",
+      "Menciona ventajas del escalado horizontal."
+    ],
+    "nivel": "avanzado"
+  },
+  {
+    "materia": "BD-REL",
+    "titulo": "Diferencias entre SQL y NoSQL",
+    "palabras_clave": [
+      "sql vs nosql",
+      "bases de datos",
+      "mongodb",
+      "relational vs non relational",
+      "database comparison",
+      "nosql explained"
+    ],
+    "sinonimos": [
+      "comparacion sql nosql",
+      "relational vs nosql",
+      "database types"
+    ],
+    "variantes_comunes": [
+      "q diferencia hay entre sql y nosql",
+      "mongodb vs mysql",
+      "relational database vs nosql",
+      "sql or nosql",
+      "database comparison explained"
+    ],
+    "contenido": "Las bases de datos SQL utilizan tablas y relaciones estructuradas, mientras que las NoSQL almacenan información de manera más flexible usando documentos, grafos o clave-valor. SQL destaca en consistencia e integridad relacional, mientras que NoSQL sobresale en escalabilidad y manejo de datos no estructurados. La elección depende del tipo de aplicación y necesidades del sistema.",
+    "ejemplos": [
+      "MySQL como SQL.",
+      "MongoDB como NoSQL.",
+      "Aplicaciones financieras usando SQL."
+    ],
+    "ejercicios": [
+      "Explica ventajas de SQL.",
+      "Investiga cuándo usar NoSQL.",
+      "Compara MySQL y MongoDB."
+    ],
+    "nivel": "intermedio"
+  },
+  {
+    "materia": "BD-REL",
+    "titulo": "Administrador de Bases de Datos (DBA)",
+    "palabras_clave": [
+      "dba",
+      "database administrator",
+      "administracion database",
+      "sql administrator",
+      "database maintenance",
+      "database management"
+    ],
+    "sinonimos": [
+      "administrador de bases de datos",
+      "database admin",
+      "dba role"
+    ],
+    "variantes_comunes": [
+      "q hace un dba",
+      "database administrator meaning",
+      "trabajo de administrador sql",
+      "funciones de un dba",
+      "database maintenance explained"
+    ],
+    "contenido": "El DBA o Database Administrator es el profesional encargado de administrar, optimizar, proteger y mantener bases de datos. Sus responsabilidades incluyen respaldos, seguridad, monitoreo de rendimiento, recuperación ante fallos y optimización de consultas. En empresas grandes, los DBA son esenciales para garantizar disponibilidad y estabilidad de sistemas críticos.",
+    "ejemplos": [
+      "Monitoreo de servidores SQL.",
+      "Optimización de consultas lentas.",
+      "Gestión de seguridad y respaldos."
+    ],
+    "ejercicios": [
+      "Investiga habilidades necesarias para ser DBA.",
+      "Explica responsabilidades de un administrador de bases de datos.",
+      "Menciona herramientas usadas por DBAs."
+    ],
+    "nivel": "general"
+  },
+  {
+    "materia": "BD-REL",
+    "titulo": "Arquitectura cliente-servidor en bases de datos",
+    "palabras_clave": [
+      "cliente servidor",
+      "database architecture",
+      "sql server architecture",
+      "client server database",
+      "backend database",
+      "database communication"
+    ],
+    "sinonimos": [
+      "arquitectura cliente-servidor",
+      "modelo cliente servidor",
+      "database client server"
+    ],
+    "variantes_comunes": [
+      "q es cliente servidor en bases de datos",
+      "como funciona sql server architecture",
+      "database backend explained",
+      "client server mysql",
+      "arquitectura de una base de datos"
+    ],
+    "contenido": "La arquitectura cliente-servidor es el modelo más utilizado en sistemas de bases de datos relacionales. En este modelo, el cliente es la aplicación o usuario que solicita información y el servidor es el sistema encargado de procesar consultas SQL, almacenar datos y devolver resultados. Por ejemplo, cuando un usuario inicia sesión en una aplicación escolar, la app actúa como cliente y el servidor de base de datos valida credenciales y devuelve información. Este modelo permite centralizar datos, mejorar seguridad y soportar múltiples usuarios simultáneamente. Además, facilita escalabilidad, mantenimiento y control de acceso. Sistemas como MySQL, PostgreSQL y SQL Server funcionan bajo este enfoque. En arquitecturas modernas, el cliente puede ser una aplicación web, móvil o API que se comunica con el servidor mediante protocolos específicos.",
+    "ejemplos": [
+      "Aplicación web conectada a MySQL.",
+      "Sistema escolar donde estudiantes consultan calificaciones.",
+      "Backend de una tienda online conectado a PostgreSQL."
+    ],
+    "ejercicios": [
+      "Explica diferencia entre cliente y servidor.",
+      "Investiga cómo se conecta una app a MySQL.",
+      "Menciona ventajas del modelo cliente-servidor."
+    ],
+    "nivel": "general"
+  },
+  {
+    "materia": "BD-REL",
+    "titulo": "Motores de almacenamiento en MySQL",
+    "palabras_clave": [
+      "storage engine",
+      "innodb",
+      "myisam",
+      "mysql engines",
+      "database engine",
+      "almacenamiento sql"
+    ],
+    "sinonimos": [
+      "motores de almacenamiento",
+      "mysql engines",
+      "database storage engine"
+    ],
+    "variantes_comunes": [
+      "q es innodb",
+      "difference innodb and myisam",
+      "mysql storage engines",
+      "como funciona el motor de mysql",
+      "database engine explained"
+    ],
+    "contenido": "Los motores de almacenamiento son componentes internos de MySQL encargados de administrar cómo se guardan, organizan y recuperan los datos físicamente. Los motores más conocidos son InnoDB y MyISAM. InnoDB es el más utilizado porque soporta transacciones, integridad referencial y propiedades ACID. MyISAM, aunque más rápido en algunas lecturas simples, no soporta transacciones ni foreign keys. Elegir el motor adecuado depende del tipo de aplicación y necesidades de rendimiento. Por ejemplo, sistemas bancarios requieren InnoDB debido a su confiabilidad, mientras que aplicaciones simples de lectura podrían usar motores más ligeros.",
+    "ejemplos": [
+      "InnoDB usado en aplicaciones empresariales.",
+      "MyISAM utilizado en proyectos antiguos.",
+      "Motores especializados para almacenamiento temporal."
+    ],
+    "ejercicios": [
+      "Explica diferencias entre InnoDB y MyISAM.",
+      "Investiga qué motor usa MySQL por defecto.",
+      "Menciona ventajas de InnoDB."
+    ],
+    "nivel": "intermedio"
+  },
+  {
+    "materia": "BD-REL",
+    "titulo": "Plan de ejecución de consultas SQL",
+    "palabras_clave": [
+      "execution plan",
+      "query planner",
+      "sql explain",
+      "database optimizer",
+      "query analysis",
+      "performance sql"
+    ],
+    "sinonimos": [
+      "plan de ejecucion",
+      "query execution plan",
+      "optimizador sql"
+    ],
+    "variantes_comunes": [
+      "q es explain sql",
+      "como analizar consultas mysql",
+      "execution plan explained",
+      "database optimizer mysql",
+      "sql performance analysis"
+    ],
+    "contenido": "El plan de ejecución es la estrategia que utiliza el DBMS para ejecutar una consulta SQL. El optimizador analiza múltiples formas posibles de acceder a los datos y selecciona la más eficiente. Herramientas como EXPLAIN en MySQL permiten visualizar cómo el sistema ejecutará una consulta, qué índices utilizará y cuántos registros recorrerá. Analizar planes de ejecución es esencial para optimizar rendimiento en sistemas grandes. Consultas mal diseñadas pueden provocar lentitud extrema y alto consumo de recursos.",
+    "ejemplos": [
+      "Uso de EXPLAIN SELECT * FROM usuarios;",
+      "Detectar consultas que no usan índices.",
+      "Optimizar búsquedas complejas."
+    ],
+    "ejercicios": [
+      "Investiga cómo funciona EXPLAIN.",
+      "Explica por qué algunas consultas son lentas.",
+      "Menciona ventajas de analizar execution plans."
+    ],
+    "nivel": "avanzado"
+  },
+  {
+    "materia": "BD-REL",
+    "titulo": "Locks y concurrencia en bases de datos",
+    "palabras_clave": [
+      "database locks",
+      "concurrencia sql",
+      "locking database",
+      "simultaneous transactions",
+      "sql concurrency",
+      "deadlocks"
+    ],
+    "sinonimos": [
+      "bloqueos de datos",
+      "control de concurrencia",
+      "database locking"
+    ],
+    "variantes_comunes": [
+      "q es un lock en sql",
+      "como funciona concurrencia database",
+      "deadlock explained",
+      "database locking mysql",
+      "simultaneous transactions"
+    ],
+    "contenido": "La concurrencia ocurre cuando múltiples usuarios o procesos acceden a la misma base de datos al mismo tiempo. Para evitar conflictos, los DBMS utilizan locks o bloqueos. Un lock puede impedir que otros usuarios modifiquen datos mientras una transacción está en progreso. Esto ayuda a mantener consistencia, pero también puede provocar deadlocks, situaciones donde dos transacciones esperan indefinidamente recursos bloqueados. El manejo eficiente de concurrencia es fundamental en aplicaciones bancarias, redes sociales y sistemas empresariales con miles de usuarios simultáneos.",
+    "ejemplos": [
+      "Bloquear saldo bancario durante una transferencia.",
+      "Evitar modificaciones simultáneas conflictivas.",
+      "Deadlock entre dos transacciones."
+    ],
+    "ejercicios": [
+      "Explica qué es un deadlock.",
+      "Investiga tipos de locks.",
+      "Menciona por qué la concurrencia es importante."
+    ],
+    "nivel": "avanzado"
+  },
+  {
+    "materia": "BD-REL",
+    "titulo": "Data Warehouses y bases de datos analíticas",
+    "palabras_clave": [
+      "data warehouse",
+      "analytical database",
+      "business intelligence",
+      "olap",
+      "warehouse sql",
+      "analytics database"
+    ],
+    "sinonimos": [
+      "almacen de datos",
+      "database warehouse",
+      "sistema analitico"
+    ],
+    "variantes_comunes": [
+      "q es un data warehouse",
+      "difference oltp and olap",
+      "business intelligence database",
+      "analytics sql",
+      "warehouse explained"
+    ],
+    "contenido": "Un Data Warehouse es una base de datos diseñada específicamente para análisis y toma de decisiones. A diferencia de bases OLTP enfocadas en transacciones diarias, los warehouses almacenan enormes volúmenes históricos de información para análisis complejos. Son utilizados en Business Intelligence, dashboards y minería de datos. Tecnologías OLAP permiten consultas multidimensionales rápidas sobre millones de registros. Empresas utilizan warehouses para analizar ventas, comportamiento de usuarios y tendencias de mercado.",
+    "ejemplos": [
+      "Dashboard empresarial con estadísticas históricas.",
+      "Análisis de ventas anuales.",
+      "Reportes ejecutivos usando BI."
+    ],
+    "ejercicios": [
+      "Explica diferencia entre OLTP y OLAP.",
+      "Investiga herramientas de Business Intelligence.",
+      "Menciona usos de un Data Warehouse."
+    ],
+    "nivel": "general"
+  },
+  {
+    "materia": "BD-REL",
+    "titulo": "Migraciones de bases de datos",
+    "palabras_clave": [
+      "database migration",
+      "schema migration",
+      "migraciones sql",
+      "database updates",
+      "versioning database",
+      "migration tools"
+    ],
+    "sinonimos": [
+      "migracion de datos",
+      "schema updates",
+      "database versioning"
+    ],
+    "variantes_comunes": [
+      "q es una migracion database",
+      "como funcionan migrations",
+      "database schema updates",
+      "migration tools sql",
+      "version control database"
+    ],
+    "contenido": "Las migraciones son procesos utilizados para modificar estructuras de bases de datos de forma controlada y versionada. Son muy comunes en desarrollo moderno porque las aplicaciones evolucionan constantemente. Una migración puede agregar tablas, cambiar columnas o actualizar relaciones. Herramientas como Sequelize Migrations, Flyway o Liquibase ayudan a mantener sincronizadas las estructuras entre entornos de desarrollo y producción.",
+    "ejemplos": [
+      "Agregar columna telefono mediante migración.",
+      "Actualizar estructura de usuarios.",
+      "Versionar cambios del esquema."
+    ],
+    "ejercicios": [
+      "Explica por qué las migraciones son importantes.",
+      "Investiga herramientas de migrations.",
+      "Menciona riesgos de modificar esquemas manualmente."
+    ],
+    "nivel": "intermedio"
+  },
+  {
+    "materia": "BD-REL",
+    "titulo": "Logs y auditoría en bases de datos",
+    "palabras_clave": [
+      "database logs",
+      "auditoria sql",
+      "activity tracking",
+      "query logs",
+      "database monitoring",
+      "sql auditing"
+    ],
+    "sinonimos": [
+      "registro de actividad",
+      "database auditing",
+      "logs database"
+    ],
+    "variantes_comunes": [
+      "q son los logs sql",
+      "como funciona auditoria database",
+      "query monitoring mysql",
+      "activity tracking database",
+      "sql logs explained"
+    ],
+    "contenido": "Los logs son registros automáticos de eventos y actividades dentro de una base de datos. Permiten monitorear consultas, errores, accesos y modificaciones realizadas por usuarios. La auditoría ayuda a detectar problemas de seguridad, rastrear cambios y cumplir regulaciones legales. Los logs son fundamentales en sistemas críticos donde se necesita trazabilidad completa.",
+    "ejemplos": [
+      "Registrar intentos de login.",
+      "Monitorear consultas lentas.",
+      "Auditoría de cambios administrativos."
+    ],
+    "ejercicios": [
+      "Explica para qué sirven los logs.",
+      "Investiga herramientas de monitoreo SQL.",
+      "Menciona beneficios de la auditoría."
+    ],
+    "nivel": "general"
+  },
+  {
+    "materia": "BD-REL",
+    "titulo": "Escalabilidad vertical y horizontal",
+    "palabras_clave": [
+      "vertical scaling",
+      "horizontal scaling",
+      "database scalability",
+      "scale up",
+      "scale out",
+      "distributed systems"
+    ],
+    "sinonimos": [
+      "escalado vertical",
+      "escalado horizontal",
+      "database scaling"
+    ],
+    "variantes_comunes": [
+      "q es escalabilidad database",
+      "difference scale up and scale out",
+      "horizontal scaling sql",
+      "database scalability explained",
+      "como escalar bases de datos"
+    ],
+    "contenido": "La escalabilidad es la capacidad de un sistema para soportar mayor carga de trabajo. El escalado vertical consiste en aumentar recursos de un servidor, como RAM o CPU. El escalado horizontal agrega más servidores distribuyendo carga. Bases de datos modernas combinan ambas estrategias para soportar millones de usuarios y grandes volúmenes de información.",
+    "ejemplos": [
+      "Agregar RAM al servidor SQL.",
+      "Distribuir consultas entre múltiples nodos.",
+      "Infraestructura de grandes plataformas."
+    ],
+    "ejercicios": [
+      "Explica diferencia entre escalado vertical y horizontal.",
+      "Investiga ejemplos reales de sistemas escalables.",
+      "Menciona ventajas del horizontal scaling."
+    ],
+    "nivel": "general"
+  },
+  {
+    "materia": "BD-REL",
+    "titulo": "Conexiones y pools de conexiones",
+    "palabras_clave": [
+      "connection pool",
+      "database connections",
+      "pooling sql",
+      "mysql connections",
+      "database performance",
+      "backend optimization"
+    ],
+    "sinonimos": [
+      "pool de conexiones",
+      "database pooling",
+      "gestion de conexiones"
+    ],
+    "variantes_comunes": [
+      "q es connection pooling",
+      "como funcionan conexiones mysql",
+      "database pool explained",
+      "backend sql optimization",
+      "pooling database"
+    ],
+    "contenido": "Cada vez que una aplicación se conecta a una base de datos consume recursos del servidor. Crear y cerrar conexiones constantemente puede reducir rendimiento. Los pools de conexiones solucionan esto reutilizando conexiones abiertas. Esto mejora velocidad, reduce consumo y permite manejar más usuarios simultáneamente. Frameworks modernos incluyen sistemas automáticos de pooling.",
+    "ejemplos": [
+      "Pool de conexiones en Node.js.",
+      "Reutilización de conexiones MySQL.",
+      "Optimización de APIs backend."
+    ],
+    "ejercicios": [
+      "Explica ventajas del connection pooling.",
+      "Investiga pools en frameworks modernos.",
+      "Menciona problemas de demasiadas conexiones."
+    ],
+    "nivel": "intermedio"
+  },
+  {
+    "materia": "BD-REL",
+    "titulo": "Bases de datos en la nube",
+    "palabras_clave": [
+      "cloud database",
+      "database as a service",
+      "aws rds",
+      "google cloud sql",
+      "azure database",
+      "cloud sql"
+    ],
+    "sinonimos": [
+      "database cloud",
+      "dbaas",
+      "bases de datos cloud"
+    ],
+    "variantes_comunes": [
+      "q es una cloud database",
+      "database as a service explained",
+      "aws rds mysql",
+      "google cloud sql",
+      "bases de datos en la nube"
+    ],
+    "contenido": "Las bases de datos en la nube son servicios administrados que permiten utilizar motores SQL sin encargarse directamente de infraestructura física. Plataformas como AWS RDS, Google Cloud SQL y Azure Database ofrecen escalabilidad, respaldos automáticos, alta disponibilidad y monitoreo integrado. Esto reduce costos operativos y simplifica administración. Actualmente muchas aplicaciones modernas funcionan completamente en la nube.",
+    "ejemplos": [
+      "MySQL en AWS RDS.",
+      "PostgreSQL en Google Cloud.",
+      "Infraestructura cloud escalable."
+    ],
+    "ejercicios": [
+      "Explica ventajas de usar cloud databases.",
+      "Investiga qué significa DBaaS.",
+      "Compara bases locales vs cloud."
+    ],
+    "nivel": "general"
+  },
+  {
+    "materia": "BD-REL",
+    "titulo": "Historia y evolución de las bases de datos relacionales",
+    "palabras_clave": [
+      "historia sql",
+      "evolucion bases de datos",
+      "edgar codd",
+      "relational model",
+      "database history",
+      "origen sql"
+    ],
+    "sinonimos": [
+      "evolucion de databases",
+      "historia de sql",
+      "modelo relacional"
+    ],
+    "variantes_comunes": [
+      "quien creo las bases de datos relacionales",
+      "q es el modelo relacional",
+      "database history explained",
+      "origen de sql",
+      "edgar codd explained"
+    ],
+    "contenido": "El modelo relacional fue propuesto por Edgar F. Codd en 1970 mientras trabajaba en IBM. Antes de esto, muchas bases de datos utilizaban modelos jerárquicos y de red que eran más complejos y menos flexibles. Codd propuso organizar la información mediante tablas relacionadas matemáticamente, lo que revolucionó la forma de almacenar y consultar datos. Con el tiempo surgieron sistemas como Oracle, MySQL, PostgreSQL y SQL Server, convirtiendo al modelo relacional en el estándar dominante durante décadas. Aunque actualmente existen bases NoSQL, las bases relacionales siguen siendo fundamentales en bancos, empresas, universidades y aplicaciones críticas debido a su consistencia y confiabilidad.",
+    "ejemplos": [
+      "Creación del modelo relacional en IBM.",
+      "Nacimiento de SQL como lenguaje estándar.",
+      "Evolución hacia sistemas cloud modernos."
+    ],
+    "ejercicios": [
+      "Investiga quién fue Edgar Codd.",
+      "Explica diferencias entre modelos antiguos y relacionales.",
+      "Menciona DBMS importantes en la historia."
+    ],
+    "nivel": "general"
+  },
+  {
+    "materia": "BD-REL",
+    "titulo": "Diccionario de datos y metadatos",
+    "palabras_clave": [
+      "data dictionary",
+      "metadata database",
+      "diccionario de datos",
+      "database schema",
+      "informacion estructural",
+      "database metadata"
+    ],
+    "sinonimos": [
+      "metadatos",
+      "data catalog",
+      "estructura descriptiva"
+    ],
+    "variantes_comunes": [
+      "q es un diccionario de datos",
+      "metadata database explained",
+      "database schema information",
+      "como funcionan metadatos sql",
+      "data dictionary meaning"
+    ],
+    "contenido": "El diccionario de datos es una colección de información que describe la estructura de una base de datos. Contiene detalles sobre tablas, columnas, tipos de datos, restricciones, índices y relaciones. Los metadatos son literalmente 'datos sobre datos'. Gracias al diccionario de datos, los administradores y desarrolladores pueden entender cómo está organizada una base de datos sin revisar manualmente cada tabla. Los DBMS modernos almacenan automáticamente esta información y permiten consultarla mediante vistas especiales.",
+    "ejemplos": [
+      "Información sobre columnas y tipos de datos.",
+      "Metadatos almacenados en INFORMATION_SCHEMA.",
+      "Consulta automática de estructuras SQL."
+    ],
+    "ejercicios": [
+      "Explica qué son los metadatos.",
+      "Investiga INFORMATION_SCHEMA en MySQL.",
+      "Menciona usos de un diccionario de datos."
+    ],
+    "nivel": "general"
+  },
+  {
+    "materia": "BD-REL",
+    "titulo": "Integración de bases de datos con APIs",
+    "palabras_clave": [
+      "database api",
+      "backend api sql",
+      "rest api database",
+      "sql integration",
+      "api backend",
+      "database connection"
+    ],
+    "sinonimos": [
+      "integracion backend",
+      "api con sql",
+      "database api integration"
+    ],
+    "variantes_comunes": [
+      "como conectar una api a mysql",
+      "q es rest api database",
+      "backend sql integration",
+      "api with database",
+      "database backend explained"
+    ],
+    "contenido": "Las APIs permiten que aplicaciones se comuniquen con bases de datos de manera segura y estructurada. Normalmente una aplicación frontend no interactúa directamente con MySQL o PostgreSQL, sino que utiliza un backend o API intermedia. Esta API recibe solicitudes, ejecuta consultas SQL y devuelve resultados en formatos como JSON. Frameworks modernos como Express.js, Django o Spring Boot facilitan esta integración. Las APIs ayudan a separar lógica de negocio, mejorar seguridad y permitir que múltiples aplicaciones utilicen la misma base de datos.",
+    "ejemplos": [
+      "API REST conectada a MySQL.",
+      "Backend Node.js consultando usuarios.",
+      "Aplicación móvil consumiendo datos SQL."
+    ],
+    "ejercicios": [
+      "Explica por qué las apps usan APIs.",
+      "Investiga qué es REST.",
+      "Menciona ventajas de separar frontend y backend."
+    ],
+    "nivel": "general"
+  },
+  {
+    "materia": "BD-REL",
+    "titulo": "Monitoreo y métricas de rendimiento",
+    "palabras_clave": [
+      "database monitoring",
+      "sql metrics",
+      "performance monitoring",
+      "database health",
+      "query metrics",
+      "monitoring tools"
+    ],
+    "sinonimos": [
+      "monitoreo sql",
+      "metricas de rendimiento",
+      "database observability"
+    ],
+    "variantes_comunes": [
+      "como monitorear mysql",
+      "database monitoring explained",
+      "metricas sql importantes",
+      "performance tracking database",
+      "health check sql"
+    ],
+    "contenido": "El monitoreo de bases de datos consiste en supervisar constantemente rendimiento, disponibilidad y uso de recursos. Las métricas más importantes incluyen tiempo de respuesta de consultas, uso de CPU, consumo de memoria, cantidad de conexiones activas y operaciones por segundo. Herramientas como Prometheus, Grafana y MySQL Workbench permiten visualizar esta información. El monitoreo es esencial para detectar problemas antes de que afecten usuarios finales.",
+    "ejemplos": [
+      "Detectar consultas lentas.",
+      "Monitorear conexiones activas.",
+      "Visualizar métricas con dashboards."
+    ],
+    "ejercicios": [
+      "Explica por qué el monitoreo es importante.",
+      "Investiga herramientas de observabilidad.",
+      "Menciona métricas críticas en SQL."
+    ],
+    "nivel": "general"
+  },
+  {
+    "materia": "BD-REL",
+    "titulo": "Alta disponibilidad en bases de datos",
+    "palabras_clave": [
+      "high availability",
+      "database uptime",
+      "fault tolerance",
+      "redundancy sql",
+      "cluster database",
+      "always on database"
+    ],
+    "sinonimos": [
+      "alta disponibilidad",
+      "database redundancy",
+      "fault tolerant systems"
+    ],
+    "variantes_comunes": [
+      "q es alta disponibilidad",
+      "high availability database explained",
+      "database redundancy",
+      "cluster sql",
+      "always on mysql"
+    ],
+    "contenido": "La alta disponibilidad busca garantizar que una base de datos permanezca accesible incluso ante fallos de hardware, software o red. Para lograrlo se utilizan técnicas como replicación, clusters, balanceadores y servidores redundantes. Sistemas críticos como bancos y hospitales requieren disponibilidad cercana al 100%. Una caída prolongada puede provocar pérdidas económicas y daños operativos importantes.",
+    "ejemplos": [
+      "Clusters de bases de datos.",
+      "Servidores redundantes.",
+      "Failover automático."
+    ],
+    "ejercicios": [
+      "Explica qué es failover.",
+      "Investiga técnicas de alta disponibilidad.",
+      "Menciona aplicaciones críticas que requieren uptime."
+    ],
+    "nivel": "avanzado"
+  },
+  {
+    "materia": "BD-REL",
+    "titulo": "Bases de datos distribuidas",
+    "palabras_clave": [
+      "distributed database",
+      "distributed sql",
+      "multi node database",
+      "database clustering",
+      "distributed systems",
+      "global databases"
+    ],
+    "sinonimos": [
+      "database distribuida",
+      "sistemas distribuidos",
+      "multi node database"
+    ],
+    "variantes_comunes": [
+      "q es una base de datos distribuida",
+      "distributed database explained",
+      "multi server sql",
+      "global database systems",
+      "distributed systems sql"
+    ],
+    "contenido": "Una base de datos distribuida almacena información en múltiples servidores ubicados en diferentes lugares físicos o lógicos. Aunque los datos estén distribuidos, el sistema intenta funcionar como una sola base coherente. Esto mejora escalabilidad, tolerancia a fallos y velocidad para usuarios globales. Sin embargo, mantener consistencia en sistemas distribuidos es un desafío complejo.",
+    "ejemplos": [
+      "Infraestructura global de redes sociales.",
+      "Datos distribuidos por regiones.",
+      "Clusters multinodo."
+    ],
+    "ejercicios": [
+      "Explica ventajas de distribuir datos.",
+      "Investiga desafíos de consistencia distribuida.",
+      "Menciona empresas que usan sistemas distribuidos."
+    ],
+    "nivel": "avanzado"
+  },
+  {
+    "materia": "BD-REL",
+    "titulo": "Consistencia eventual y CAP Theorem",
+    "palabras_clave": [
+      "cap theorem",
+      "eventual consistency",
+      "distributed consistency",
+      "availability partition tolerance",
+      "database theory",
+      "distributed databases"
+    ],
+    "sinonimos": [
+      "teorema cap",
+      "consistencia eventual",
+      "cap theorem database"
+    ],
+    "variantes_comunes": [
+      "q es cap theorem",
+      "eventual consistency explained",
+      "distributed database theory",
+      "availability consistency partition tolerance",
+      "consistency in distributed systems"
+    ],
+    "contenido": "El teorema CAP establece que un sistema distribuido no puede garantizar simultáneamente Consistency, Availability y Partition Tolerance. En la práctica, los sistemas deben priorizar dos de estas propiedades. La consistencia eventual significa que, aunque temporalmente existan diferencias entre nodos, eventualmente todos tendrán la misma información. Este concepto es muy importante en arquitecturas modernas distribuidas.",
+    "ejemplos": [
+      "Replicación entre servidores globales.",
+      "Sistemas que priorizan disponibilidad.",
+      "Bases de datos distribuidas modernas."
+    ],
+    "ejercicios": [
+      "Explica cada propiedad del CAP theorem.",
+      "Investiga consistencia eventual.",
+      "Menciona por qué CAP es importante."
+    ],
+    "nivel": "avanzado"
+  },
+  {
+    "materia": "BD-REL",
+    "titulo": "Bases de datos embebidas",
+    "palabras_clave": [
+      "embedded database",
+      "sqlite",
+      "local database",
+      "lightweight database",
+      "mobile database",
+      "embedded sql"
+    ],
+    "sinonimos": [
+      "database embebida",
+      "local db",
+      "sqlite database"
+    ],
+    "variantes_comunes": [
+      "q es sqlite",
+      "embedded database explained",
+      "local databases mobile",
+      "lightweight sql database",
+      "sqlite meaning"
+    ],
+    "contenido": "Las bases de datos embebidas son sistemas ligeros integrados directamente dentro de aplicaciones. No requieren servidores separados y son ideales para aplicaciones móviles, software de escritorio y dispositivos pequeños. SQLite es uno de los ejemplos más populares. Aunque son simples y rápidas para proyectos pequeños, no están diseñadas para soportar miles de usuarios simultáneos.",
+    "ejemplos": [
+      "SQLite en aplicaciones Android.",
+      "Bases locales en software de escritorio.",
+      "Almacenamiento offline."
+    ],
+    "ejercicios": [
+      "Explica ventajas de SQLite.",
+      "Investiga cuándo usar bases embebidas.",
+      "Menciona diferencias entre SQLite y MySQL."
+    ],
+    "nivel": "general"
+  },
+  {
+    "materia": "BD-REL",
+    "titulo": "Caching y aceleración de consultas",
+    "palabras_clave": [
+      "database cache",
+      "query cache",
+      "redis cache",
+      "performance acceleration",
+      "cache layer",
+      "sql optimization"
+    ],
+    "sinonimos": [
+      "cache de consultas",
+      "aceleracion database",
+      "database caching"
+    ],
+    "variantes_comunes": [
+      "q es cache database",
+      "como acelerar consultas sql",
+      "redis explained",
+      "query cache mysql",
+      "database performance cache"
+    ],
+    "contenido": "El caching consiste en almacenar temporalmente resultados frecuentes para evitar ejecutar constantemente las mismas consultas SQL. Esto mejora rendimiento y reduce carga sobre el servidor. Tecnologías como Redis o Memcached funcionan como capas de caché extremadamente rápidas. El caching es esencial en aplicaciones modernas con millones de usuarios.",
+    "ejemplos": [
+      "Guardar sesiones en Redis.",
+      "Cachear resultados de dashboards.",
+      "Reducir consultas repetidas."
+    ],
+    "ejercicios": [
+      "Explica ventajas del caching.",
+      "Investiga Redis y Memcached.",
+      "Menciona riesgos de información desactualizada."
+    ],
+    "nivel": "intermedio"
+  },
+  {
+    "materia": "BD-REL",
+    "titulo": "Futuro de las bases de datos y tendencias modernas",
+    "palabras_clave": [
+      "future databases",
+      "modern databases",
+      "ai databases",
+      "cloud native databases",
+      "serverless database",
+      "database trends"
+    ],
+    "sinonimos": [
+      "tendencias de databases",
+      "future sql systems",
+      "modern database trends"
+    ],
+    "variantes_comunes": [
+      "futuro de las bases de datos",
+      "modern database explained",
+      "serverless sql",
+      "database trends 2026",
+      "ai database systems"
+    ],
+    "contenido": "Las bases de datos modernas están evolucionando hacia sistemas distribuidos, cloud-native y optimizados para inteligencia artificial. Tecnologías serverless permiten usar bases de datos sin administrar servidores manualmente. También están creciendo bases híbridas que combinan características SQL y NoSQL. La automatización mediante IA ayuda a optimizar consultas, detectar problemas y mejorar seguridad. El futuro apunta a sistemas más escalables, autónomos y globales.",
+    "ejemplos": [
+      "Bases serverless en la nube.",
+      "Automatización con inteligencia artificial.",
+      "Sistemas híbridos SQL + NoSQL."
+    ],
+    "ejercicios": [
+      "Investiga qué es serverless database.",
+      "Explica cómo IA puede optimizar databases.",
+      "Menciona tendencias modernas en SQL."
+    ],
+    "nivel": "general"
+  },
+{
+"materia": "BD-REL",
+"titulo": "Introducción a las Bases de Datos Relacionales (SQL)",
+"palabras_clave": ["base de datos relacional", "RDBMS", "SQL", "tablas", "filas", "columnas", "relaciones", "modelado de datos", "entidad relacion", "estándar SQL"],
+"sinonimos": ["Relational Database Management System", "Sistemas Relacionales"],
+"variantes_comunes": ["q es una base de datos relacional", "como funcionan las tablas", "explicame RDBMS", "para q sirve SQL"],
+"contenido": "Una base de datos relacional es un tipo de base de datos que almacena y proporciona acceso a puntos de datos relacionados entre sí. Se basan en el modelo relacional, una forma intuitiva y directa de representar datos en tablas. En una base de datos relacional, cada fila de la tabla es un registro con un ID único llamado clave primaria. Las columnas de la tabla contienen atributos de los datos y cada registro suele tener un valor para cada atributo, lo que facilita el establecimiento de relaciones entre los puntos de datos. Este sistema utiliza el lenguaje de consulta estructurado (SQL) para escribir y consultar datos. Es el estándar de la industria debido a su robustez, integridad de datos y facilidad para realizar consultas complejas mediante 'joins' entre múltiples tablas.",
+"ejemplos": ["MySQL", "PostgreSQL", "Microsoft SQL Server"],
+"ejercicios": [
+{
+"pregunta": "¿Cómo se llama la estructura básica donde se guardan los datos?",
+"respuesta": "Tabla",
+"dificultad": "basica"
+},
+{
+"pregunta": "¿Cuál es el lenguaje estándar para manejar estas bases de datos?",
+"respuesta": "SQL (Structured Query Language)",
+"dificultad": "intermedia"
+}
+],
+"nivel": "basico"
+},
+{
+"materia": "BD-REL",
+"titulo": "Bases de Datos No Relacionales: ¿Qué es MongoDB?",
+"palabras_clave": ["MongoDB", "NoSQL", "base de datos de documentos", "BSON", "JSON", "colecciones", "escalabilidad horizontal", "esquema flexible", "mongo shell", "atlas"],
+"sinonimos": ["Document-oriented database", "NoSQL Database"],
+"variantes_comunes": ["q es mongo db", "como funciona mongodb", "explicame NoSQL", "diferencia entre sql y nosql"],
+"contenido": "MongoDB es una base de datos NoSQL líder, orientada a documentos, que ofrece una gran escalabilidad y flexibilidad. A diferencia de las bases de datos relacionales tradicionales, no guarda los datos en tablas con filas y columnas fijas. En su lugar, utiliza documentos similares a JSON (técnicamente BSON) con esquemas dinámicos. Esto significa que puedes crear registros sin definir primero la estructura, como el tipo de campos o su valor. Los datos relacionados se agrupan en 'colecciones' en lugar de tablas. Es ideal para aplicaciones modernas que manejan grandes volúmenes de datos, contenido de redes sociales o catálogos de productos donde los atributos pueden variar frecuentemente, permitiendo un desarrollo mucho más rápido e iterativo.",
+"ejemplos": ["Almacenamiento de perfiles de usuario", "Sistemas de gestión de contenido (CMS)", "Análisis de datos en tiempo real"],
+"ejercicios": [
+{
+"pregunta": "¿En qué formato guarda MongoDB los datos?",
+"respuesta": "En documentos BSON (similares a JSON).",
+"dificultad": "basica"
+},
+{
+"pregunta": "¿Cómo se llaman los grupos de documentos en MongoDB?",
+"respuesta": "Colecciones",
+"dificultad": "intermedia"
+}
+],
+"nivel": "basico"
+},
+{
+"materia": "BD-REL",
+"titulo": "Claves Primarias y Foráneas (Primary & Foreign Keys)",
+"palabras_clave": ["clave primaria", "primary key", "clave foránea", "foreign key", "PK", "FK", "integridad referencial", "identificador único", "relacionar tablas", "llaves bd"],
+"sinonimos": ["Unique identifiers", "Referential constraints"],
+"variantes_comunes": ["q es una primary key", "para que sirve la foreign key", "como relacionar dos tablas", "explicame las llaves de base de datos"],
+"contenido": "Las claves son los pilares que mantienen la estructura y las relaciones en una base de datos relacional. Una Clave Primaria (Primary Key) es un campo (o conjunto de campos) que identifica de forma única cada registro en una tabla; no puede haber duplicados y no puede ser nula. Por otro lado, una Clave Foránea (Foreign Key) es una columna en una tabla que apunta a la Clave Primaria de otra tabla. Esta conexión es lo que permite 'relacionar' los datos. Por ejemplo, en una tabla de 'Pedidos', podrías tener una clave foránea 'ID_Cliente' que conecte con la clave primaria de la tabla 'Clientes'. Esto garantiza la integridad referencial, asegurando que no existan registros 'huérfanos' y que los datos se mantengan consistentes en todo el sistema.",
+"ejemplos": ["ID_Usuario como PK", "ID_Categoria como FK en una tabla de Productos", "DNI como clave primaria"],
+"ejercicios": [
+{
+"pregunta": "¿Puede una clave primaria tener valores repetidos?",
+"respuesta": "No, debe ser única por cada registro.",
+"dificultad": "basica"
+},
+{
+"pregunta": "¿Qué tipo de clave se usa para vincular dos tablas?",
+"respuesta": "Clave Foránea (Foreign Key).",
+"dificultad": "intermedia"
+}
+],
+"nivel": "basico"
+},
+{
+"materia": "BD-REL",
+"titulo": "Tipos de Relaciones (1:1, 1:N, N:N)",
+"palabras_clave": ["uno a muchos", "muchos a muchos", "uno a uno", "cardinalidad", "tabla intermedia", "relaciones bd", "mapping", "vínculos", "foreign keys", "entidades"],
+"sinonimos": ["Database cardinality", "Entity relationships"],
+"variantes_comunes": ["q es una relacion uno a muchos", "como hacer relacion muchos a muchos", "explicame cardinalidad", "ejemplos de relaciones en sql"],
+"contenido": "La cardinalidad define cuántas instancias de una entidad se relacionan con instancias de otra. Las tres más comunes son: 1. Uno a Uno (1:1): Un registro en la Tabla A se relaciona con un solo registro en la Tabla B (ej. Usuario y su Perfil Privado). 2. Uno a Muchos (1:N): El más común; un registro en la Tabla A puede relacionarse con varios en la Tabla B, pero no al revés (ej. Un Cliente tiene muchos Pedidos). 3. Muchos a Muchos (N:N): Muchos registros en A se relacionan con muchos en B (ej. Estudiantes y Cursos). En el modelo relacional, las relaciones N:N requieren una 'tabla intermedia' o de unión para descomponer la relación en dos relaciones de uno a muchos, manteniendo así el orden y la normalización de los datos.",
+"ejemplos": ["Un autor escribe muchos libros (1:N)", "Un ciudadano tiene un pasaporte (1:1)", "Actores y películas (N:N)"],
+"ejercicios": [
+{
+"pregunta": "¿Qué tipo de relación es: Un país y sus ciudades?",
+"respuesta": "Uno a Muchos (1:N).",
+"dificultad": "basica"
+},
+{
+"pregunta": "¿Qué necesitas para crear una relación Muchos a Muchos?",
+"respuesta": "Una tabla intermedia (o de unión).",
+"dificultad": "intermedia"
+}
+],
+"nivel": "intermedio"
+},
+{
+"materia": "BD-REL",
+"titulo": "Sentencias SQL: SELECT, INSERT, UPDATE, DELETE",
+"palabras_clave": ["CRUD", "SELECT", "INSERT", "UPDATE", "DELETE", "consultas SQL", "manipulación de datos", "DML", "query", "borrar datos", "actualizar registros"],
+"sinonimos": ["SQL DML Commands", "Data Manipulation Language"],
+"variantes_comunes": ["como hacer un select", "como insertar datos en sql", "explicame el crud de base de datos", "para que sirve update"],
+"contenido": "El lenguaje SQL se divide en varias categorías, siendo el DML (Data Manipulation Language) el más usado para interactuar con los datos. SELECT se utiliza para recuperar datos de la base de datos, permitiendo filtrar y ordenar los resultados. INSERT se usa para añadir nuevos registros a una tabla. UPDATE permite modificar los valores de registros ya existentes. Finalmente, DELETE se utiliza para eliminar registros. Estas cuatro operaciones se conocen comúnmente como CRUD (Create, Read, Update, Delete). Es vital usar siempre la cláusula WHERE al ejecutar UPDATE o DELETE, ya que de lo contrario podrías modificar o borrar accidentalmente todos los registros de una tabla de una sola vez.",
+"ejemplos": ["SELECT * FROM usuarios;", "INSERT INTO productos (nombre, precio) VALUES ('Café', 5);", "UPDATE empleados SET salario = 3000 WHERE id = 1;"],
+"ejercicios": [
+{
+"pregunta": "¿Qué comando usarías para ver todos los datos de una tabla?",
+"respuesta": "SELECT",
+"dificultad": "basica"
+},
+{
+"pregunta": "¿Qué pasa si olvidas el WHERE en un DELETE?",
+"respuesta": "Se borran todos los registros de la tabla.",
+"dificultad": "intermedia"
+}
+],
+"nivel": "basico"
+},
+{
+"materia": "BD-REL",
+"titulo": "Normalización de Bases de Datos",
+"palabras_clave": ["normalización", "formas normales", "1NF", "2NF", "3NF", "redundancia", "integridad de datos", "diseño de bases de datos", "anomalías", "dependencias"],
+"sinonimos": ["Database Normalization", "Data structural optimization"],
+"variantes_comunes": ["q es la normalizacion", "para que sirven las formas normales", "explicame la tercera forma normal", "como evitar redundancia"],
+"contenido": "La normalización es el proceso de organizar los datos en una base de datos para reducir la redundancia y mejorar la integridad. El objetivo principal es separar los datos de manera lógica para que cada tabla represente un solo tema o entidad. Se realiza a través de 'Formas Normales'. La Primera Forma Normal (1NF) elimina grupos repetidos y asegura que cada campo sea atómico. La Segunda (2NF) asegura que todos los datos dependan de la clave primaria. La Tercera (3NF) elimina dependencias transitivas (datos que no dependen directamente de la clave). Aunque un diseño normalizado evita errores al actualizar datos y ahorra espacio, a veces los desarrolladores optan por la 'desnormalización' en sistemas muy grandes para mejorar la velocidad de lectura.",
+"ejemplos": ["Separar direcciones de una tabla de usuarios", "Crear una tabla de categorías aparte de productos", "Eliminar columnas que se pueden calcular"],
+"ejercicios": [
+{
+"pregunta": "¿Cuál es el objetivo principal de la normalización?",
+"respuesta": "Reducir la redundancia y evitar anomalías en los datos.",
+"dificultad": "basica"
+},
+{
+"pregunta": "¿Qué significa que un valor sea 'atómico'?",
+"respuesta": "Que no se puede dividir en partes más pequeñas (ej. un solo teléfono por campo).",
+"dificultad": "intermedia"
+}
+],
+"nivel": "avanzado"
+},
+{
+"materia": "BD-REL",
+"titulo": "Cláusulas de Filtrado y Orden (WHERE, ORDER BY, LIMIT)",
+"palabras_clave": ["WHERE", "ORDER BY", "LIMIT", "filtros", "ordenar", "condiciones SQL", "ASC", "DESC", "TOP", "OFFSET", "consultas filtradas"],
+"sinonimos": ["Filtering and sorting", "Query constraints"],
+"variantes_comunes": ["como filtrar en sql", "como ordenar de mayor a menor", "para q sirve limit", "explicame el where"],
+"contenido": "Para que las consultas SQL sean útiles, raramente queremos todos los datos a la vez. WHERE es la cláusula fundamental de filtrado; permite especificar condiciones (ej. 'precio > 100' o 'ciudad = Madrid'). ORDER BY se utiliza para clasificar los resultados según una o más columnas, ya sea de forma ascendente (ASC) o descendente (DESC). LIMIT (o TOP en otros sistemas) se usa para restringir el número de filas devueltas, lo cual es esencial para crear paginación en sitios web (por ejemplo, mostrar solo 10 productos por página). Estas herramientas permiten extraer información específica y presentarla de una manera legible y eficiente para el usuario final.",
+"ejemplos": ["SELECT * FROM ventas WHERE total > 50;", "SELECT nombre FROM alumnos ORDER BY apellido ASC;", "SELECT * FROM post LIMIT 5;"],
+"ejercicios": [
+{
+"pregunta": "¿Cómo ordenas resultados de la Z a la A?",
+"respuesta": "Usando ORDER BY columna DESC.",
+"dificultad": "basica"
+},
+{
+"pregunta": "Si quiero solo los 3 productos más caros, ¿qué uso?",
+"respuesta": "ORDER BY precio DESC LIMIT 3.",
+"dificultad": "intermedia"
+}
+],
+"nivel": "basico"
+},
+{
+"materia": "BD-REL",
+"titulo": "Propiedades ACID en Transacciones",
+"palabras_clave": ["ACID", "transacciones", "atomicidad", "consistencia", "aislamiento", "durabilidad", "COMMIT", "ROLLBACK", "integridad", "seguridad de datos"],
+"sinonimos": ["Database Transaction Properties", "ACID Compliance"],
+"variantes_comunes": ["q son las propiedades acid", "que es una transaccion en bd", "explicame atomicidad", "para q sirve el rollback"],
+"contenido": "ACID es un acrónimo que describe las cuatro propiedades clave que garantizan que las transacciones de base de datos se procesen de forma fiable: 1. Atomicidad: La transacción se realiza por completo o no se hace nada ('todo o nada'). 2. Consistencia: Una transacción lleva la base de datos de un estado válido a otro. 3. Aislamiento: Las operaciones de una transacción son invisibles para otras hasta que finalice. 4. Durabilidad: Una vez confirmada (COMMIT), la transacción permanece incluso si hay un fallo del sistema. Estas propiedades son críticas en sistemas financieros; por ejemplo, al transferir dinero, no puede ocurrir que se reste de una cuenta pero no se sume en la otra. Si algo falla a mitad de camino, se usa un ROLLBACK para volver al estado inicial.",
+"ejemplos": ["Transferencias bancarias", "Sistemas de reserva de vuelos", "Procesamiento de pagos"],
+"ejercicios": [
+{
+"pregunta": "¿Qué significa la 'A' en ACID?",
+"respuesta": "Atomicidad (la transacción es indivisible).",
+"dificultad": "basica"
+},
+{
+"pregunta": "¿Qué comando confirma los cambios de una transacción?",
+"respuesta": "COMMIT",
+"dificultad": "intermedia"
+}
+],
+"nivel": "avanzado"
+},
+{
+"materia": "BD-REL",
+"titulo": "Uso de JOINs (INNER, LEFT, RIGHT)",
+"palabras_clave": ["JOIN", "INNER JOIN", "LEFT JOIN", "RIGHT JOIN", "unir tablas", "consultas multitabla", "cruce de datos", "ON", "relaciones SQL", "vincular registros"],
+"sinonimos": ["Table joins", "Relational queries"],
+"variantes_comunes": ["como unir dos tablas en sql", "diferencia entre inner y left join", "explicame el join", "para que sirve left join"],
+"contenido": "La cláusula JOIN permite combinar filas de dos o más tablas basándose en una columna relacionada entre ellas. El INNER JOIN devuelve solo los registros que tienen valores coincidentes en ambas tablas. El LEFT JOIN devuelve todos los registros de la tabla izquierda y los registros coincidentes de la derecha (si no hay coincidencia, devuelve NULL). El RIGHT JOIN es lo opuesto. Dominar los JOINs es lo que realmente da poder al modelo relacional, ya que permite mantener tablas pequeñas y especializadas (normalizadas) y reconstruir la información completa solo cuando se necesita. Sin los JOINs, tendríamos que repetir muchísima información en una sola tabla gigante, lo cual es ineficiente y propenso a errores.",
+"ejemplos": ["Unir Clientes con Pedidos", "Vincular Productos con sus Proveedores", "Mostrar Estudiantes y sus Notas"],
+"ejercicios": [
+{
+"pregunta": "¿Qué JOIN devuelve solo registros que existen en ambas tablas?",
+"respuesta": "INNER JOIN",
+"dificultad": "basica"
+},
+{
+"pregunta": "Si quiero ver todos los clientes, tengan pedidos o no, ¿qué uso?",
+"respuesta": "LEFT JOIN (poniendo la tabla clientes a la izquierda).",
+"dificultad": "intermedia"
+}
+],
+"nivel": "intermedio"
+},
+{
+"materia": "BD-REL",
+"titulo": "Índices y Optimización",
+"palabras_clave": ["índices", "index", "optimización", "rendimiento", "query tuning", "búsqueda rápida", "B-Tree", "índice único", "escaneo de tabla", "performance"],
+"sinonimos": ["Database Indexing", "Performance tuning"],
+"variantes_comunes": ["como acelerar una consulta sql", "q es un indice en bd", "explicame para que sirve el index", "porque mi base de datos esta lenta"],
+"contenido": "Un índice es una estructura de datos que mejora la velocidad de las operaciones de búsqueda en una tabla a costa de un espacio adicional en disco y escrituras ligeramente más lentas. Funciona de manera similar al índice de un libro: en lugar de leer toda la tabla (full table scan) para encontrar un registro, la base de datos consulta el índice para saltar directamente a la ubicación de los datos. El índice más común es sobre la Clave Primaria. Es fundamental crear índices en las columnas que se usan frecuentemente en cláusulas WHERE o JOIN. Sin embargo, no se deben indexar todas las columnas, ya que esto ralentiza las operaciones de INSERT y UPDATE, puesto que el índice debe actualizarse cada vez que los datos cambian.",
+"ejemplos": ["Indexar la columna 'email' en una tabla de usuarios", "Crear un índice en 'fecha_venta'", "Índices compuestos"],
+"ejercicios": [
+{
+"pregunta": "¿Para qué sirve un índice?",
+"respuesta": "Para acelerar las búsquedas de datos.",
+"dificultad": "basica"
+},
+{
+"pregunta": "¿Cuál es la desventaja de tener demasiados índices?",
+"respuesta": "Ralentiza las inserciones y actualizaciones de datos.",
+"dificultad": "intermedia"
+}
+],
+"nivel": "intermedio"
+}
+
+
+
+]
