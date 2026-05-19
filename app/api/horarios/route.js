@@ -2,57 +2,66 @@
  * =============================================================================
  *  ENDPOINT: /api/horarios
  * =============================================================================
- *  Gestiona el horario de clases de cada alumno.
+ *  Aqui esta la API para el horario del alumno.
  *
- *    GET  -> Lista las clases del usuario actual, ya cruzadas con la
- *            colección "materias" para incluir nombre e icono.
- *    POST -> Agrega una nueva clase al horario del alumno.
+ *  GET  -> Devuelve todas las clases del alumno logueado.
+ *  POST -> Agrega una clase nueva (valida que no choque con otra).
  *
- *  Reglas de negocio:
- *    - Solo los alumnos pueden agregar clases (los maestros no tienen horario
- *      en este sistema).
- *    - Cada alumno solo puede ver y modificar su propio horario.
+ *  Reglas:
+ *    - Solo los alumnos pueden agregar clases.
+ *    - Cada alumno solo ve su propio horario.
+ *    - Si dos clases se pisan el mismo dia => error 409.
  * =============================================================================
  */
+
+// Importamos lo que necesitamos de Next y Mongo.
 import { NextResponse } from "next/server";
 import { ObjectId } from "mongodb";
+// Funcion para saber quien es el usuario logueado (lee el token JWT).
 import { obtenerUsuarioActual, respuesta401 } from "@/lib/auth";
+// Helpers para entrar a las colecciones de Mongo.
 import { getHorariosCollection, getMateriasCollection } from "@/lib/mongodb";
+// Nuestras validaciones (Zod + detector de choques).
+import { schemaHorario, detectarTraslape } from "@/lib/validaciones-horario";
 
 /* ===========================================================================
  *  GET /api/horarios
- *  ---------------------------------------------------------------------------
- *  Devuelve todas las clases del usuario logueado, con el nombre e icono de
- *  la materia ya resueltos (no solo el id), para que el frontend no tenga
- *  que hacer un segundo viaje.
+ *  Devuelve la lista de clases del alumno, con el nombre e icono de
+ *  cada materia ya resueltos (asi el frontend no hace doble viaje).
  * ===========================================================================
  */
 export async function GET(req) {
+  // 1) Vemos quien esta haciendo la peticion.
   const usuario = await obtenerUsuarioActual(req);
+  // Si no hay sesion, respondemos 401 (no autorizado).
   if (!usuario) return respuesta401();
 
   try {
-    // 1) Traer todos los horarios cuyo user_id coincida con el usuario actual.
+    // 2) Pedimos la coleccion "horarios" de Mongo.
     const horariosCol = await getHorariosCollection();
+    // 3) Buscamos los horarios cuyo user_id sea el del usuario actual.
     const horarios = await horariosCol
       .find({ user_id: usuario._id.toString() })
       .toArray();
 
-    // 2) Por cada horario, buscar la materia asociada para añadir nombre/icono.
-    //    Promise.all permite hacer todas las búsquedas en paralelo.
+    // 4) Tambien necesitamos la coleccion "materias" para sacar nombre/icono.
     const materiasCol = await getMateriasCollection();
+
+    // 5) Por cada horario, buscamos su materia. Promise.all las pide en paralelo.
     const horariosConMateria = await Promise.all(
       horarios.map(async (h) => {
+        // Buscamos la materia por su _id.
         const materia = await materiasCol.findOne({
           _id: new ObjectId(h.materia_id),
         });
+        // Devolvemos el horario "enriquecido" con datos de la materia.
         return {
           _id: h._id.toString(),
           materia_id: h.materia_id,
-          // Si la materia ya no existe, ponemos valores por defecto para no
-          // romper el render del frontend.
+          // Si la materia fue borrada, ponemos un default para no romper la UI.
           materia_nombre: materia?.nombre || "Materia",
           materia_icono: materia?.icono || "📚",
+          materia_codigo: materia?.codigo || null,
           dia: h.dia,
           hora_inicio: h.hora_inicio,
           hora_fin: h.hora_fin,
@@ -61,8 +70,10 @@ export async function GET(req) {
       })
     );
 
+    // 6) Devolvemos la lista en JSON.
     return NextResponse.json(horariosConMateria);
   } catch (error) {
+    // Si algo falla, lo registramos y devolvemos error 500.
     console.error("Error listando horarios:", error);
     return NextResponse.json(
       { detail: "Error al cargar horarios" },
@@ -73,30 +84,16 @@ export async function GET(req) {
 
 /* ===========================================================================
  *  POST /api/horarios
- *  ---------------------------------------------------------------------------
- *  Body esperado:
- *    {
- *      codigo_materia: "BD-REL" | "BD-NOSQL" | "ENG",
- *      dia: "lunes" | "martes" | ...,
- *      hora_inicio: "08:00",
- *      hora_fin:    "09:30",
- *      aula?: string
- *    }
- *
- *  Pasos:
- *    1) Verificar autenticación y que el usuario sea alumno (no maestro).
- *    2) Validar que estén los campos obligatorios y el día sea válido.
- *    3) Buscar la materia por código para guardar el _id real.
- *    4) Insertar el horario y devolver el id generado.
+ *  Crea una clase nueva en el horario del alumno.
+ *  Body esperado: { codigo_materia, dia, hora_inicio, hora_fin, aula? }
  * ===========================================================================
  */
 export async function POST(req) {
-  // PASO 1: autenticación y rol.
+  // 1) Verificamos que haya sesion.
   const usuario = await obtenerUsuarioActual(req);
   if (!usuario) return respuesta401();
 
-  // Los maestros no tienen horario propio, así que bloqueamos el endpoint
-  // para ellos con un 403 Forbidden.
+  // Solo los alumnos pueden tener horario (los maestros no).
   if (usuario.rol !== "alumno") {
     return NextResponse.json(
       { detail: "Solo los alumnos pueden agregar clases" },
@@ -105,31 +102,29 @@ export async function POST(req) {
   }
 
   try {
+    // 2) Leemos el body que mando el frontend.
     const body = await req.json();
-    const { codigo_materia, dia, hora_inicio, hora_fin, aula } = body;
 
-    // PASO 2a: campos obligatorios presentes.
-    if (!codigo_materia || !dia || !hora_inicio || !hora_fin) {
+    // 3) Lo pasamos por Zod para validar formato, horas, dia, etc.
+    const parsed = schemaHorario.safeParse(body);
+    if (!parsed.success) {
+      // Si fallo, tomamos el primer error y lo mandamos al frontend.
+      const primerError = parsed.error.errors[0];
       return NextResponse.json(
-        { detail: "Faltan campos obligatorios" },
+        {
+          detail: primerError?.message || "Datos invalidos",
+          errores: parsed.error.errors,
+        },
         { status: 400 }
       );
     }
+    // Si todo OK, sacamos los datos ya limpios.
+    const datos = parsed.data;
 
-    // PASO 2b: día válido. Aceptamos cualquier capitalización porque luego
-    // lo guardamos en minúsculas (estandarización).
-    const diasValidos = ["lunes", "martes", "miercoles", "jueves", "viernes", "sabado", "domingo"];
-    if (!diasValidos.includes(dia.toLowerCase())) {
-      return NextResponse.json(
-        { detail: "Día inválido" },
-        { status: 400 }
-      );
-    }
-
-    // PASO 3: el frontend manda el código corto de la materia ("BD-REL"),
-    // pero en la BD guardamos el _id real para mantener la integridad.
+    // 4) Buscamos la materia por su codigo (ej: "BD-REL") para guardar el _id real.
     const materiasCol = await getMateriasCollection();
-    const materia = await materiasCol.findOne({ codigo: codigo_materia });
+    const materia = await materiasCol.findOne({ codigo: datos.codigo_materia });
+    // Si la materia no existe, error 404.
     if (!materia) {
       return NextResponse.json(
         { detail: "Materia no encontrada" },
@@ -137,24 +132,48 @@ export async function POST(req) {
       );
     }
 
-    // PASO 4: insertar el horario para este usuario.
+    // 5) Revisamos que no choque con otra clase del mismo dia.
     const horariosCol = await getHorariosCollection();
+    // Solo traemos las del mismo dia para no cargar mas de lo necesario.
+    const delMismoDia = await horariosCol
+      .find({ user_id: usuario._id.toString(), dia: datos.dia })
+      .toArray();
+
+    // Usamos nuestra funcion para detectar traslapes.
+    const choque = detectarTraslape(datos, delMismoDia, null);
+    if (choque) {
+      // Si hay choque, error 409 con mensaje claro.
+      return NextResponse.json(
+        {
+          detail: `Esta clase choca con otra el ${datos.dia} de ${choque.hora_inicio} a ${choque.hora_fin}`,
+        },
+        { status: 409 }
+      );
+    }
+
+    // 6) Insertamos el nuevo horario en la base.
     const resultado = await horariosCol.insertOne({
       user_id: usuario._id.toString(),
       materia_id: materia._id.toString(),
-      dia: dia.toLowerCase(),
-      hora_inicio,
-      hora_fin,
-      aula: aula || null,
+      dia: datos.dia,
+      hora_inicio: datos.hora_inicio,
+      hora_fin: datos.hora_fin,
+      // Si no mandaron aula, guardamos null.
+      aula: datos.aula?.trim() || null,
       fecha_creacion: new Date(),
     });
 
-    return NextResponse.json({
-      success: true,
-      _id: resultado.insertedId.toString(),
-      mensaje: "✅ Clase agregada al horario",
-    });
+    // 7) Devolvemos el id generado y un mensaje bonito para el toast.
+    return NextResponse.json(
+      {
+        success: true,
+        _id: resultado.insertedId.toString(),
+        mensaje: "✅ Clase agregada al horario",
+      },
+      { status: 201 }
+    );
   } catch (error) {
+    // Cualquier error inesperado => 500.
     console.error("Error agregando horario:", error);
     return NextResponse.json(
       { detail: "Error al agregar clase" },
